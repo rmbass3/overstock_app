@@ -12,7 +12,12 @@
 
 @font-face {
   font-family: RedHatMedium;
-  src: url(./fonts/RedHatText/static/RedHatText-Medium.ttf)
+  src: url("./fonts/RedHatText/static/RedHatText-Medium.ttf");
+}
+
+@font-face {
+  font-family: RedHatItalics;
+  src: url("./fonts/RedHatText/static/RedHatText-MediumItalic.ttf")
 }
 
 /* Header */
@@ -46,15 +51,65 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: clamp(50vh, calc(50vh + 50vw), 1000px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .home .title-container {
-  padding-top: 200px;
+  padding-top: 6vh;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.title-container h2, .title-container h3, .title-container hr {
+
+.title-container .title-intro {
   color: white;
+  font-family: RedHatItalics;
+  font-size: clamp(30px, 6vw, 96px);
+}
+
+.title-container .title-overstock {
+  color: var(--logo-color);
+  font-family: RedHatMedium;
+  font-size: clamp(60px, 12vw, 192px);
+  line-height: 1;
+}
+
+.title-container .title-end {
+  color: white;
+  font-family: RedHatMedium;
+  font-size: clamp(15px, 3vw, 48px);
+  margin-top: 10px;
+}
+
+.title-container .title-hr {
+  color: white;
+}
+
+.title-container .title-button {
+  font-family: RedHatItalics;
+  border-radius: 0px;
+  font-size: clamp(10px, 2vw, 32px);
+  padding: clamp(10px, 2vw, 32px);
+  /* margin-top: 10px; */
+}
+
+.title-container .title-button, 
+.title-container .title-button:active, 
+.title-container .title-button:focus {
+  background-color: var(--charcoal);
+  border-color: var(--charcoal);
+}
+
+.title-container .title-button:hover {
+  background-color: var(--charcoal);
+  border-color: var(--charcoal)
 }
 
 /* Home Transition */
@@ -62,3 +117,100 @@
 .home-trans {
   height: 100vh;
 }
+
+/* Breakpoints */
+/* @media only screen and (max-width: 340px) {
+  .title-container .title-intro {
+    font-size: 25px;
+  }
+
+  .title-container .title-overstock {
+    font-size: 40px;
+  }
+  
+  .title-container .title-end {
+    font-size: 15px;
+  }
+  
+} */
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (min-width: 340px) {
+  .title-container .title-intro {
+    font-size: 30px;
+  }
+
+  .title-container .title-overstock {
+    font-size: 50px;
+  }
+  
+  .title-container .title-end {
+    font-size: 20px;
+  }
+  
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 576px) {
+  .title-container .title-intro {
+    font-size: 45px;
+  }
+
+  .title-container .title-overstock {
+    font-size: 60px;
+  }
+  
+  .title-container .title-end {
+    font-size: 20px;
+  }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  .title-container .title-intro {
+    font-size: 60px;
+  }
+
+  .title-container .title-overstock {
+    font-size: 75px;
+  }
+  
+  .title-container .title-end {
+    font-size: 20px;
+  }
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  .title-container .title-intro {
+    font-size: 75px;
+  }
+
+  .title-container .title-overstock {
+    font-size: 90px;
+  }
+  
+  .title-container .title-end {
+    font-size: 20px;
+  }
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+  .title-container .title-intro {
+    font-size: 90px;
+  }
+
+  .title-container .title-overstock {
+    font-size: 105px;
+  }
+  
+  .title-container .title-end {
+    font-size: 20px;
+  }
+} */
+
+/* Extra extra large devices (large laptops and desktops, 1400px and up) */
+/* @media only screen and (min-width: 1400px) {
+
+} */
