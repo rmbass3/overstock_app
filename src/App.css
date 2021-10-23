@@ -1,3 +1,5 @@
+/* Settings */
+
 :root {
   --trans-white: #ffffffe0;
   --ash-gray: #cad2c5ff;
@@ -5,17 +7,17 @@
   --logo-color: #5DB094;
   --hookers-green: #52796fff;
   --dark-slate-gray: #354f52ff;
-  --charcoal: #2f3e46ff;
+  --charcoal: rgb(28, 36, 41);
 }
-
 
 @font-face {
   font-family: RedHatMedium;
   src: url(./fonts/RedHatText/static/RedHatText-Medium.ttf)
 }
 
+/* Header */
+
 .App .header {
-  font-family: RedHatMedium;
   font-size: 24px;
   position: fixed;
   width: 100vw;
@@ -26,14 +28,10 @@
   height: 100px;
 }
 
-/* .container .navbar-collapse {
-
-} */
-
 .navbar-collapse .navbar-nav {
-
-  width: 100%;
-  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 75%;
+  justify-content: space-around;
 }
 
 .navbar-nav > a {
@@ -41,13 +39,25 @@
   color: var(--charcoal)!important;
 }
 
+/* Home */
+
 .home {
-  background-image: url("../src/imgs/bg-main.jpg");
+  background-image: url("../src/imgs/bg-main-dark.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
+
+.home .title-container {
+  padding-top: 200px;
+}
+
+.title-container h2, .title-container h3, .title-container hr {
+  color: white;
+}
+
+/* Home Transition */
 
 .home-trans {
   height: 100vh;
