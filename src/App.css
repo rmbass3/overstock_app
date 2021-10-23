@@ -8,6 +8,7 @@
   --hookers-green: #52796fff;
   --dark-slate-gray: #354f52ff;
   --charcoal: rgb(28, 36, 41);
+  --dark-charcoal: rgb(17, 21, 24);
 }
 
 @font-face {
@@ -40,8 +41,9 @@
 }
 
 .navbar-nav > a {
-  margin: 0 30px;
+  margin: 0;
   color: var(--charcoal)!important;
+  font-family: RedHatMedium;
 }
 
 /* Home */
@@ -97,18 +99,22 @@
   border-radius: 0px;
   font-size: clamp(10px, 2vw, 32px);
   padding: clamp(10px, 2vw, 32px);
-  /* margin-top: 10px; */
+  background-color: var(--charcoal);
 }
 
 .title-container .title-button, 
 .title-container .title-button:active, 
 .title-container .title-button:focus {
-  background-color: var(--charcoal);
   border-color: var(--charcoal);
+  box-shadow: none;
+}
+
+.title-container .title-button:focus {
+  background-color: var(--charcoal);
 }
 
 .title-container .title-button:hover {
-  background-color: var(--charcoal);
+  background-color: var(--dark-charcoal);
   border-color: var(--charcoal)
 }
 
@@ -119,96 +125,36 @@
 }
 
 /* Breakpoints */
-/* @media only screen and (max-width: 340px) {
-  .title-container .title-intro {
-    font-size: 25px;
-  }
-
-  .title-container .title-overstock {
-    font-size: 40px;
-  }
+@media only screen and (max-width: 340px) {
   
-  .title-container .title-end {
-    font-size: 15px;
-  }
-  
-} */
+}
 
 /* Extra small devices (phones, 600px and down) */
-/* @media only screen and (min-width: 340px) {
-  .title-container .title-intro {
-    font-size: 30px;
-  }
-
-  .title-container .title-overstock {
-    font-size: 50px;
-  }
+@media only screen and (min-width: 340px) {
   
-  .title-container .title-end {
-    font-size: 20px;
-  }
-  
-} */
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 576px) {
-  .title-container .title-intro {
-    font-size: 45px;
-  }
+@media only screen and (min-width: 576px) {
 
-  .title-container .title-overstock {
-    font-size: 60px;
-  }
-  
-  .title-container .title-end {
-    font-size: 20px;
-  }
-} */
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-  .title-container .title-intro {
-    font-size: 60px;
-  }
+@media only screen and (min-width: 768px) {
 
-  .title-container .title-overstock {
-    font-size: 75px;
-  }
-  
-  .title-container .title-end {
-    font-size: 20px;
-  }
-} */
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
-  .title-container .title-intro {
-    font-size: 75px;
+@media only screen and (min-width: 992px) {
+  .navbar-nav > a {
+    margin: 0 30px;
   }
-
-  .title-container .title-overstock {
-    font-size: 90px;
-  }
-  
-  .title-container .title-end {
-    font-size: 20px;
-  }
-} */
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-  .title-container .title-intro {
-    font-size: 90px;
-  }
+@media only screen and (min-width: 1200px) {
 
-  .title-container .title-overstock {
-    font-size: 105px;
-  }
-  
-  .title-container .title-end {
-    font-size: 20px;
-  }
-} */
+}
 
 /* Extra extra large devices (large laptops and desktops, 1400px and up) */
 /* @media only screen and (min-width: 1400px) {
