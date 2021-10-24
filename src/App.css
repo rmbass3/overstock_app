@@ -21,6 +21,27 @@
   src: url("./fonts/RedHatText/static/RedHatText-MediumItalic.ttf")
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 23px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(192, 206, 200);
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bfb4;
+}
+
+
 /* Header */
 
 .App .header {
@@ -48,16 +69,20 @@
 
 /* Home */
 
-.home {
-  background-image: url("../src/imgs/bg-main-dark.jpg");
+.App .home-banner {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: clamp(50vh, calc(50vh + 50vw), 1000px);
+  height: clamp(50vh, calc(50vh + 50vw), 1000px)!important;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: -1;
+}
+
+.home {
+  z-index: 1;
 }
 
 .home .title-container {
@@ -73,20 +98,20 @@
 .title-container .title-intro {
   color: white;
   font-family: RedHatItalics;
-  font-size: clamp(30px, 6vw, 96px);
+  font-size: clamp(30px, 6vw, 84px);
 }
 
 .title-container .title-overstock {
   color: var(--logo-color);
   font-family: RedHatMedium;
-  font-size: clamp(60px, 12vw, 192px);
+  font-size: clamp(60px, 12vw, 168px);
   line-height: 1;
 }
 
 .title-container .title-end {
   color: white;
   font-family: RedHatMedium;
-  font-size: clamp(15px, 3vw, 48px);
+  font-size: clamp(15px, 3vw, 42px);
   margin-top: 10px;
 }
 
