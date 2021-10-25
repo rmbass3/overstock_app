@@ -23,7 +23,7 @@
 
 /* Scrollbar */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 23px;
 }
 
@@ -39,7 +39,7 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #a8bfb4;
-}
+} */
 
 #root {
   overflow-x: hidden;
@@ -158,21 +158,19 @@
   /* margin: 0; */
 }
 
-.home-trans1 .trans1-col {
+.home-trans1 .trans1-text-col {
   background-color: var(--charcoal);
   padding: 0;
 }
 
-.home-trans1 .trans1-box-left {
+.home-trans1 .trans1-box-left,
+.home-trans1 .trans1-box-right {
   /* background-color: var(--charcoal);
   height: 100%; */
   display: flex;
   align-items: center;
 }
 
-.home-trans1 .trans1-title-container {
-
-}
 
 .home-trans1 .trans1-title {
   color: white;
@@ -182,7 +180,37 @@
   white-space: nowrap;
 }
 
-.triangle-left-bottom {
+.home-trans1 .trans1-text {
+  color: white;
+  font-family: RedHatItalics;
+  text-align: center;
+}
+
+
+
+.home-trans1 .trans1-img-right-container {
+  background-image: url("../src/imgs/trans1-img-right.jpg");
+}
+
+.home-trans1 .trans1-img-left-container {
+  background-image: url("../src/imgs/trans1-img-left.jpg");
+}
+
+.home-trans1 .trans1-img-right-container, .home-trans1 .trans1-img-left-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 314px;
+}
+
+.triangle-left-top {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 314px 100px 0 0;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.triangle-right-bottom {
   width: 0;
   height: 0;
   border-style: solid;
@@ -194,27 +222,22 @@
   margin-left: auto;
 }
 
-.home-trans1 .trans1-img-right-container {
-  background-repeat: no-repeat;
-  background-position: center;
-  /* background-size: cover; */
-  background-image: url("../src/imgs/trans1-img-right.jpg");
-  height: 314px;
-}
-
-.home-trans1 .trans1-img-right {
-
-}
-
 .triangle-right-top {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 314px 100px 0 0;
-  border-color: #ffffff transparent transparent transparent;
-  line-height: 0px;
+  border-width: 0 100px 314px 0;
+  border-color: transparent #ffffff transparent transparent;
+  margin-left: auto;
 }
 
+.triangle-left-bottom {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 314px 0 0 100px;
+  border-color: transparent transparent transparent #ffffff;
+}
 /* Breakpoints */
 @media only screen and (max-width: 340px) {
   
