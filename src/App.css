@@ -1,5 +1,4 @@
 /* Settings */
-
 :root {
   --trans-white: #ffffffe0;
   --ash-gray: #cad2c5ff;
@@ -42,8 +41,9 @@
 } */
 
 #root {
-  overflow-x: hidden;
-  position: relative;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+  /* position: relative; */
 }
 
 /* Header */

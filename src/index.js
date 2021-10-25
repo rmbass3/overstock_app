@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import AppContainer from './components/AppContainer';
 import reportWebVitals from './reportWebVitals';
+import 'animate.css';
+
 
 ReactDOM.render(
   <React.StrictMode>

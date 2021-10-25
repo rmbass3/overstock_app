@@ -1,30 +1,29 @@
 import React from "react";
 import { ParallaxBanner } from 'react-scroll-parallax';
-import Radium, {StyleRoot} from "radium";
-import { slideInLeft, slideInRight } from "react-animations";
 import trans1img1 from '../imgs/trans1-img-right.jpg'
 import trans1img2 from '../imgs/trans1-img-left.jpg'
+import ScrollAnimation from "react-animate-on-scroll";
 
-const styles = {
-  slideInLeft: {
-    animation: 'x 1s',
-    animationName: Radium.keyframes(slideInLeft, 'slideInLeft')
-  },
 
-  slideInRight: {
-    animation: 'x 1s',
-    animationName: Radium.keyframes(slideInRight, 'slideInRight')
-  }
-}
+// const styles = {
+//   slideInLeft: {
+//     animation: 'x 1s',
+//     animationName: Radium.keyframes(slideInLeft, 'slideInLeft')
+//   },
+
+//   slideInRight: {
+//     animation: 'x 1s',
+//     animationName: Radium.keyframes(slideInRight, 'slideInRight')
+//   }
+// }
 
 function HomeTransition(props) {
   return (
     <div className="home-trans1">
-      <StyleRoot>
-        <div className="trans1-container">
-          <div className="row row-cols-1 row-cols-md-2 gx-0">
-            <div className="col col order-1 order-md-1 trans1-text-col"
-            style={styles.slideInLeft}>
+      <div className="trans1-container">
+        <div className="row row-cols-1 row-cols-md-2 gx-0">
+          <ScrollAnimation animateIn="fadeInLeft">
+            <div className="col col order-1 order-md-1 trans1-text-col">
               <div className="trans1-box-left p-3 p-md-0">
                 <div className="container trans1-title-container">
                   <h3 className="trans1-title">
@@ -36,6 +35,8 @@ function HomeTransition(props) {
                 <div className="triangle-right-bottom d-none d-md-block"/>
               </div>
             </div>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInRight">
             <div className="col col order-2 order-md-2 trans1-img-col">
               <ParallaxBanner
                 className="parallax-trans1-right"
@@ -52,9 +53,11 @@ function HomeTransition(props) {
               <div className="triangle-left-top d-none d-md-block"/>
               </ParallaxBanner> 
             </div>
-          </div>
-          <div className="row row-cols-1 row-cols-md-2 gx-0">
-            <div className="col order-2 order-md-1 trans1-img-col">
+          </ScrollAnimation>
+        </div>
+        <div className="row row-cols-1 row-cols-md-2 gx-0">
+          <ScrollAnimation animateIn="fadeInLeft">
+          <div className="col order-1 order-md-1 trans1-img-col">
             <ParallaxBanner
                 className="parallax-trans1-right"
                 layers={[
@@ -70,7 +73,9 @@ function HomeTransition(props) {
                 <div className="triangle-right-top d-none d-md-block"/>
               </ParallaxBanner> 
             </div>
-            <div className="col order-1 order-md-2 trans1-text-col">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInRight">
+            <div className="col order-2 order-md-2 trans1-text-col">
               <div className="trans1-box-right p-3 p-md-0">
                 <div className="triangle-left-bottom d-none d-md-block"/>
                 <div className="container trans1-text-container">
@@ -78,14 +83,14 @@ function HomeTransition(props) {
                     Durability
                   </h4>
                   <p className="trans1-text">
-                    Scratches from animal claws or active children running through the house have met their match. Unlike real wood floors, LVP is very durable with MIL wears from 12-22,  even with the heaviest traffic it’s scratch resistant.
+                    Scratches from animal claws or active children running  through the house have met their match. Unlike real wood  floors, LVP is very durable with MIL wears from 12-22, even with the heaviest traffic it’s scratch resistant.
                   </p>
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
-      </StyleRoot>
+      </div>
     </div>
   )
 }
