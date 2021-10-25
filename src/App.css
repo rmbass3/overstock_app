@@ -41,6 +41,10 @@
   background-color: #a8bfb4;
 }
 
+#root {
+  overflow-x: hidden;
+  position: relative;
+}
 
 /* Header */
 
