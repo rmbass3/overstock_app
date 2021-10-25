@@ -126,7 +126,7 @@
 /* Home Transition */
 
 .home-trans1 {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 
@@ -154,7 +154,7 @@
   color: white;
   font-family: RedHatMedium;
   text-align: center;
-  font-size: clamp(15px, 1.5vw, 30px);
+  font-size: clamp(15px, 1.5vw, 22.5px);
   padding-right: 20px;
 }
 
@@ -162,16 +162,10 @@
   color: var(--logo-color);
   font-family: RedHatMedium;
   text-align: center;
-  font-size: clamp(30px, 3vw, 60px);
+  font-size: clamp(30px, 3vw, 45px);
   padding-right: 20px;
 }
 
-.home-trans1 .trans1-img-left-container {
-  background-image: url("../src/imgs/trans1-img-left.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 314px;
-}
 
 .triangle-left-top {
   width: 0;
