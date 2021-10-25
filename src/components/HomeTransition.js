@@ -4,19 +4,6 @@ import trans1img1 from '../imgs/trans1-img-right.jpg'
 import trans1img2 from '../imgs/trans1-img-left.jpg'
 import ScrollAnimation from "react-animate-on-scroll";
 
-
-// const styles = {
-//   slideInLeft: {
-//     animation: 'x 1s',
-//     animationName: Radium.keyframes(slideInLeft, 'slideInLeft')
-//   },
-
-//   slideInRight: {
-//     animation: 'x 1s',
-//     animationName: Radium.keyframes(slideInRight, 'slideInRight')
-//   }
-// }
-
 function HomeTransition(props) {
   return (
     <div className="home-trans1">
@@ -90,7 +77,7 @@ function HomeTransition(props) {
                       Durability
                     </h4>
                     <p className="trans1-text">
-                      Scratches from animal claws or active children running  through the house have met their match. Unlike real wood  floors, LVP is very durable with MIL wears from 12-22, even with the heaviest traffic it’s scratch resistant.
+                      Scratches from animal claws or active children running through the house have met their match. Unlike real wood floors, LVP is very durable with MIL wears from 12-22. Even with the heaviest traffic it’s scratch resistant.
                     </p>
                   </div>
                 </div>
