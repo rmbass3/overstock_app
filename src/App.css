@@ -53,7 +53,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: clamp(50vh, calc(50vh + 50vw), 1000px)!important;
+  /* calc(50vh + 50vw) */
+  height: clamp(50vh, 100vh, 1000px)!important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +85,7 @@
 .title-container .title-overstock {
   color: var(--logo-color);
   font-family: RedHatMedium;
-  font-size: clamp(60px, 12vw, 168px);
+  font-size: clamp(48px, 12vw, 168px);
   line-height: 1;
 }
 
@@ -171,7 +172,7 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 314px 100px 0 0;
+  border-width: 314px 30px 0 0;
   border-color: #ffffff transparent transparent transparent;
   position: relative;
   z-index: 3;
@@ -181,7 +182,7 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 314px 100px;
+  border-width: 0 0 314px 30px;
   border-color: transparent transparent #ffffff transparent;
   line-height: 0px;
   position: relative;
@@ -193,7 +194,7 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 100px 314px 0;
+  border-width: 0 30px 314px 0;
   border-color: transparent #ffffff transparent transparent;
   margin-left: auto;
   position: relative;
@@ -204,19 +205,19 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 314px 0 0 100px;
+  border-width: 314px 0 0 30px;
   border-color: transparent transparent transparent #ffffff;
   position: relative;
   z-index: 3;
 }
 /* Breakpoints */
-@media only screen and (max-width: 340px) {
-  
-}
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 340px) {
-  
+@media only screen and (max-width: 576px) {
+  .logo {
+    width: 220px;
+    height: 80px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
