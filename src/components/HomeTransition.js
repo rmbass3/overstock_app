@@ -81,7 +81,7 @@ function HomeTransition(props) {
                       Durability
                     </h4>
                     <p className="trans1-text">
-                      Scratches from animal claws or active children running through the house have met their match. Unlike real wood floors, LVP is very durable with MIL wears from 12-22. Even with the heaviest traffic it’s scratch resistant.
+                      Scratches from animal claws or active children running through the house have met their match. Unlike real wood floors, LVP is very durable with MIL wears from 12-22. Even with the heaviest traffic, it’s scratch resistant.
                     </p>
                   </div>
                 </div>
