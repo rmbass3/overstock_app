@@ -1,3 +1,3 @@
-#Overstock Discount Flooring
+# Overstock Discount Flooring
 
-Website created using React framework.
+Website for Overstock Discount Flooring created using the React framework.
