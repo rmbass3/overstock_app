@@ -38,9 +38,9 @@ function Home(props) {
         }}
       >
         <div className="home">
-          <div className="container title-container">
-            <StyleRoot className="text-center">
-              <h2 className="title-intro" style={styles.fadeIn1}>FIND THE PERFECT</h2>
+          <div className="container home-title-container">
+            <div className="text-center">
+              <h2 className="title-intro">FIND THE PERFECT</h2>
               <h2 className="title-intro" style={styles.fadeIn2}>FLOORING WITH</h2>
               <div style={styles.fadeIn3}>
                 <h1 className="title-overstock">OVERSTOCK</h1>
@@ -52,7 +52,7 @@ function Home(props) {
                   Get a quote today
                 </Button>
               </div>
-            </StyleRoot>
+            </div>
           </div>
         </div>
       </ParallaxBanner>

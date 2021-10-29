@@ -49,7 +49,7 @@
 
 /* Home */
 
-.App .home-banner, .App .about-banner {
+.App .home-banner {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -66,7 +66,7 @@
   z-index: 1;
 }
 
-.home .title-container {
+.home .home-title-container {
   padding-top: 6vh;
   white-space: nowrap;
   display: flex;
@@ -76,31 +76,31 @@
 }
 
 
-.title-container .title-intro {
+.home-title-container .title-intro {
   color: white;
   font-family: RedHatItalics;
   font-size: clamp(30px, 6vw, 84px);
 }
 
-.title-container .title-overstock {
+.home-title-container .title-overstock {
   color: var(--logo-color);
   font-family: RedHatMedium;
   font-size: clamp(48px, 12vw, 168px);
   line-height: 1;
 }
 
-.title-container .title-end {
+.home-title-container .title-end {
   color: white;
   font-family: RedHatMedium;
   font-size: clamp(15px, 3vw, 42px);
   margin-top: 10px;
 }
 
-.title-container .title-hr {
+.home-title-container .title-hr {
   color: white;
 }
 
-.title-container .title-button {
+.home-title-container .title-button {
   font-family: RedHatItalics;
   border-radius: 0px;
   font-size: clamp(10px, 2vw, 32px);
@@ -108,18 +108,18 @@
   background-color: var(--charcoal);
 }
 
-.title-container .title-button, 
-.title-container .title-button:active, 
-.title-container .title-button:focus {
+.home-title-container .title-button, 
+.home-title-container .title-button:active, 
+.home-title-container .title-button:focus {
   border-color: var(--charcoal);
   box-shadow: none;
 }
 
-.title-container .title-button:focus {
+.home-title-container .title-button:focus {
   background-color: var(--charcoal);
 }
 
-.title-container .title-button:hover {
+.home-title-container .title-button:hover {
   background-color: var(--dark-charcoal);
   border-color: var(--charcoal)
 }
@@ -208,9 +208,25 @@
 }
 
 /* Banner titles */
+.App .banner-title {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* calc(50vh + 50vw) */
+  height: clamp(25vh, 50vh, 500px)!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
+}
+
 .title-container {
   position: relative;
 }
+
+/*  */
+
 
 /* Breakpoints */
 

@@ -7,7 +7,7 @@ function About(props){
   return (
     <div id="about">
       <ParallaxBanner
-        className="about-banner"
+        className="banner-title"
         layers={[
           {
             image: bgAbout,
