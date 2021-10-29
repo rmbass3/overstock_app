@@ -49,7 +49,7 @@
 
 /* Home */
 
-.App .home-banner {
+.App .home-banner, .App .about-banner {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -62,7 +62,7 @@
   z-index: -1;
 }
 
-.home {
+.home, .about {
   z-index: 1;
 }
 
@@ -125,10 +125,6 @@
 }
 
 /* Home Transition */
-
-.home-trans1 {
-  /* height: 100vh; */
-}
 
 
 .home-trans1 .trans1-text-col {
@@ -210,6 +206,12 @@
   position: relative;
   z-index: 3;
 }
+
+/* Banner titles */
+.title-container {
+  position: relative;
+}
+
 /* Breakpoints */
 
 /* Extra small devices (phones, 600px and down) */
