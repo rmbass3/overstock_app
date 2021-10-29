@@ -14,7 +14,7 @@ function HomeTransition(props) {
       <div className="trans1-container">
         <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4 mt-0 mt-md-4">
           <div className="col order-1 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-text-col">
                 <div className="trans1-box-left p-3 p-md-0">
                   <div className="container trans1-title-container">
@@ -30,7 +30,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
           <div className="col order-2 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
               <div className="col trans1-img-col">
                 <ParallaxBanner
                   className="parallax-trans1-right"
@@ -52,7 +52,7 @@ function HomeTransition(props) {
         </div>
         <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4">
           <div className="col order-2 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-img-col">
               <ParallaxBanner
                   className="parallax-trans1-right"
@@ -72,7 +72,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
           <div className="col order-1 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
               <div className="col trans1-text-col">
                 <div className="trans1-box-right p-3 p-md-0">
                   <div className="triangle-left-bottom d-none d-md-block"/>
@@ -92,7 +92,7 @@ function HomeTransition(props) {
         {/* Row Set 2 */}
         <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4">
           <div className="col order-1 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-text-col">
                 <div className="trans1-box-left p-3 p-md-0">
                     <div className="container trans1-text-container ps-0 ps-md-3">
@@ -109,7 +109,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
           <div className="col order-2 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
               <div className="col trans1-img-col">
                 <ParallaxBanner
                   className="parallax-trans1-right"
@@ -131,7 +131,7 @@ function HomeTransition(props) {
         </div>
         <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4">
           <div className="col order-2 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-img-col">
               <ParallaxBanner
                   className="parallax-trans1-right"
@@ -151,7 +151,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
           <div className="col order-1 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
               <div className="col trans1-text-col">
                 <div className="trans1-box-right p-3 p-md-0">
                   <div className="triangle-left-bottom d-none d-md-block"/>
@@ -171,7 +171,7 @@ function HomeTransition(props) {
         {/* Row Set 3 */}
         <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4">
           <div className="col order-1 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-text-col">
                 <div className="trans1-box-left p-3 p-md-0">
                   <div className="container trans1-text-container ps-0 ps-md-3">
@@ -188,7 +188,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
           <div className="col order-2 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
               <div className="col trans1-img-col">
                 <ParallaxBanner
                   className="parallax-trans1-right"
@@ -210,7 +210,7 @@ function HomeTransition(props) {
         </div>
         <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4">
           <div className="col order-2 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-img-col">
               <ParallaxBanner
                   className="parallax-trans1-right"
@@ -230,7 +230,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
           <div className="col order-1 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce="true">
+            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
               <div className="col trans1-text-col">
                 <div className="trans1-box-right p-3 p-md-0">
                   <div className="triangle-left-bottom d-none d-md-block"/>

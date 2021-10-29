@@ -16,13 +16,10 @@ function Home(props) {
             amount: 0.5,
           },
         ]}
-        style={{
-          height: '500px',
-        }}
       >
         <div className="home">
           <div className="container home-title-container">
-            <div className="text-center">
+            <ScrollAnimation animateIn="fadeIn" duration={2}>
               <h2 className="title-intro">FIND THE PERFECT</h2>
               <h2 className="title-intro">FLOORING WITH</h2>
               <div>
@@ -35,7 +32,7 @@ function Home(props) {
                   Get a quote today
                 </Button>
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </ParallaxBanner>

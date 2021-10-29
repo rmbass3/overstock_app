@@ -73,6 +73,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .home-title-container .title-intro {
@@ -212,7 +213,7 @@
   background-position: center;
   background-size: cover;
   /* calc(50vh + 50vw) */
-  height: clamp(25vh, 50vh, 500px)!important;
+  height: 40vh !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,8 +234,8 @@
 /* About */
 .about-title {
   color: white;
-  font-family: RedHatMedium;
-  font-size: clamp(24px, 6vw, 96px);
+  font-family: RedHatItalics;
+  font-size: clamp(24px, 6vw, 108px);
   line-height: 1;
 }
 
@@ -247,6 +248,16 @@
     width: 220px;
     height: 80px;
   }
+
+  #about .parallax-banner-layer-0 {
+    background-image: none !important;
+    background-color: var(--charcoal);
+  }
+
+  .App .banner-title {
+    height: 20vh !important;
+  }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
