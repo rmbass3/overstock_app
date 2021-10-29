@@ -75,7 +75,6 @@
   flex-direction: column;
 }
 
-
 .home-title-container .title-intro {
   color: white;
   font-family: RedHatItalics;
@@ -223,9 +222,21 @@
 
 .title-container {
   position: relative;
+  padding-top: 6vh;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-/*  */
+/* About */
+.about-title {
+  color: white;
+  font-family: RedHatMedium;
+  font-size: clamp(24px, 6vw, 96px);
+  line-height: 1;
+}
 
 
 /* Breakpoints */
