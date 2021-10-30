@@ -242,6 +242,7 @@
   height: 100vh;
   width: 90%;
   margin: 0 auto;
+  padding: 0 50px;
 }
 
 .about-container .row{
@@ -250,7 +251,7 @@
 }
 
 .about-container .col {
-  max-width: 600px;
+  
 }
 
 
@@ -258,10 +259,15 @@
   background-color: var(--charcoal);
   display: flex;
   align-items: center;
+  /* max-width: 600px; */
+}
+
+.about-img-col {
+  /* max-width: 500px; */
 }
 
 .parallax-about-right, .about-text-col {
-  height: clamp(200px, 40vw, 500px)!important ;
+  height: clamp(200px, 42vw, 500px)!important ;
 }
 
 .about-text-container {

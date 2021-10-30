@@ -24,8 +24,8 @@ function About(props){
 
       <div className="about-container">
         <ScrollAnimation animateIn="fadeIn">
-          <div className="row row-cols-1 row-cols-md-2 gx-5 mb-0 mb-md-4 mt-0 mt-md-5">
-            <div className="col order-1 order-md-2">
+          <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4 my-md-5">
+            <div className="col-7 order-2">
               <div className="about-text-col">
                 <div className="about-text-container">
                   <h4 className="about-text-title">SELECTION</h4>
@@ -35,7 +35,7 @@ function About(props){
                 </div>
               </div>
             </div>
-            <div className="col order-2 order-md-1">
+            <div className="col-5 order-1">
               <div className="about-img-col">
                 <ParallaxBanner
                   className="parallax-about-right"
