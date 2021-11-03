@@ -21,7 +21,7 @@
 }
 
 .App {
-  background-color: var(--charcoal);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Header */
@@ -156,7 +156,7 @@
 }
 
 .home-trans1 .trans1-text {
-  color: white;
+  color: rgb(29, 29, 29);
   font-family: RedHatMedium;
   text-align: center;
   font-size: clamp(15px, 1.5vw, 22.5px);
@@ -177,7 +177,7 @@
   height: 0;
   border-style: solid;
   border-width: 314px 30px 0 0;
-  border-color: rgb(28, 36, 41) transparent transparent transparent;
+  border-color: white transparent transparent transparent;
   position: relative;
   z-index: 3;
 }
@@ -187,7 +187,7 @@
   height: 0;
   border-style: solid;
   border-width: 0 0 314px 30px;
-  border-color: transparent transparent rgb(28, 36, 41) transparent;
+  border-color: transparent transparent white transparent;
   line-height: 0px;
   position: relative;
   z-index: 3;
@@ -199,7 +199,7 @@
   height: 0;
   border-style: solid;
   border-width: 0 30px 314px 0;
-  border-color: transparent rgb(28, 36, 41) transparent transparent;
+  border-color: transparent white transparent transparent;
   margin-left: auto;
   position: relative;
   z-index: 3;
@@ -210,7 +210,7 @@
   height: 0;
   border-style: solid;
   border-width: 314px 0 0 30px;
-  border-color: transparent transparent transparent rgb(28, 36, 41);
+  border-color: transparent transparent transparent white;
   position: relative;
   z-index: 3;
 }
