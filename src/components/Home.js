@@ -36,6 +36,7 @@ function Home(props) {
           </div>
         </div>
       </ParallaxBanner>
+      <div className="gradient-trans" />
     </div>
   )
 }

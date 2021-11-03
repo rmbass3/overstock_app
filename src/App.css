@@ -132,6 +132,16 @@
   border-color: var(--charcoal)
 }
 
+.gradient-trans {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255,255,255,1) 50%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  height: 80px;
+  position: relative;
+  z-index: 1;
+  margin-top: -40px;
+}
+
+
 /* Home Transition */
 
 
@@ -150,9 +160,10 @@
 .home-trans1 .trans1-title {
   color: var(--logo-color);
   font-family: RedHatItalics;
-  font-size: clamp(30px, 4vw, 60px);
+  font-size: clamp(30px, 5vw, 70px);
   text-align: center;
   white-space: nowrap;
+  margin-bottom: 45px;
 }
 
 .home-trans1 .trans1-text {
@@ -298,6 +309,7 @@
   text-align: center;
   font-size: clamp(4px, 2vw, 24px);
 }
+
 
 /* Breakpoints */
 
