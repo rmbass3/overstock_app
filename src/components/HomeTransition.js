@@ -12,7 +12,7 @@ function HomeTransition(props) {
   return (
     <div className="home-trans1">
       <div className="trans1-container">
-        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4 mt-0 mt-md-4">
+        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mt-0 mt-md-4">
           <div className="col order-1 order-md-1">
             <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-text-col">
@@ -50,7 +50,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
         </div>
-        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4">
+        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0  ">
           <div className="col order-2 order-md-1">
             <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-img-col">
@@ -90,7 +90,7 @@ function HomeTransition(props) {
           </div>
         </div>
         {/* Row Set 2 */}
-        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4">
+        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0  ">
           <div className="col order-1 order-md-1">
             <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-text-col">
@@ -129,7 +129,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
         </div>
-        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4">
+        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0  ">
           <div className="col order-2 order-md-1">
             <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-img-col">
@@ -169,7 +169,7 @@ function HomeTransition(props) {
           </div>
         </div>
         {/* Row Set 3 */}
-        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4">
+        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0  ">
           <div className="col order-1 order-md-1">
             <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-text-col">
@@ -208,7 +208,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
         </div>
-        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mb-md-4">
+        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0  ">
           <div className="col order-2 order-md-1">
             <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
               <div className="col trans1-img-col">

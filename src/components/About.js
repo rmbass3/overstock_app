@@ -7,20 +7,6 @@ import aboutimg1 from '../imgs/about-img1.JPG'
 function About(props){
   return (
     <div id="about">
-      <ParallaxBanner
-        className="banner-title"
-        layers={[
-          {
-            image: bgAbout,
-            amount: 0.5,
-          },
-        ]}
-      >
-        <div className="container title-container">
-          <h1 className="about-title">HIGH POINT'S MOST TRUSTED</h1>
-          <h1 className="about-title">FLOORING COMPANY</h1>
-        </div>
-      </ParallaxBanner>
 
       <div className="about-container">
         <ScrollAnimation animateIn="fadeIn">
