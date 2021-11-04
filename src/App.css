@@ -65,6 +65,7 @@
   z-index: -1;
 }
 
+
 #home {
   position: relative;
   z-index: 1;
@@ -138,12 +139,53 @@
   height: 80px;
   position: relative;
   z-index: 1;
+  
+}
+
+.trans-top {
   margin-top: -40px;
 }
+
+.trans-bottom {
+  margin-bottom: -40px;
+}
+
 
 
 /* Home Transition */
 
+.App .lvf-banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: clamp(200px, 50vw, 600px) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lvf-banner .lvf-title-container {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.lvf-title-container .lvf-title-intro {
+  color: white;
+  font-family: RedHatItalics;
+  font-size: clamp(20px, 4vw, 60px);
+}
+
+.lvf-title-container .lvf-title-lvp {
+  color: var(--logo-color);
+  font-family: RedHatMedium;
+  font-size: clamp(30px, 6vw, 90px);
+  text-transform: uppercase;
+}
 
 .home-trans1 .trans1-text-col {
   background-color: rgba(90, 90, 90, 0);
@@ -170,7 +212,7 @@
   color: rgb(29, 29, 29);
   font-family: RedHatMedium;
   text-align: center;
-  font-size: clamp(15px, 1.5vw, 22.5px);
+  font-size: clamp(15px, 2vw, 25px);
   padding-right: 20px;
 }
 
@@ -178,8 +220,9 @@
   color: var(--logo-color);
   font-family: RedHatMedium;
   text-align: center;
-  font-size: clamp(30px, 3vw, 45px);
+  font-size: clamp(30px, 4vw, 50px);
   padding-right: 20px;
+  text-transform: uppercase;
 }
 
 
@@ -289,7 +332,7 @@
   display: flex;
   align-items: center;
   background: linear-gradient(0deg, rgba(28,36,41,1) 0%, rgba(84,90,92,1) 100%);
-  box-shadow: 5px 5px 8px 5px rgb(173, 173, 173);
+  box-shadow: -5px 5px 8px 5px rgb(173, 173, 173);
 }
 
 .about-img-col {
@@ -326,7 +369,6 @@
   display: flex;
   align-items: center;
   background: linear-gradient(0deg, rgba(28,36,41,1) 0%, rgba(84,90,92,1) 100%);
-  box-shadow: 0px 5px 8px 5px rgb(173, 173, 173);
   margin: 0 12px;
   height: clamp(150px, 31.5vw, 375px)!important ;
 }

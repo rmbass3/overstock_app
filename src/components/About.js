@@ -12,7 +12,7 @@ function About(props){
     <div id="about">
 
       <div className="about-container">
-        <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4my-md-5">
+        <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4 my-md-5">
           <div className="col-7 order-2">
             <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" duration={0.5}>
               <div className="about-text-col-right">
@@ -73,9 +73,9 @@ function About(props){
           </div>
         </div>
         <div className="row row-cols-1 my-3 my-sm-4 my-md-5">
-          <div className="col order-1">
-            <div className="about-wide-img-col">
-              <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={0.5}>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={0.5}>
+            <div className="col order-1">
+              <div className="about-wide-img-col">
                 <ParallaxBanner
                   className="parallax-about"
                   layers={[
@@ -86,21 +86,19 @@ function About(props){
                   ]}
                 >
                 </ParallaxBanner> 
-              </ScrollAnimation>
-            </div>
-          </div>
-          <div className="col order-2">
-            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={0.5}>
-            <div className="about-wide-text-col">
-              <div className="about-text-container">
-                <h4 className="about-text-title">FOUNDING</h4>
-                <p className="about-text">
-                  Steve and Ashley started Overstock Discount Flooring (ODF) out of their frustrations with their local flooring supply. They've committed themselves to sourcing high-quality flooring, wide selections and pricing not seen in a family run business.
-                </p>
               </div>
             </div>
-            </ScrollAnimation>
-          </div>
+            <div className="col order-2">
+              <div className="about-wide-text-col">
+                <div className="about-text-container">
+                  <h4 className="about-text-title">FOUNDING</h4>
+                  <p className="about-text">
+                    Steve and Ashley started Overstock Discount Flooring (ODF) out of their frustrations with their local flooring supply. They've committed themselves to sourcing high-quality flooring, wide selections and pricing not seen in a family run business.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </ScrollAnimation>
         </div>
         <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4my-md-5">
           <div className="col-7 order-2">

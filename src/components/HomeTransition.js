@@ -1,58 +1,39 @@
 import React from "react";
 import { ParallaxBanner } from 'react-scroll-parallax';
-import trans1img1 from '../imgs/trans1-img1.jpg'
 import trans1img2 from '../imgs/trans1-img2.jpg'
 import trans1img3 from '../imgs/trans1-img3.jpg'
 import trans1img4 from '../imgs/trans1-img4.jpg'
 import trans1img5 from '../imgs/trans1-img5.jpg'
 import trans1img6 from '../imgs/trans1-img6.jpg'
 import ScrollAnimation from "react-animate-on-scroll";
+import bgMain2 from '../imgs/bg-main-dark.jpg'
 
 function HomeTransition(props) {
   return (
-    <div className="home-trans1">
-      <div className="trans1-container">
-        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mt-0 mt-md-4">
-          <div className="col order-1 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
-              <div className="col trans1-text-col">
-                <div className="trans1-box-left p-3 p-md-0">
-                  <div className="container trans1-title-container">
-                    <h3 className="trans1-title">
-                      Why Luxury Vinyl <br/>
-                      Plank (LVP) <br/>
-                      Flooring?
-                    </h3>
-                  </div>
-                  <div className="triangle-right-bottom d-none d-md-block"/>
-                </div>
-              </div>
-            </ScrollAnimation>
-          </div>
-          <div className="col order-2 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
-              <div className="col trans1-img-col">
-                <ParallaxBanner
-                  className="parallax-trans1-right"
-                  layers={[
-                    {
-                      image: trans1img1,
-                      amount: 0.5
-                    }
-                  ]}
-                  style={{
-                    height: '314px'
-                  }}
-                >
-                <div className="triangle-left-top d-none d-md-block"/>
-                </ParallaxBanner> 
-              </div>
-            </ScrollAnimation>
-          </div>
+    <div className="home-trans1" id="lvp">
+      <div className="gradient-trans trans-bottom" />
+      <ParallaxBanner
+        className="lvf-banner"
+        layers={[
+          {
+            image: bgMain2,
+            amount: 0.5,
+          },
+        ]}
+      >
+        <div className="container lvf-title-container">
+          <ScrollAnimation animateIn="fadeIn" duration={2}>
+            <h2 className="lvf-title-intro">Why</h2>
+            <h1 className="lvf-title-lvp">Luxury Vinyl Plank</h1>
+            <h2 className="lvf-title-intro">Flooring?</h2>
+          </ScrollAnimation>
         </div>
-        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0  ">
+      </ParallaxBanner>
+      <div className="gradient-trans trans-top" />
+      <div className="trans1-container">
+        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mt-3 mt-sm-4 mt-md-5">
           <div className="col order-2 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" duration={0.5}>
               <div className="col trans1-img-col">
               <ParallaxBanner
                   className="parallax-trans1-right"
@@ -72,7 +53,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
           <div className="col order-1 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" duration={0.5}>
               <div className="col trans1-text-col">
                 <div className="trans1-box-right p-3 p-md-0">
                   <div className="triangle-left-bottom d-none d-md-block"/>
@@ -92,7 +73,7 @@ function HomeTransition(props) {
         {/* Row Set 2 */}
         <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0  ">
           <div className="col order-1 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" duration={0.5}>
               <div className="col trans1-text-col">
                 <div className="trans1-box-left p-3 p-md-0">
                     <div className="container trans1-text-container ps-0 ps-md-3">
@@ -100,7 +81,7 @@ function HomeTransition(props) {
                         Price
                       </h4>
                       <p className="trans1-text">
-                        Luxury vinyl plank flooring is a cost-effective way to update your home without breaking the bank. You can save thousands without sacrificing on style. Unlike real wood or even LVP at most stores, you can find quality LVP at Overstock Discount Flooring for less than half of typical “big box” stores.
+                        Luxury vinyl plank flooring is a cost-effective way to update your home without breaking the bank. Unlike real wood or even LVP at most stores, you can find quality LVP at Overstock Discount Flooring for less than half of typical “big box” stores.
                       </p>
                     </div>
                     <div className="triangle-right-bottom d-none d-md-block"/>
@@ -109,7 +90,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
           <div className="col order-2 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" duration={0.5}>
               <div className="col trans1-img-col">
                 <ParallaxBanner
                   className="parallax-trans1-right"
@@ -131,7 +112,7 @@ function HomeTransition(props) {
         </div>
         <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0  ">
           <div className="col order-2 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" duration={0.5}>
               <div className="col trans1-img-col">
               <ParallaxBanner
                   className="parallax-trans1-right"
@@ -151,7 +132,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
           <div className="col order-1 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" duration={0.5}>
               <div className="col trans1-text-col">
                 <div className="trans1-box-right p-3 p-md-0">
                   <div className="triangle-left-bottom d-none d-md-block"/>
@@ -171,7 +152,7 @@ function HomeTransition(props) {
         {/* Row Set 3 */}
         <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0  ">
           <div className="col order-1 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" duration={0.5}>
               <div className="col trans1-text-col">
                 <div className="trans1-box-left p-3 p-md-0">
                   <div className="container trans1-text-container ps-0 ps-md-3">
@@ -188,7 +169,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
           <div className="col order-2 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" duration={0.5}>
               <div className="col trans1-img-col">
                 <ParallaxBanner
                   className="parallax-trans1-right"
@@ -210,7 +191,7 @@ function HomeTransition(props) {
         </div>
         <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0  ">
           <div className="col order-2 order-md-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" duration={0.5}>
               <div className="col trans1-img-col">
               <ParallaxBanner
                   className="parallax-trans1-right"
@@ -230,7 +211,7 @@ function HomeTransition(props) {
             </ScrollAnimation>
           </div>
           <div className="col order-1 order-md-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" duration={0.5}>
               <div className="col trans1-text-col">
                 <div className="trans1-box-right p-3 p-md-0">
                   <div className="triangle-left-bottom d-none d-md-block"/>
@@ -239,7 +220,7 @@ function HomeTransition(props) {
                       Low-Maintenance
                     </h4>
                     <p className="trans1-text">
-                      When it comes to maintenance, it doesn’t get any easier than LVP. These floors are 100% waterproof and are installed on a 5G click and lock system to ensure no water leakage. No wax? No polish? No problem. Today’s LVP doesn’t need added chemicals to hold its shine. Simply clean with a dust mop or for a deeper clean you can easily damp mop to keep sanitized and sterilized. Great for pet accidents or kids spills.
+                      When it comes to maintenance, it doesn’t get any easier than LVP. These floors are 100% waterproof and ensure no water leakage. No wax? No polish? No problem. Today’s LVP doesn’t need added chemicals to hold its shine.
                     </p>
                   </div>
                 </div>
