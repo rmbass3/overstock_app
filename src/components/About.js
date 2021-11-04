@@ -9,9 +9,9 @@ function About(props){
     <div id="about">
 
       <div className="about-container">
-        <ScrollAnimation animateIn="fadeIn">
-          <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4 my-md-5">
-            <div className="col-7 order-2">
+        <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4my-md-5">
+          <div className="col-7 order-2">
+            <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight">
               <div className="about-text-col">
                 <div className="about-text-container">
                   <h4 className="about-text-title">SELECTION</h4>
@@ -20,9 +20,11 @@ function About(props){
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="col-5 order-1">
-              <div className="about-img-col">
+            </ScrollAnimation>
+          </div>
+          <div className="col-5 order-1">
+            <div className="about-img-col">
+              <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft">
                 <ParallaxBanner
                   className="parallax-about-right"
                   layers={[
@@ -33,10 +35,11 @@ function About(props){
                   ]}
                 >
                 </ParallaxBanner> 
-              </div>
+              </ScrollAnimation>
             </div>
           </div>
-        </ScrollAnimation>
+        </div>
+        
       </div>
     </div>
   )

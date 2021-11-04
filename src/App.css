@@ -259,14 +259,16 @@
 
 .about-container {
   height: 100vh;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 40px;
 }
 
 .about-container .row{
   display: flex;
   justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .about-container .col {
@@ -278,6 +280,9 @@
   background-color: var(--charcoal);
   display: flex;
   align-items: center;
+  background: linear-gradient(0deg, rgba(28,36,41,1) 0%, rgba(84,90,92,1) 100%);
+  box-shadow: 5px 5px 8px 5px rgb(173, 173, 173);
+
   /* max-width: 600px; */
 }
 
@@ -300,14 +305,14 @@
   color: var(--logo-color);
   font-family: RedHatMedium;
   text-align: center;
-  font-size: clamp(8px, 4vw, 48px);
+  font-size: clamp(8px, 4vw, 64px);
 }
 
 .about-text {
   color: white;
   font-family: RedHatMedium;
   text-align: center;
-  font-size: clamp(4px, 2vw, 24px);
+  font-size: clamp(4px, 2vw, 32px);
 }
 
 
