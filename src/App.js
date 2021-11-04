@@ -15,8 +15,8 @@ function App() {
           Contact */}
       <Header/>
       <Home />
-      <HomeTransition />
       <About />
+      <HomeTransition />
     </div>
   );
 }
