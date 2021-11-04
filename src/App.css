@@ -321,6 +321,20 @@
   font-size: clamp(4px, 2vw, 32px);
 }
 
+.about-wide-text-col {
+
+}
+
+.about-wide-img-col {
+  margin: 0 12px;
+  
+}
+
+.about-wide-img-col .parallax-banner-layer-0 {
+  height: clamp(150px, 31.5vw, 375px)!important;
+}
+
+
 
 /* Breakpoints */
 

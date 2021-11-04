@@ -1,8 +1,9 @@
 import React from "react";
 import { ParallaxBanner } from 'react-scroll-parallax';
 import ScrollAnimation from "react-animate-on-scroll";
-import aboutimg1 from '../imgs/about-img1.JPG'
-import aboutimg2 from '../imgs/about-img2.jpg'
+import aboutimg1 from '../imgs/about-img1.JPG';
+import aboutimg2 from '../imgs/about-img2.jpg';
+import aboutimg3 from '../imgs/about-img3.jpg';
 
 function About(props){
   return (
@@ -66,6 +67,34 @@ function About(props){
                 >
                 </ParallaxBanner> 
               </ScrollAnimation>
+            </div>
+          </div>
+        </div>
+        <div className="row row-cols-1 my-3 my-sm-4 my-md-5">
+          <div className="col order-1">
+            <div className="about-wide-img-col">
+              <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                <ParallaxBanner
+                  className="parallax-about"
+                  layers={[
+                    {
+                      image: aboutimg3,
+                      amount: 0.0
+                    }
+                  ]}
+                >
+                </ParallaxBanner> 
+              </ScrollAnimation>
+            </div>
+          </div>
+          <div className="col order-2">
+            <div className="about-wide-text-col">
+              <div className="about-text-container">
+                <h4 className="about-text-title">PRICING</h4>
+                <p className="about-text">
+                  Whether you’re in need of Luxury Vinyl Plank as a home investor, for a DIY, or you are a builder looking for a source for new home construction, we’re committed to making sure you receive the best prices around.
+                </p>
+              </div>
             </div>
           </div>
         </div>
