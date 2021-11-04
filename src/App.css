@@ -296,7 +296,7 @@
   /* max-width: 500px; */
 }
 
-.about-text-col-left, .about-text-col-right, .parallax-about {
+.about-text-col-left, .about-text-col-right, .about-img-col .parallax-about {
   height: clamp(200px, 42vw, 500px)!important ;
 }
 
@@ -322,15 +322,21 @@
 }
 
 .about-wide-text-col {
-
+  background-color: var(--charcoal);
+  display: flex;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(28,36,41,1) 0%, rgba(84,90,92,1) 100%);
+  box-shadow: 0px 5px 8px 5px rgb(173, 173, 173);
+  margin: 0 12px;
+  height: clamp(150px, 31.5vw, 375px)!important ;
 }
+
 
 .about-wide-img-col {
   margin: 0 12px;
-  
 }
 
-.about-wide-img-col .parallax-banner-layer-0 {
+.about-wide-img-col .parallax-banner-layer-0, .about-wide-img-col .parallax-about {
   height: clamp(150px, 31.5vw, 375px)!important;
 }
 
