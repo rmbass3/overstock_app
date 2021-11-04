@@ -39,7 +39,36 @@ function About(props){
             </div>
           </div>
         </div>
-        
+        <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4 my-md-5">
+          <div className="col-7 order-1">
+            <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft">
+              <div className="about-text-col">
+                <div className="about-text-container">
+                  <h4 className="about-text-title">SELECTION</h4>
+                  <p className="about-text">
+                    With OVER 200,000 square feet of LVP in stock carrying 15-year residential or lifetime commercial warranties the quality and selection speaks for itself.
+                  </p>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
+          <div className="col-5 order-2">
+            <div className="about-img-col">
+              <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight">
+                <ParallaxBanner
+                  className="parallax-about-right"
+                  layers={[
+                    {
+                      image: aboutimg1,
+                      amount: 0.0
+                    }
+                  ]}
+                >
+                </ParallaxBanner> 
+              </ScrollAnimation>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
