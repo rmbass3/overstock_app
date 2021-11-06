@@ -199,6 +199,7 @@
 }
 
 
+
 .home-trans1 .trans1-title {
   color: var(--logo-color);
   font-family: RedHatItalics;
@@ -268,6 +269,11 @@
   position: relative;
   z-index: 3;
 }
+
+.trans1-box-right .trans1-text-container, .trans1-box-left .trans1-text-container {
+  margin: 0 auto;
+}
+
 
 /* Banner titles */
 .App .banner-title {
@@ -409,12 +415,39 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
+  .trans1-container {
+    position: relative;
+    display: block;
+  }
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+  .trans1-container {
+    left: 10%;
+    right: 10%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trans1-container .order-1 {
+    margin-left: -30px;
+  }
+  
+  .trans1-container .order-2 {
+    margin-right: 30px;
+  }
+
+  .trans1-box-right .trans1-text-container {
+    margin-right: 25px;
+  }
+  
+  .trans1-box-left .trans1-text-container {
+    margin-left: 25px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -422,11 +455,15 @@
   .navbar-nav > a {
     margin: 0 30px;
   }
+
+
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+  
 }
 
 /* Extra extra large devices (large laptops and desktops, 1400px and up) */
