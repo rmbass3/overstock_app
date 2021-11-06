@@ -40,11 +40,11 @@ function HomeTransition(props) {
                   layers={[
                     {
                       image: trans1img2,
-                      amount: 0.5
+                      amount: 0.3
                     }
                   ]}
                   style={{
-                    height: '314px'
+                    height: '400px'
                   }}
                 >
                   <div className="triangle-right-top d-none d-md-block"/>
@@ -97,11 +97,11 @@ function HomeTransition(props) {
                   layers={[
                     {
                       image: trans1img3,
-                      amount: 0.5
+                      amount: 0.3
                     }
                   ]}
                   style={{
-                    height: '314px'
+                    height: '400px'
                   }}
                 >
                 <div className="triangle-left-top d-none d-md-block"/>
@@ -119,11 +119,11 @@ function HomeTransition(props) {
                   layers={[
                     {
                       image: trans1img4,
-                      amount: 0.5
+                      amount: 0.3
                     }
                   ]}
                   style={{
-                    height: '314px'
+                    height: '400px'
                   }}
                 >
                   <div className="triangle-right-top d-none d-md-block"/>
@@ -176,11 +176,11 @@ function HomeTransition(props) {
                   layers={[
                     {
                       image: trans1img5,
-                      amount: 0.5
+                      amount: 0.3
                     }
                   ]}
                   style={{
-                    height: '314px'
+                    height: '400px'
                   }}
                 >
                 <div className="triangle-left-top d-none d-md-block"/>
@@ -198,11 +198,11 @@ function HomeTransition(props) {
                   layers={[
                     {
                       image: trans1img6,
-                      amount: 0.5
+                      amount: 0.3
                     }
                   ]}
                   style={{
-                    height: '314px'
+                    height: '400px'
                   }}
                 >
                   <div className="triangle-right-top d-none d-md-block"/>
