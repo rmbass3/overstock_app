@@ -4,7 +4,7 @@ import Home from './components/Home.js';
 import HomeTransition from './components/HomeTransition';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/About.js';
-import Gallery from './components/Gallery';
+import LVPGallery from './components/LVPGallery';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <Home />
       <About />
       <HomeTransition />
-      <Gallery />
+      <LVPGallery />
     </div>
   );
 }
