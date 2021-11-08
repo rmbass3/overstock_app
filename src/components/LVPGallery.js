@@ -4,11 +4,17 @@ import { ParallaxBanner } from "react-scroll-parallax";
 import Gallery from "react-grid-gallery";
 import bgMain3 from '../imgs/bg-main-3.jpg'
 import galleryimg1 from '../imgs/gallery-img-1.jpeg'
-import galleryimg2 from '../imgs/gallery-img-2.png'
+import galleryimg2 from '../imgs/gallery-img-2.JPG';
 import galleryimg3 from '../imgs/gallery-img-3.JPG'
 import galleryimg4 from '../imgs/gallery-img-4.JPG'
 import galleryimg5 from '../imgs/gallery-img-5.jpeg'
-import galleryimg6 from '../imgs/gallery-img-6.jpg'
+import galleryimg6 from '../imgs/gallery-img-6.JPG'
+import galleryimg7 from '../imgs/gallery-img-7.JPG'
+import galleryimg8 from '../imgs/gallery-img-8.JPG'
+import galleryimg9 from '../imgs/gallery-img-9.JPG'
+import galleryimg10 from '../imgs/gallery-img-10.JPG'
+import galleryimg11 from '../imgs/gallery-img-11.JPG'
+import galleryimg12 from '../imgs/gallery-img-12.JPG'
 
 function LVPGallery (props) {
 
@@ -17,41 +23,72 @@ function LVPGallery (props) {
     {
       src: galleryimg1,
       thumbnail: galleryimg1,
-      thumbnailWidth: 270,
-      thumbnailHeight: 400,
+      thumbnailWidth: 300,
+      thumbnailHeight: 300,
     },
     {
       src: galleryimg2,
       thumbnail: galleryimg2,
-      thumbnailWidth: 270,
-      thumbnailHeight: 270,
+      thumbnailWidth: 300,
+      thumbnailHeight: 300,
     },
     {
       src: galleryimg3,
       thumbnail: galleryimg3,
       thumbnailWidth: 300,
-      thumbnailHeight: 400,
+      thumbnailHeight: 300,
     },
     {
       src: galleryimg4,
       thumbnail: galleryimg4,
       thumbnailWidth: 300,
-      thumbnailHeight: 400,
+      thumbnailHeight: 300,
     },
     {
       src: galleryimg5,
       thumbnail: galleryimg5,
       thumbnailWidth: 300,
-      thumbnailHeight: 400,
+      thumbnailHeight: 300,
     },
     {
       src: galleryimg6,
       thumbnail: galleryimg6,
-      thumbnailWidth: 400,
+      thumbnailWidth: 300,
       thumbnailHeight: 300,
     },
-
+    {
+      src: galleryimg7,
+      thumbnail: galleryimg7,
+      thumbnailWidth: 300,
+      thumbnailHeight: 300,
+    },    {
+      src: galleryimg8,
+      thumbnail: galleryimg8,
+      thumbnailWidth: 300,
+      thumbnailHeight: 300,
+    },    {
+      src: galleryimg9,
+      thumbnail: galleryimg9,
+      thumbnailWidth: 300,
+      thumbnailHeight: 300,
+    },    {
+      src: galleryimg10,
+      thumbnail: galleryimg10,
+      thumbnailWidth: 300,
+      thumbnailHeight: 300,
+    },    {
+      src: galleryimg11,
+      thumbnail: galleryimg11,
+      thumbnailWidth: 300,
+      thumbnailHeight: 300,
+    },    {
+      src: galleryimg12,
+      thumbnail: galleryimg12,
+      thumbnailWidth: 300,
+      thumbnailHeight: 300,
+    }
   ]
+
 
   return (
     <div id="gallery">
@@ -79,6 +116,10 @@ function LVPGallery (props) {
           images={IMAGES} 
           enableImageSelection={false}
           rowHeight={400}
+          backdropClosesModal={true}
+          thumbnailStyle={() => {
+            // <ScrollAnimation animateIn="fadeIn" />
+          }}
           />
         </div>
     </div>
