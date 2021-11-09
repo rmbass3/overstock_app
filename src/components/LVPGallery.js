@@ -3,11 +3,11 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { ParallaxBanner } from "react-scroll-parallax";
 import Gallery from "react-grid-gallery";
 import bgMain3 from '../imgs/bg-main-3.jpg'
-import galleryimg1 from '../imgs/gallery-img-1.jpeg'
+import galleryimg1 from '../imgs/gallery-img-1.JPG'
 import galleryimg2 from '../imgs/gallery-img-2.JPG';
 import galleryimg3 from '../imgs/gallery-img-3.JPG'
 import galleryimg4 from '../imgs/gallery-img-4.JPG'
-import galleryimg5 from '../imgs/gallery-img-5.jpeg'
+import galleryimg5 from '../imgs/gallery-img-5.JPG'
 import galleryimg6 from '../imgs/gallery-img-6.JPG'
 import galleryimg7 from '../imgs/gallery-img-7.JPG'
 import galleryimg8 from '../imgs/gallery-img-8.JPG'
@@ -16,74 +16,88 @@ import galleryimg10 from '../imgs/gallery-img-10.JPG'
 import galleryimg11 from '../imgs/gallery-img-11.JPG'
 import galleryimg12 from '../imgs/gallery-img-12.JPG'
 
+var galleryArr = [galleryimg1, galleryimg2, galleryimg3, galleryimg4, galleryimg5, galleryimg6, galleryimg7, galleryimg8, galleryimg9, galleryimg10, galleryimg11, galleryimg12];
+
+function randomizeGalleryOrder() {
+  for (var i = galleryArr.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = galleryArr[i];
+    galleryArr[i] = galleryArr[j];
+    galleryArr[j] = temp;
+  }
+  // galleryArr.forEach(e => console.log(e));
+}
+
 function LVPGallery (props) {
 
+  randomizeGalleryOrder();
+  console.log(galleryArr[0])
   const IMAGES =
   [
     {
-      src: galleryimg1,
-      thumbnail: galleryimg1,
+      src: `${galleryArr[0]}`,
+      thumbnail: `${galleryArr[0]}`,
+      thumbnailWidth: 300,
+      thumbnailHeight: 400,
+    },
+    {
+      src: `${galleryArr[1]}`,
+      thumbnail: `${galleryArr[1]}`,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },
     {
-      src: galleryimg2,
-      thumbnail: galleryimg2,
+      src: `${galleryArr[2]}`,
+      thumbnail: `${galleryArr[2]}`,
+      thumbnailWidth: 300,
+      thumbnailHeight: 400,
+    },
+    {
+      src: `${galleryArr[3]}`,
+      thumbnail: `${galleryArr[3]}`,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },
     {
-      src: galleryimg3,
-      thumbnail: galleryimg3,
+      src: `${galleryArr[4]}`,
+      thumbnail: `${galleryArr[4]}`,
+      thumbnailWidth: 300,
+      thumbnailHeight: 400,
+    },
+    {
+      src: `${galleryArr[5]}`,
+      thumbnail: `${galleryArr[5]}`,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },
     {
-      src: galleryimg4,
-      thumbnail: galleryimg4,
+      src: `${galleryArr[6]}`,
+      thumbnail: `${galleryArr[6]}`,
       thumbnailWidth: 300,
-      thumbnailHeight: 300,
-    },
-    {
-      src: galleryimg5,
-      thumbnail: galleryimg5,
-      thumbnailWidth: 300,
-      thumbnailHeight: 300,
-    },
-    {
-      src: galleryimg6,
-      thumbnail: galleryimg6,
-      thumbnailWidth: 300,
-      thumbnailHeight: 300,
-    },
-    {
-      src: galleryimg7,
-      thumbnail: galleryimg7,
+      thumbnailHeight: 400,
+    },    {
+      src: `${galleryArr[7]}`,
+      thumbnail: `${galleryArr[7]}`,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },    {
-      src: galleryimg8,
-      thumbnail: galleryimg8,
+      src: `${galleryArr[8]}`,
+      thumbnail: `${galleryArr[8]}`,
+      thumbnailWidth: 300,
+      thumbnailHeight: 400,
+    },    {
+      src: `${galleryArr[9]}`,
+      thumbnail: `${galleryArr[9]}`,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },    {
-      src: galleryimg9,
-      thumbnail: galleryimg9,
+      src: `${galleryArr[10]}`,
+      thumbnail: `${galleryArr[10]}`,
       thumbnailWidth: 300,
-      thumbnailHeight: 300,
+      thumbnailHeight: 400,
     },    {
-      src: galleryimg10,
-      thumbnail: galleryimg10,
-      thumbnailWidth: 300,
-      thumbnailHeight: 300,
-    },    {
-      src: galleryimg11,
-      thumbnail: galleryimg11,
-      thumbnailWidth: 300,
-      thumbnailHeight: 300,
-    },    {
-      src: galleryimg12,
-      thumbnail: galleryimg12,
+      src: `${galleryArr[11]}`,
+      thumbnail: `${galleryArr[11]}`,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     }
@@ -111,7 +125,7 @@ function LVPGallery (props) {
           </div>
         </ParallaxBanner>
         <div className="gradient-trans trans-top" />
-        <ScrollAnimation animateIn="fadeIn">
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <div className="gallery-container">
             <Gallery 
               images={IMAGES} 
