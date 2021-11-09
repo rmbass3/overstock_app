@@ -114,13 +114,13 @@
   border-radius: 0px;
   font-size: clamp(10px, 2vw, 32px);
   padding: clamp(10px, 2vw, 32px);
-  background-color: var(--charcoal);
+  background: linear-gradient(0deg, rgb(19, 24, 27) 0%, rgb(22, 23, 24) 100%);
 }
 
 .home-title-container .title-button, 
 .home-title-container .title-button:active, 
 .home-title-container .title-button:focus {
-  border-color: var(--charcoal);
+  border-color: rgb(19, 24, 27);
   box-shadow: none;
 }
 
@@ -309,7 +309,7 @@
 .about-container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 85px;
 }
 
 .about-container .row{
@@ -328,7 +328,7 @@
   background-color: var(--charcoal);
   display: flex;
   align-items: center;
-  background: linear-gradient(0deg, rgba(28,36,41,1) 0%, rgba(84,90,92,1) 100%);
+  background: linear-gradient(0deg, rgb(19, 24, 27) 0%, rgb(43, 47, 48) 100%);
   box-shadow: 5px 5px 8px 5px rgb(173, 173, 173);
   /* max-width: 600px; */
 }
@@ -337,7 +337,7 @@
   background-color: var(--charcoal);
   display: flex;
   align-items: center;
-  background: linear-gradient(0deg, rgba(28,36,41,1) 0%, rgba(84,90,92,1) 100%);
+  background: linear-gradient(0deg, rgb(19, 24, 27) 0%, rgb(43, 47, 48) 100%);
   box-shadow: -5px 5px 8px 5px rgb(173, 173, 173);
 }
 
@@ -374,7 +374,7 @@
   background-color: var(--charcoal);
   display: flex;
   align-items: center;
-  background: linear-gradient(0deg, rgba(28,36,41,1) 0%, rgba(84,90,92,1) 100%);
+  background: linear-gradient(0deg, rgb(19, 24, 27) 0%, rgb(43, 47, 48) 100%);
   margin: 0 12px;
   height: clamp(150px, 31.5vw, 375px)!important ;
 }

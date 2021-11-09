@@ -38,7 +38,7 @@ function LVPGallery (props) {
       src: `${galleryArr[0]}`,
       thumbnail: `${galleryArr[0]}`,
       thumbnailWidth: 300,
-      thumbnailHeight: 400,
+      thumbnailHeight: 300,
     },
     {
       src: `${galleryArr[1]}`,
@@ -50,7 +50,7 @@ function LVPGallery (props) {
       src: `${galleryArr[2]}`,
       thumbnail: `${galleryArr[2]}`,
       thumbnailWidth: 300,
-      thumbnailHeight: 400,
+      thumbnailHeight: 300,
     },
     {
       src: `${galleryArr[3]}`,
@@ -62,7 +62,7 @@ function LVPGallery (props) {
       src: `${galleryArr[4]}`,
       thumbnail: `${galleryArr[4]}`,
       thumbnailWidth: 300,
-      thumbnailHeight: 400,
+      thumbnailHeight: 300,
     },
     {
       src: `${galleryArr[5]}`,
@@ -74,7 +74,7 @@ function LVPGallery (props) {
       src: `${galleryArr[6]}`,
       thumbnail: `${galleryArr[6]}`,
       thumbnailWidth: 300,
-      thumbnailHeight: 400,
+      thumbnailHeight: 300,
     },    {
       src: `${galleryArr[7]}`,
       thumbnail: `${galleryArr[7]}`,
@@ -84,7 +84,7 @@ function LVPGallery (props) {
       src: `${galleryArr[8]}`,
       thumbnail: `${galleryArr[8]}`,
       thumbnailWidth: 300,
-      thumbnailHeight: 400,
+      thumbnailHeight: 300,
     },    {
       src: `${galleryArr[9]}`,
       thumbnail: `${galleryArr[9]}`,
@@ -94,7 +94,7 @@ function LVPGallery (props) {
       src: `${galleryArr[10]}`,
       thumbnail: `${galleryArr[10]}`,
       thumbnailWidth: 300,
-      thumbnailHeight: 400,
+      thumbnailHeight: 300,
     },    {
       src: `${galleryArr[11]}`,
       thumbnail: `${galleryArr[11]}`,
@@ -118,9 +118,8 @@ function LVPGallery (props) {
         >
           <div className="container lvf-title-container">
             <ScrollAnimation animateIn="fadeIn" duration={2}>
-              <h2 className="lvf-title-intro">Find the</h2>
-              <h1 className="lvf-title-lvp">PERFECT FLOORING</h1>
-              <h2 className="lvf-title-intro">for your home</h2>
+              <h1 className="lvf-title-lvp">FLOORING GALLERY</h1>
+              <h2 className="lvf-title-intro">Take a look at our flooring!</h2>
             </ScrollAnimation>
           </div>
         </ParallaxBanner>
