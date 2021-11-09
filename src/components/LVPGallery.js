@@ -2,6 +2,10 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { ParallaxBanner } from "react-scroll-parallax";
 import Gallery from "react-grid-gallery";
+import { Swiper } from '../../node_modules/swiper/react/swiper.js'
+import { SwiperSlide } from '../../node_modules/swiper/react/swiper-slide.js'
+import '../../node_modules/swiper/swiper-bundle.css';
+import '../../node_modules/swiper/swiper.min.css';
 import bgMain3 from '../imgs/bg-main-3.jpg'
 import galleryimg1 from '../imgs/gallery-img-1.JPG'
 import galleryimg2 from '../imgs/gallery-img-2.JPG';
@@ -31,7 +35,6 @@ function randomizeGalleryOrder() {
 function LVPGallery (props) {
 
   randomizeGalleryOrder();
-  console.log(galleryArr[0])
   const IMAGES =
   [
     {
@@ -124,6 +127,19 @@ function LVPGallery (props) {
           </div>
         </ParallaxBanner>
         <div className="gradient-trans trans-top" />
+
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={3}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
+        > 
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+        </Swiper>
+        
         <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <div className="gallery-container">
             <Gallery 
