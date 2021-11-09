@@ -111,17 +111,16 @@ function LVPGallery (props) {
           </div>
         </ParallaxBanner>
         <div className="gradient-trans trans-top" />
-        <div className="gallery-container">
-          <Gallery 
-          images={IMAGES} 
-          enableImageSelection={false}
-          rowHeight={400}
-          backdropClosesModal={true}
-          thumbnailStyle={() => {
-            // <ScrollAnimation animateIn="fadeIn" />
-          }}
-          />
-        </div>
+        <ScrollAnimation animateIn="fadeIn">
+          <div className="gallery-container">
+            <Gallery 
+              images={IMAGES} 
+              enableImageSelection={false}
+              rowHeight={400}
+              backdropClosesModal={true}
+            />
+          </div>
+        </ScrollAnimation>
     </div>
   )
 }
