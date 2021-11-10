@@ -394,6 +394,19 @@
   height: 100vw;
 }
 
+/* #gallery .swiper {
+  margin-left: 80px!important;
+  margin-right: 80px!important;
+} */
+.swiper-slide {
+  text-align: center;
+}
+
+.flooring-swiper img {
+  width: 100%;
+  max-width: 1000px;
+}
+
 /* Breakpoints */
 
 /* Extra small devices (phones, 600px and down) */
@@ -416,7 +429,7 @@
     height: 200px!important ;
   }
 
-  .gallery-container {
+  .gallery-container, #gallery .swiper {
     margin: 0 20px;
   }
 
@@ -429,7 +442,7 @@
     display: block;
   }
 
-  .gallery-container {
+  .gallery-container, #gallery .swiper {
     margin: 0 40px;
   }
 
@@ -461,7 +474,7 @@
     margin-left: 25px;
   }
 
-  .gallery-container {
+  .gallery-container, #gallery .swiper {
     margin: 0 100px;
   }
 }
@@ -472,7 +485,7 @@
     margin: 0 30px;
   }
 
-  .gallery-container {
+  .gallery-container, #gallery .swiper {
     margin: 0 160px;
   }
 

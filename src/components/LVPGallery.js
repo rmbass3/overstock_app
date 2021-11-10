@@ -4,8 +4,11 @@ import { ParallaxBanner } from "react-scroll-parallax";
 import Gallery from "react-grid-gallery";
 import { Swiper } from '../../node_modules/swiper/react/swiper.js'
 import { SwiperSlide } from '../../node_modules/swiper/react/swiper-slide.js'
+import { Pagination, EffectCoverflow } from 'swiper';
 import '../../node_modules/swiper/swiper-bundle.css';
-import '../../node_modules/swiper/swiper.min.css';
+import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
+import '../../node_modules/swiper/modules/pagination/pagination.min.css'
+
 import bgMain3 from '../imgs/bg-main-3.jpg'
 import galleryimg1 from '../imgs/gallery-img-1.JPG'
 import galleryimg2 from '../imgs/gallery-img-2.JPG';
@@ -19,6 +22,12 @@ import galleryimg9 from '../imgs/gallery-img-9.JPG'
 import galleryimg10 from '../imgs/gallery-img-10.JPG'
 import galleryimg11 from '../imgs/gallery-img-11.JPG'
 import galleryimg12 from '../imgs/gallery-img-12.JPG'
+import slideimg1 from '../imgs/slide-flooring-img-1.jpg'
+import slideimg2 from '../imgs/slide-flooring-img-2.jpg'
+import slideimg3 from '../imgs/slide-flooring-img-3.jpg'
+import slideimg4 from '../imgs/slide-flooring-img-4.jpg'
+import slideimg5 from '../imgs/slide-flooring-img-5.jpg'
+
 
 var galleryArr = [galleryimg1, galleryimg2, galleryimg3, galleryimg4, galleryimg5, galleryimg6, galleryimg7, galleryimg8, galleryimg9, galleryimg10, galleryimg11, galleryimg12];
 
@@ -128,18 +137,28 @@ function LVPGallery (props) {
         </ParallaxBanner>
         <div className="gradient-trans trans-top" />
 
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
-        > 
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
+        <Swiper 
+          modules={[Pagination, EffectCoverflow]}
+          effect={'coverflow'} 
+          grabCursor={true} 
+          centeredSlides={true} 
+          slidesPerView={'auto'} 
+          coverflowEffect={{
+            "rotate": 50,
+            "stretch": 0,
+            "depth": 50,
+            "modifier": 1,
+            "slideShadows": true
+          }}
+          className="flooring-swiper"
+        >
+          <SwiperSlide><img src={slideimg1} alt=""/></SwiperSlide>
+          <SwiperSlide><img src={slideimg2} alt=""/></SwiperSlide>
+          <SwiperSlide><img src={slideimg3} alt=""/></SwiperSlide>
+          <SwiperSlide><img src={slideimg4} alt=""/></SwiperSlide>
+          <SwiperSlide><img src={slideimg5} alt=""/></SwiperSlide>
         </Swiper>
-        
+
         <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <div className="gallery-container">
             <Gallery 
