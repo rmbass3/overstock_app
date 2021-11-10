@@ -391,21 +391,51 @@
 
 /* Gallery */
 .gallery-container {
-  height: 100vw;
+  padding-top: 40px;
 }
 
 /* #gallery .swiper {
   margin-left: 80px!important;
   margin-right: 80px!important;
 } */
-.swiper-slide {
+/* .swiper-slide {
   text-align: center;
+} */
+
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 700px!important;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }
 
 .flooring-swiper img {
-  width: 100%;
-  max-width: 1000px;
+  /* width: 100%;
+  max-width: 1000px; */
 }
+
+.swiper-pagination-bullet-active {
+  background: #242424!important;
+}
+
+
+
+.swiper-pagination {
+  bottom: 5px!important;
+}
+
 
 /* Breakpoints */
 
@@ -429,7 +459,7 @@
     height: 200px!important ;
   }
 
-  .gallery-container, #gallery .swiper {
+  .gallery-container, #gallery .flooring-swiper-container {
     margin: 0 20px;
   }
 
@@ -442,7 +472,7 @@
     display: block;
   }
 
-  .gallery-container, #gallery .swiper {
+  .gallery-container, #gallery .flooring-swiper-container {
     margin: 0 40px;
   }
 
@@ -474,7 +504,7 @@
     margin-left: 25px;
   }
 
-  .gallery-container, #gallery .swiper {
+  .gallery-container, #gallery .flooring-swiper-container {
     margin: 0 100px;
   }
 }
@@ -485,7 +515,7 @@
     margin: 0 30px;
   }
 
-  .gallery-container, #gallery .swiper {
+  .gallery-container, #gallery .flooring-swiper-container {
     margin: 0 160px;
   }
 

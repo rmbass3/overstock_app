@@ -31,19 +31,10 @@ import slideimg5 from '../imgs/slide-flooring-img-5.jpg'
 
 var galleryArr = [galleryimg1, galleryimg2, galleryimg3, galleryimg4, galleryimg5, galleryimg6, galleryimg7, galleryimg8, galleryimg9, galleryimg10, galleryimg11, galleryimg12];
 
-function randomizeGalleryOrder() {
-  for (var i = galleryArr.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var temp = galleryArr[i];
-    galleryArr[i] = galleryArr[j];
-    galleryArr[j] = temp;
-  }
-  // galleryArr.forEach(e => console.log(e));
-}
 
 function LVPGallery (props) {
 
-  randomizeGalleryOrder();
+  // randomizeGalleryOrder();
   const IMAGES =
   [
     {
@@ -136,29 +127,32 @@ function LVPGallery (props) {
           </div>
         </ParallaxBanner>
         <div className="gradient-trans trans-top" />
+        <div className="flooring-swiper-container">
+          <Swiper 
+            modules={[Pagination, EffectCoverflow]}
+            effect={'coverflow'} 
+            grabCursor={true} 
+            centeredSlides={true} 
+            slidesPerView={'auto'} 
+            coverflowEffect={{
+              "rotate": 30,
+              "stretch": 0,
+              "depth": 50,
+              "modifier": 2,
+              "slideShadows": true
+            }}
+            className="flooring-swiper"
+            loop={true}
+            pagination={true}
 
-        <Swiper 
-          modules={[Pagination, EffectCoverflow]}
-          effect={'coverflow'} 
-          grabCursor={true} 
-          centeredSlides={true} 
-          slidesPerView={'auto'} 
-          coverflowEffect={{
-            "rotate": 50,
-            "stretch": 0,
-            "depth": 50,
-            "modifier": 1,
-            "slideShadows": true
-          }}
-          className="flooring-swiper"
-        >
-          <SwiperSlide><img src={slideimg1} alt=""/></SwiperSlide>
-          <SwiperSlide><img src={slideimg2} alt=""/></SwiperSlide>
-          <SwiperSlide><img src={slideimg3} alt=""/></SwiperSlide>
-          <SwiperSlide><img src={slideimg4} alt=""/></SwiperSlide>
-          <SwiperSlide><img src={slideimg5} alt=""/></SwiperSlide>
-        </Swiper>
-
+          >
+            <SwiperSlide><img src={slideimg1} alt=""/></SwiperSlide>
+            <SwiperSlide><img src={slideimg2} alt=""/></SwiperSlide>
+            <SwiperSlide><img src={slideimg3} alt=""/></SwiperSlide>
+            <SwiperSlide><img src={slideimg4} alt=""/></SwiperSlide>
+            <SwiperSlide><img src={slideimg5} alt=""/></SwiperSlide>
+          </Swiper>
+        </div>
         <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <div className="gallery-container">
             <Gallery 
