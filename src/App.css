@@ -25,7 +25,6 @@
 }
 
 /* Header */
-
 .App .header {
   font-size: 24px;
   position: fixed;
@@ -51,7 +50,6 @@
 }
 
 /* Home */
-
 .App .home-banner {
   background-repeat: no-repeat;
   background-position: center;
@@ -64,7 +62,6 @@
   flex-direction: column;
   z-index: -1;
 }
-
 
 #home {
   position: relative;
@@ -150,10 +147,7 @@
   margin-bottom: -40px;
 }
 
-
-
 /* Home Transition */
-
 .App .lvf-banner {
   background-repeat: no-repeat;
   background-position: center;
@@ -198,8 +192,6 @@
   align-items: center;
 }
 
-
-
 .home-trans1 .trans1-title {
   color: var(--logo-color);
   font-family: RedHatItalics;
@@ -225,7 +217,6 @@
   padding-right: 20px;
   text-transform: uppercase;
 }
-
 
 .triangle-left-top {
   width: 0;
@@ -274,7 +265,6 @@
   margin: 0 auto;
 }
 
-
 /* Banner titles */
 .App .banner-title {
   background-repeat: no-repeat;
@@ -311,18 +301,12 @@
   margin: 0 auto;
 }
 
-
 .about-container .row{
   display: flex;
   justify-content: center;
   max-width: 1500px;
   margin: 0 auto;
 }
-
-.about-container .col {
-  
-}
-
 
 .about-text-col-right {
   background-color: var(--charcoal);
@@ -339,10 +323,6 @@
   align-items: center;
   background: linear-gradient(0deg, rgb(19, 24, 27) 0%, rgb(43, 47, 48) 100%);
   box-shadow: -5px 5px 8px 5px rgb(173, 173, 173);
-}
-
-.about-img-col {
-  /* max-width: 500px; */
 }
 
 .about-text-col-left, .about-text-col-right, .about-img-col .parallax-about {
@@ -379,28 +359,16 @@
   height: clamp(150px, 31.5vw, 375px)!important ;
 }
 
-
-.about-wide-img-col {
-  /* margin: 0 12px; */
-}
-
 .about-wide-img-col .parallax-banner-layer-0, .about-wide-img-col .parallax-about {
   height: clamp(150px, 31.5vw, 375px)!important;
 }
 
-
 /* Gallery */
 .gallery-container {
   padding-top: 40px;
+  overflow: auto;
 }
 
-/* #gallery .swiper {
-  margin-left: 80px!important;
-  margin-right: 80px!important;
-} */
-/* .swiper-slide {
-  text-align: center;
-} */
 .flooring-swiper-container {
   user-select: none;
 }
@@ -423,20 +391,16 @@
   width: 100%;
 }
 
-.flooring-swiper img {
-  /* width: 100%;
-  max-width: 1000px; */
-}
-
 .swiper-pagination-bullet-active {
   background: #242424!important;
 }
 
-
-
 .swiper-pagination {
   bottom: 5px!important;
 }
+
+/* Reviews */
+
 
 
 /* Breakpoints */

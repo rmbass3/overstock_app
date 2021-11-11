@@ -5,6 +5,7 @@ import HomeTransition from './components/HomeTransition';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/About.js';
 import LVPGallery from './components/LVPGallery';
+import Reviews from './components/Reviews';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <About />
       <HomeTransition />
       <LVPGallery />
+      <Reviews />
     </div>
   );
 }
