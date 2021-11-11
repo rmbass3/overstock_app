@@ -1,14 +1,15 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { ParallaxBanner } from "react-scroll-parallax";
-import Gallery from "react-grid-gallery";
+import { Card } from "react-bootstrap";
 import { Swiper } from '../../node_modules/swiper/react/swiper.js'
 import { SwiperSlide } from '../../node_modules/swiper/react/swiper-slide.js'
-import { Pagination, EffectCoverflow } from 'swiper';
+import { Pagination } from 'swiper';
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
 import bgMain4 from '../imgs/bg-main-4.jpg'
+import reviewer1 from '../imgs/reviewer1-header.png'
 
 function Reviews (props) {
   return (
@@ -31,6 +32,77 @@ function Reviews (props) {
         </div>
       </ParallaxBanner>
       <div className="gradient-trans trans-top" />
+      <div className="reviews-swiper-container">
+          <Swiper 
+            modules={[Pagination]}
+            grabCursor={true} 
+            slidesPerView={3}
+            spaceBetween={30}
+            slidePerGroup={3}
+            loop={true}
+            loopFillGroupWithBlank={true}
+            centeredSlides={true} 
+            className="reviews-swiper"
+            pagination={true}
+
+          >
+            <SwiperSlide>
+              <Card>
+                <Card.Img variant="top" src={reviewer1} />
+                <Card.Body>
+                  <Card.Title>Ryan Truong</Card.Title>
+                  <Card.Text>
+                    Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card>
+                <Card.Img variant="top" src={reviewer1} />
+                <Card.Body>
+                  <Card.Title>Ryan Truong</Card.Title>
+                  <Card.Text>
+                    Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card>
+                <Card.Img variant="top" src={reviewer1} />
+                <Card.Body>
+                  <Card.Title>Ryan Truong</Card.Title>
+                  <Card.Text>
+                    Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card>
+                <Card.Img variant="top" src={reviewer1} />
+                <Card.Body>
+                  <Card.Title>Ryan Truong</Card.Title>
+                  <Card.Text>
+                    Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card>
+                <Card.Img variant="top" src={reviewer1} />
+                <Card.Body>
+                  <Card.Title>Ryan Truong</Card.Title>
+                  <Card.Text>
+                    Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+          </Swiper>
+        </div>
     </div>
   )
 }

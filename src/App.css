@@ -373,34 +373,41 @@
   user-select: none;
 }
 
-.swiper {
+.flooring-swiper-container .swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+.flooring-swiper-container .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 700px!important;
   height: 300px;
 }
 
-.swiper-slide img {
+.flooring-swiper-container .swiper-slide img {
   display: block;
   width: 100%;
 }
 
-.swiper-pagination-bullet-active {
+.flooring-swiper-container .swiper-pagination-bullet-active {
   background: #242424!important;
 }
 
-.swiper-pagination {
+.flooring-swiper-container .swiper-pagination {
   bottom: 5px!important;
 }
 
 /* Reviews */
+.reviews-swiper-container {
+  margin: 0 20vw;
+}
 
+.reviews-swiper-container .swiper-slide {
+  max-width: 400px;
+  /* min-width: 200px; */
+}
 
 
 /* Breakpoints */
