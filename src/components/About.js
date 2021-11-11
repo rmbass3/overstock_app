@@ -73,7 +73,7 @@ function About(props){
           </div>
         </div>
         <div className="row row-cols-1 my-3 my-sm-4 my-md-5">
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={0.5}>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={0.5} className="wide-img-col-container">
             <div className="col order-1">
               <div className="about-wide-img-col">
                 <ParallaxBanner

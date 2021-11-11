@@ -346,7 +346,7 @@
 }
 
 .about-text-col-left, .about-text-col-right, .about-img-col .parallax-about {
-  height: clamp(200px, 42vw, 500px)!important ;
+  height: clamp(200px, 42vw, 400px)!important ;
 }
 
 .about-text-container {
@@ -375,13 +375,13 @@
   display: flex;
   align-items: center;
   background: linear-gradient(0deg, rgb(19, 24, 27) 0%, rgb(43, 47, 48) 100%);
-  margin: 0 12px;
+  /* margin: 0 12px; */
   height: clamp(150px, 31.5vw, 375px)!important ;
 }
 
 
 .about-wide-img-col {
-  margin: 0 12px;
+  /* margin: 0 12px; */
 }
 
 .about-wide-img-col .parallax-banner-layer-0, .about-wide-img-col .parallax-about {
@@ -469,6 +469,10 @@
     padding: 0 15px;
   }
 
+  .row .wide-img-col-container {
+    padding: 0 8px;
+  }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -484,6 +488,10 @@
 
   .about-container {
     padding: 0 25px;
+  }
+
+  .row .wide-img-col-container {
+    padding: 0 12px;
   }
 
 }
@@ -520,6 +528,10 @@
 
   .about-container {
     padding: 0 45px;
+  }
+
+  .row .wide-img-col-container {
+    padding: 0 24px;
   }
 }
 
