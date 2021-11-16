@@ -404,6 +404,7 @@
   margin: 0 18vw;
   max-width: 1200px;
   text-align: center;
+  user-select: none;
 }
 
 .reviews-swiper-container .swiper-slide {
@@ -417,8 +418,8 @@
   margin: 0 auto;
 }
 
-.card {
-
+.card-body {
+  height: 150px;
 }
 
 

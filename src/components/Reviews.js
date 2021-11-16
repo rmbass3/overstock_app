@@ -4,13 +4,17 @@ import { ParallaxBanner } from "react-scroll-parallax";
 import { Card } from "react-bootstrap";
 import { Swiper } from '../../node_modules/swiper/react/swiper.js'
 import { SwiperSlide } from '../../node_modules/swiper/react/swiper-slide.js'
-import { Pagination } from 'swiper';
 import { EffectCoverflow } from "swiper";
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
 import bgMain4 from '../imgs/bg-main-4.jpg'
 import reviewer1 from '../imgs/reviewer1-header.png'
+import reviewer2 from '../imgs/reviewer2-header.png'
+import reviewer3 from '../imgs/reviewer3-header.png'
+import reviewer4 from '../imgs/reviewer4-header.png'
+import reviewer5 from '../imgs/reviewer5-header.png'
+
 
 function Reviews (props) {
   return (
@@ -65,44 +69,44 @@ function Reviews (props) {
             </SwiperSlide>
             <SwiperSlide>
               <Card>
-                <Card.Img variant="top" src={reviewer1} />
+                <Card.Img variant="top" src={reviewer2} />
                 <Card.Body>
-                  <Card.Title>Ryan Truong</Card.Title>
+                  <Card.Title>Beverly Dale</Card.Title>
                   <Card.Text>
-                    Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!
+                    Excellent customer service! Everything from the sales experience to the installation was flawless. Highly recommend!
                   </Card.Text>
                 </Card.Body>
               </Card>
             </SwiperSlide>
             <SwiperSlide>
               <Card>
-                <Card.Img variant="top" src={reviewer1} />
+                <Card.Img variant="top" src={reviewer3} />
                 <Card.Body>
-                  <Card.Title>Ryan Truong</Card.Title>
+                  <Card.Title>Shannon Skeen</Card.Title>
                   <Card.Text>
-                    Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!
+                    Steve is a great guy to work with. His prices can't be beat. He also has a great variety of flooring to choose from.
                   </Card.Text>
                 </Card.Body>
               </Card>
             </SwiperSlide>
             <SwiperSlide>
               <Card>
-                <Card.Img variant="top" src={reviewer1} />
+                <Card.Img variant="top" src={reviewer4} />
                 <Card.Body>
-                  <Card.Title>Ryan Truong</Card.Title>
+                  <Card.Title>Anh Truong</Card.Title>
                   <Card.Text>
-                    Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!
+                    Got the best service today. Very good quality products as such as a good deal!
                   </Card.Text>
                 </Card.Body>
               </Card>
             </SwiperSlide>
             <SwiperSlide>
               <Card>
-                <Card.Img variant="top" src={reviewer1} />
+                <Card.Img variant="top" src={reviewer5} />
                 <Card.Body>
-                  <Card.Title>Ryan Truong</Card.Title>
+                  <Card.Title>Kent Lovern</Card.Title>
                   <Card.Text>
-                    Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!
+                    Great products and service. Easy to work with.
                   </Card.Text>
                 </Card.Body>
               </Card>
