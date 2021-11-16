@@ -5,6 +5,7 @@ import { Card } from "react-bootstrap";
 import { Swiper } from '../../node_modules/swiper/react/swiper.js'
 import { SwiperSlide } from '../../node_modules/swiper/react/swiper-slide.js'
 import { Pagination } from 'swiper';
+import { EffectCoverflow } from "swiper";
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
@@ -34,14 +35,21 @@ function Reviews (props) {
       <div className="gradient-trans trans-top" />
       <div className="reviews-swiper-container">
           <Swiper 
-            modules={[Pagination]}
+            modules={[Pagination, EffectCoverflow]}
+            effect={'coverflow'} 
             grabCursor={true} 
-            slidesPerView={3}
+            centeredSlides={true} 
+            slidesPerView={3} 
+            coverflowEffect={{
+              "rotate": 10,
+              "stretch": 0,
+              "depth": 50,
+              "modifier": 2,
+              "slideShadows": true
+            }}
             spaceBetween={30}
-            slidePerGroup={3}
             loop={true}
             loopFillGroupWithBlank={true}
-            centeredSlides={true} 
             className="reviews-swiper"
             pagination={true}
 
