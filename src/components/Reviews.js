@@ -35,7 +35,7 @@ function Reviews (props) {
       <div className="gradient-trans trans-top" />
       <div className="reviews-swiper-container">
           <Swiper 
-            modules={[Pagination, EffectCoverflow]}
+            modules={[EffectCoverflow]}
             effect={'coverflow'} 
             grabCursor={true} 
             centeredSlides={true} 
@@ -51,8 +51,6 @@ function Reviews (props) {
             loop={true}
             loopFillGroupWithBlank={true}
             className="reviews-swiper"
-            pagination={true}
-
           >
             <SwiperSlide>
               <Card>

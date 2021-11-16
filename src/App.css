@@ -401,12 +401,24 @@
 
 /* Reviews */
 .reviews-swiper-container {
-  margin: 0 20vw;
+  margin: 0 18vw;
+  max-width: 1200px;
+  text-align: center;
 }
 
 .reviews-swiper-container .swiper-slide {
   max-width: 400px;
+  margin-bottom: 50px;
   /* min-width: 200px; */
+}
+
+.card .card-img-top {
+  width: clamp(100px, 17vw, 300px);
+  margin: 0 auto;
+}
+
+.card {
+
 }
 
 
