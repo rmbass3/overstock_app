@@ -9,11 +9,12 @@ import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
 import bgMain4 from '../imgs/bg-main-4.jpg'
-import reviewer1 from '../imgs/reviewer1-header.png'
-import reviewer2 from '../imgs/reviewer2-header.png'
-import reviewer3 from '../imgs/reviewer3-header.png'
-import reviewer4 from '../imgs/reviewer4-header.png'
-import reviewer5 from '../imgs/reviewer5-header.png'
+import reviewer1 from '../imgs/reviewer1-header.jpg'
+import reviewer2 from '../imgs/reviewer2-header.jpg'
+import reviewer3 from '../imgs/reviewer3-header.jpg'
+import reviewer4 from '../imgs/reviewer4-header.jpg'
+import reviewer5 from '../imgs/reviewer5-header.jpg'
+import reviewimg1 from '../imgs/reviews-img-1.JPG'
 
 
 function Reviews (props) {
@@ -113,7 +114,54 @@ function Reviews (props) {
             </SwiperSlide>
           </Swiper>
         </div>
+      <div className="review-cards">
+        <div className="review-card">
+          <div className="review-card-text">
+            <div className="review-card-title">
+              Ryan Bass
+            </div>
+            <div className="review-card-body">
+              I love Overstock Discount Flooring I love Overstock Discount Flooring I love Overstock Discount Flooring I love Overstock Discount Flooring
+            </div>
+          </div>
+          <div className="review-card-img">
+            <ParallaxBanner
+              className="review-card-banner"
+              layers={[
+                {
+                  image: reviewimg1,
+                  amount: 0.5,
+                },
+              ]}
+              
+            />
+          </div>
+        </div>
+        <div className="review-card">
+        <div className="review-card-img">
+            <ParallaxBanner
+              className="review-card-banner"
+              layers={[
+                {
+                  image: reviewimg1,
+                  amount: 0.5,
+                },
+              ]}
+              
+            />
+          </div>
+          <div className="review-card-text">
+            <div className="review-card-title">
+              Ryan Bass
+            </div>
+            <div className="review-card-body">
+              I love Overstock Discount Flooring I love Overstock Discount Flooring I love Overstock Discount Flooring I love Overstock Discount Flooring
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
   )
 }
 

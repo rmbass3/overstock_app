@@ -401,8 +401,10 @@
 
 /* Reviews */
 .reviews-swiper-container {
-  margin: 0 18vw;
-  max-width: 1200px;
+  margin: 0 auto;
+  width: 80%;
+
+  max-width: 1250px;
   text-align: center;
   user-select: none;
 }
@@ -416,10 +418,60 @@
 .card .card-img-top {
   width: clamp(100px, 17vw, 300px);
   margin: 0 auto;
+  padding-top: 20px;
 }
 
-.card-body {
-  height: 150px;
+.card .card-body {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.card .card-title {
+  font-size: clamp(10px, 3vw, 30px);
+  font-family: RedHatMedium;
+}
+
+.card .card-text {
+  font-size: clamp(5px, 1.5vw, 15px);
+  font-family: RedHatItalics;
+}
+
+.review-cards {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1250px;
+}
+
+.review-card {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.review-card-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+  background-color:rgb(231, 231, 231);
+}
+
+.review-card-title {
+  font-family: RedHatMedium;
+  font-size: clamp(20px, 5vw, 40px);
+}
+
+.review-card-body {
+  font-family: RedHatItalics;
+  font-size: clamp(10px, 2.5vw, 20px);
+}
+
+.review-card-banner {
+  width: 40vw!important;
+  height: 350px!important;
 }
 
 
