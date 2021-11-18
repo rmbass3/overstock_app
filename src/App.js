@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/About.js';
 import LVPGallery from './components/LVPGallery';
 import Reviews from './components/Reviews';
-
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
       <HomeTransition />
       <Reviews />
       <LVPGallery />
+      <Contact />
     </div>
   );
 }
