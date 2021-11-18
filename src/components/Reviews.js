@@ -65,7 +65,7 @@ function Reviews (props) {
                 <Card.Body>
                   <Card.Title>Ryan Truong</Card.Title>
                   <Card.Text>
-                    Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!
+                    "Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!"
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -76,7 +76,7 @@ function Reviews (props) {
                 <Card.Body>
                   <Card.Title>Beverly Dale</Card.Title>
                   <Card.Text>
-                    Excellent customer service! Everything from the sales experience to the installation was flawless. Highly recommend!
+                    "Excellent customer service! Everything from the sales experience to the installation was flawless. Highly recommend!"
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -87,7 +87,7 @@ function Reviews (props) {
                 <Card.Body>
                   <Card.Title>Shannon Skeen</Card.Title>
                   <Card.Text>
-                    Steve is a great guy to work with. His prices can't be beat. He also has a great variety of flooring to choose from.
+                    "Steve is a great guy to work with. His prices can't be beat. He also has a great variety of flooring to choose from."
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -98,7 +98,7 @@ function Reviews (props) {
                 <Card.Body>
                   <Card.Title>Anh Truong</Card.Title>
                   <Card.Text>
-                    Got the best service today. Very good quality products as such as a good deal!
+                    "Got the best service today. Very good quality products as such as a good deal!"
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -109,7 +109,7 @@ function Reviews (props) {
                 <Card.Body>
                   <Card.Title>Kent Lovern</Card.Title>
                   <Card.Text>
-                    Great products and service. Easy to work with.
+                    "Great products and service. Easy to work with."
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -120,10 +120,10 @@ function Reviews (props) {
         <div className="review-card">
           <div className="review-card-text">
             <div className="review-card-title">
-              Ryan Bass
+              Sean Kilkenny
             </div>
             <div className="review-card-body">
-              I love Overstock Discount Flooring I love Overstock Discount Flooring I love Overstock Discount Flooring I love Overstock Discount Flooring
+              "By far the best place I've ever bought flooring from. Between the quality of the customer service and the outstanding prices, I highly recommend this business for your next Luxury Vinyl Plank purchase."
             </div>
           </div>
           <div className="review-card-img">
@@ -164,10 +164,10 @@ function Reviews (props) {
           </div>
           <div className="review-card-text">
             <div className="review-card-title">
-              Ryan Bass
+              Marc Stephanie
             </div>
             <div className="review-card-body">
-              I love Overstock Discount Flooring I love   Overstock Discount Flooring I love Overstock  Discount Flooring I love Overstock Discount  Flooring
+              "Steve is awesome!!! Great floors and the price was better then any other!! Great customer service and recommend awesome people that installed at a great price! Will not go anywhere else! They are the best around!!"
             </div>
           </div>
         </div>
