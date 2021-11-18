@@ -40,7 +40,8 @@ function Reviews (props) {
         </div>
       </ParallaxBanner>
       <div className="gradient-trans trans-top" />
-      <div className="reviews-swiper-container">
+      <ScrollAnimation animateIn="fadeIn">
+        <div className="reviews-swiper-container">
           <Swiper 
             modules={[EffectCoverflow]}
             effect={'coverflow'} 
@@ -116,61 +117,66 @@ function Reviews (props) {
             </SwiperSlide>
           </Swiper>
         </div>
+      </ScrollAnimation>
       <div className="review-cards">
-        <div className="review-card">
-          <div className="review-card-text">
-            <div className="review-card-title">
-              Sean Kilkenny
+        <ScrollAnimation animateIn="fadeInRight">
+          <div className="review-card">
+            <div className="review-card-text">
+              <div className="review-card-title">
+                Sean Kilkenny
+              </div>
+              <div className="review-card-body">
+                "By far the best place I've ever bought flooring from. Between the quality of the customer service and the outstanding prices, I highly recommend this business for your next Luxury Vinyl Plank purchase."
+              </div>
             </div>
-            <div className="review-card-body">
-              "By far the best place I've ever bought flooring from. Between the quality of the customer service and the outstanding prices, I highly recommend this business for your next Luxury Vinyl Plank purchase."
+            <div className="review-card-img">
+              <ParallaxBanner
+                className="review-card-banner"
+                layers={[
+                  {
+                    image: reviewimg1,
+                    amount: 0.5,
+                  },
+                  {
+                    image: stars,
+                    amount: 0,
+                  }
+                ]}
+                
+              />
             </div>
           </div>
-          <div className="review-card-img">
-            <ParallaxBanner
-              className="review-card-banner"
-              layers={[
-                {
-                  image: reviewimg1,
-                  amount: 0.5,
-                },
-                {
-                  image: stars,
-                  amount: 0,
-                }
-              ]}
-              
-            />
-          </div>
-        </div>
-        <div className="review-card">
-          <div className="review-card-img">
-            <ParallaxBanner
-              className="review-card-banner"
-              layers={[
-                {
-                  image: reviewimg2,
-                  amount: 0.5,
-                },
-                {
-                  image: stars,
-                  amount: 0,
-                }
-              ]}
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInLeft">
+          <div className="review-card">
+            <div className="review-card-img">
+              <ParallaxBanner
+                className="review-card-banner"
+                layers={[
+                  {
+                    image: reviewimg2,
+                    amount: 0.5,
+                  },
+                  {
+                    image: stars,
+                    amount: 0,
+                  }
+                ]}
 
-            >
-              
-            </ParallaxBanner>
-          </div>
-          <div className="review-card-text">
-            <div className="review-card-title">
-              Marc Stephanie
+              >
+                
+              </ParallaxBanner>
             </div>
-            <div className="review-card-body">
-              "Steve is awesome!!! Great floors and the price was better then any other!! Great customer service and recommend awesome people that installed at a great price! Will not go anywhere else! They are the best around!!"
+            <div className="review-card-text">
+              <div className="review-card-title">
+                Marc Stephanie
+              </div>
+              <div className="review-card-body">
+                "Steve is awesome!!! Great floors and the price was better then any other!! Great customer service and recommend awesome people that installed at a great price! Will not go anywhere else! They are the best around!!"
+              </div>
             </div>
           </div>
-        </div>
+        </ScrollAnimation>
       </div>
     </div>
   )
