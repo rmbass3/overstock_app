@@ -20,8 +20,8 @@ function App() {
       <Home />
       <About />
       <HomeTransition />
-      <LVPGallery />
       <Reviews />
+      <LVPGallery />
     </div>
   );
 }
