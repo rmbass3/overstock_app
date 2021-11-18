@@ -474,6 +474,11 @@
   height: 350px!important;
 }
 
+.review-card-banner .parallax-banner-layer-1{
+  background-size: contain!important;
+  background-repeat: no-repeat;
+}
+
 
 /* Breakpoints */
 

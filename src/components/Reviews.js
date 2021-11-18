@@ -14,7 +14,9 @@ import reviewer2 from '../imgs/reviewer2-header.jpg'
 import reviewer3 from '../imgs/reviewer3-header.jpg'
 import reviewer4 from '../imgs/reviewer4-header.jpg'
 import reviewer5 from '../imgs/reviewer5-header.jpg'
-import reviewimg1 from '../imgs/reviews-img-1.JPG'
+import reviewimg1 from '../imgs/reviews-img-1.jpg'
+import reviewimg2 from '../imgs/reviews-img-2.jpg'
+import stars from '../imgs/stars.png'
 
 
 function Reviews (props) {
@@ -132,36 +134,45 @@ function Reviews (props) {
                   image: reviewimg1,
                   amount: 0.5,
                 },
+                {
+                  image: stars,
+                  amount: 0,
+                }
               ]}
               
             />
           </div>
         </div>
         <div className="review-card">
-        <div className="review-card-img">
+          <div className="review-card-img">
             <ParallaxBanner
               className="review-card-banner"
               layers={[
                 {
-                  image: reviewimg1,
+                  image: reviewimg2,
                   amount: 0.5,
                 },
+                {
+                  image: stars,
+                  amount: 0,
+                }
               ]}
+
+            >
               
-            />
+            </ParallaxBanner>
           </div>
           <div className="review-card-text">
             <div className="review-card-title">
               Ryan Bass
             </div>
             <div className="review-card-body">
-              I love Overstock Discount Flooring I love Overstock Discount Flooring I love Overstock Discount Flooring I love Overstock Discount Flooring
+              I love Overstock Discount Flooring I love   Overstock Discount Flooring I love Overstock  Discount Flooring I love Overstock Discount  Flooring
             </div>
           </div>
         </div>
       </div>
     </div>
-
   )
 }
 
