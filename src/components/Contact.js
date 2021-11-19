@@ -31,7 +31,9 @@ function Contact(props){
         </div>
       </ParallaxBanner>
       <div className="gradient-trans trans-top" />
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.6589168693636!2d-80.03837414863509!3d35.93084792375043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88530b81c8f99bed%3A0x2d169abe421fbfec!2sOverstock%20Discount%20Flooring!5e0!3m2!1sen!2sus!4v1637281756852!5m2!1sen!2sus" title="contactmap"/>
+      <div className="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.6589168693636!2d-80.03837414863509!3d35.93084792375043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88530b81c8f99bed%3A0x2d169abe421fbfec!2sOverstock%20Discount%20Flooring!5e0!3m2!1sen!2sus!4v1637281756852!5m2!1sen!2sus" title="contact-map" className="contact-map"/>
+      </div>
     </div>
   )
 }
