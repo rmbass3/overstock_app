@@ -480,7 +480,7 @@
 }
 
 /* Contact */
-.map-container {
+.contact-container {
   margin: 0 auto;
   width: 80%;
   max-width: 1250px;
@@ -488,7 +488,7 @@
   margin-bottom: 40px;
 }
 
-.map-container .contact-map {
+.contact-container .contact-map {
   width: 100%;
   height: 30vw;
 }
