@@ -52,9 +52,15 @@ function Contact(props){
           <div className="contact-middle">
             <h3 className="contact-info-title">SOCIAL</h3>
             <div className="contact-icons-container">
-              <i class="fab fa-yelp contact-icons-middle"/>
-              <i class="fab fa-instagram contact-icons-middle"/>
-              <i class="fab fa-facebook-square contact-icons-middle"/>
+              <a href="https://www.yelp.com/biz/overstock-discount-flooring-high-point" target="_blank" className="yelp-link">
+                <i class="fab fa-yelp contact-icons-middle"/>
+              </a>
+              <a href="https://www.instagram.com/overstockdiscountflooringnc/" target="_blank" className="insta-link">
+                <i class="fab fa-instagram contact-icons-middle"/>
+              </a>
+              <a href="https://www.facebook.com/Overstock-Discount-Flooring-101773294750190/" target="_blank" className="fb-link">
+                <i class="fab fa-facebook-square contact-icons-middle"/>
+              </a>
               {/* https://www.facebook.com/Overstock-Discount-Flooring-101773294750190/ */}
             </div>
           </div>

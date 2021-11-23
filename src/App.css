@@ -514,17 +514,19 @@
 .contact-hours, .contact-info {
   margin-bottom: 5px;
   font-size: clamp(15px, 2vw, 25px);
+  color: var(--dark-charcoal);
 }
 
 .contact-info-title, .contact-hours-title {
   font-size: clamp(30px, 4vw, 50px);
   color: var(--logo-color);
+  
 }
 
 .contact-icons-container {
   display: flex;
   justify-content: space-around;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .contact-icons-container {
@@ -535,6 +537,21 @@
   margin-right: 5px;
 }
 
+.contact-icons-container a {
+  color: var(--dark-charcoal);
+}
+
+.yelp-link:hover {
+  color: rgb(211, 21, 21);
+}
+
+.insta-link:hover {
+  color: rgb(155 46 163);
+}
+
+.fb-link:hover {
+  color: rgb(22, 67, 193);
+}
 /* Breakpoints */
 
 /* Extra small devices (phones, 600px and down) */
