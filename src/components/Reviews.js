@@ -64,7 +64,7 @@ function Reviews (props) {
               <Card>
                 <Card.Img variant="top" src={reviewer1} />
                 <Card.Body>
-                  <Card.Title>Ryan Truong</Card.Title>
+                  <Card.Title>R.T.</Card.Title>
                   <Card.Text>
                     "Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!"
                   </Card.Text>
@@ -75,7 +75,7 @@ function Reviews (props) {
               <Card>
                 <Card.Img variant="top" src={reviewer2} />
                 <Card.Body>
-                  <Card.Title>Beverly Dale</Card.Title>
+                  <Card.Title>B.D.</Card.Title>
                   <Card.Text>
                     "Excellent customer service! Everything from the sales experience to the installation was flawless. Highly recommend!"
                   </Card.Text>
@@ -86,7 +86,7 @@ function Reviews (props) {
               <Card>
                 <Card.Img variant="top" src={reviewer3} />
                 <Card.Body>
-                  <Card.Title>Shannon Skeen</Card.Title>
+                  <Card.Title>S.S.</Card.Title>
                   <Card.Text>
                     "Steve is a great guy to work with. His prices can't be beat. He also has a great variety of flooring to choose from."
                   </Card.Text>
@@ -97,7 +97,7 @@ function Reviews (props) {
               <Card>
                 <Card.Img variant="top" src={reviewer4} />
                 <Card.Body>
-                  <Card.Title>Anh Truong</Card.Title>
+                  <Card.Title>A.T.</Card.Title>
                   <Card.Text>
                     "Got the best service today. Very good quality products as such as a good deal!"
                   </Card.Text>
@@ -108,7 +108,7 @@ function Reviews (props) {
               <Card>
                 <Card.Img variant="top" src={reviewer5} />
                 <Card.Body>
-                  <Card.Title>Kent Lovern</Card.Title>
+                  <Card.Title>K.L.</Card.Title>
                   <Card.Text>
                     "Great products and service. Easy to work with."
                   </Card.Text>
@@ -123,7 +123,7 @@ function Reviews (props) {
           <div className="review-card">
             <div className="review-card-text">
               <div className="review-card-title">
-                Sean Kilkenny
+                S.K.
               </div>
               <div className="review-card-body">
                 "By far the best place I've ever bought flooring from. Between the quality of the customer service and the outstanding prices, I highly recommend this business for your next Luxury Vinyl Plank purchase."
@@ -169,7 +169,7 @@ function Reviews (props) {
             </div>
             <div className="review-card-text">
               <div className="review-card-title">
-                Marc Stephanie
+                M.S.
               </div>
               <div className="review-card-body">
                 "Steve is awesome!!! Great floors and the price was better then any other!! Great customer service and recommend awesome people that installed at a great price! Will not go anywhere else! They are the best around!!"
