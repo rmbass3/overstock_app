@@ -32,46 +32,48 @@ function Contact(props){
         </div>
       </ParallaxBanner>
       <div className="gradient-trans trans-top" />
-      <div className="contact-container">
-        <div className="contact-map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.6589168693636!2d-80.03837414863509!3d35.93084792375043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88530b81c8f99bed%3A0x2d169abe421fbfec!2sOverstock%20Discount%20Flooring!5e0!3m2!1sen!2sus!4v1637281756852!5m2!1sen!2sus" title="contact-map" className="contact-map"/>
-        </div>
-        <div className="contact-info-container">
-          <div className="contact-left">
-            <h3 className="contact-info-title">CONTACT</h3>
-            <h4 className="contact-info">
-              <i class="fas fa-phone-alt contact-icons-left"></i>
-              (843) 318-9675
-            </h4>
-            <h4 className="contact-info">
-              <i class="fas fa-map-marker-alt contact-icons-left"></i>
-              1205 Elgin Ave
-            </h4>
-            <h4 className="contact-info">High Point, NC 27262</h4>
+      <ScrollAnimation animateIn="fadeIn" duration={2}>
+        <div className="contact-container">
+          <div className="contact-map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.6589168693636!2d-80.03837414863509!3d35.93084792375043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88530b81c8f99bed%3A0x2d169abe421fbfec!2sOverstock%20Discount%20Flooring!5e0!3m2!1sen!2sus!4v1637281756852!5m2!1sen!2sus" title="contact-map" className="contact-map"/>
           </div>
-          <div className="contact-middle">
-            <h3 className="contact-info-title">SOCIAL</h3>
-            <div className="contact-icons-container">
-              <a href="https://www.yelp.com/biz/overstock-discount-flooring-high-point" target="_blank" className="yelp-link">
-                <i class="fab fa-yelp contact-icons-middle"/>
-              </a>
-              <a href="https://www.instagram.com/overstockdiscountflooringnc/" target="_blank" className="insta-link">
-                <i class="fab fa-instagram contact-icons-middle"/>
-              </a>
-              <a href="https://www.facebook.com/Overstock-Discount-Flooring-101773294750190/" target="_blank" className="fb-link">
-                <i class="fab fa-facebook-square contact-icons-middle"/>
-              </a>
-              {/* https://www.facebook.com/Overstock-Discount-Flooring-101773294750190/ */}
+          <div className="contact-info-container">
+            <div className="contact-left">
+              <h3 className="contact-info-title">CONTACT</h3>
+              <h4 className="contact-info">
+                <i className="fas fa-phone-alt contact-icons-left"></i>
+                (843) 318-9675
+              </h4>
+              <h4 className="contact-info">
+                <i className="fas fa-map-marker-alt contact-icons-left"></i>
+                1205 Elgin Ave
+              </h4>
+              <h4 className="contact-info">High Point, NC 27262</h4>
+            </div>
+            <div className="contact-middle">
+              <h3 className="contact-info-title">SOCIAL</h3>
+              <div className="contact-icons-container">
+                <a href="https://www.yelp.com/biz/overstock-discount-flooring-high-point" target="_blank" className="yelp-link" rel="noreferrer">
+                  <i className="fab fa-yelp contact-icons-middle"/>
+                </a>
+                <a href="https://www.instagram.com/overstockdiscountflooringnc/" target="_blank" className="insta-link" rel="noreferrer">
+                  <i className="fab fa-instagram contact-icons-middle"/>
+                </a>
+                <a href="https://www.facebook.com/Overstock-Discount-Flooring-101773294750190/" target="_blank" className="fb-link" rel="noreferrer">
+                  <i className="fab fa-facebook-square contact-icons-middle"/>
+                </a>
+                {/* https://www.facebook.com/Overstock-Discount-Flooring-101773294750190/ */}
+              </div>
+            </div>
+            <div className="contact-right">
+              <h3 className="contact-hours-title">HOURS</h3>
+              <h4 className="contact-hours">M-F: 8AM-5PM</h4>
+              <h4 className="contact-hours">Sat: 9AM-12PM</h4>
+              <h4 className="contact-hours">Sun: Closed</h4>
             </div>
           </div>
-          <div className="contact-right">
-            <h3 className="contact-hours-title">HOURS</h3>
-            <h4 className="contact-hours">M-F: 8AM-5PM</h4>
-            <h4 className="contact-hours">Sat: 9AM-12PM</h4>
-            <h4 className="contact-hours">Sun: Closed</h4>
-          </div>
         </div>
-      </div>
+      </ScrollAnimation>
     </div>
   )
 }
