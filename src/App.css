@@ -507,8 +507,8 @@
   height: 300px;
 }
 
-.contact-left, .contact-right {
-  width: 50%;
+.contact-left, .contact-middle, .contact-right {
+  width: 33.33%;
   padding: 20px;
 }
 
@@ -520,6 +520,11 @@
 .contact-info-title, .contact-hours-title {
   font-size: clamp(30px, 4vw, 50px);
   color: var(--logo-color);
+}
+
+.contact-icons-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Breakpoints */
