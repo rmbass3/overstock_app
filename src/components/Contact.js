@@ -40,21 +40,22 @@ function Contact(props){
           <div className="contact-left">
             <h3 className="contact-info-title">CONTACT</h3>
             <h4 className="contact-info">
-              <i class="fas fa-phone-alt"></i>
+              <i class="fas fa-phone-alt contact-icons-left"></i>
               (843) 318-9675
             </h4>
             <h4 className="contact-info">
-            <i class="fas fa-map-marker-alt"></i>
-            1205 Elgin Ave
+              <i class="fas fa-map-marker-alt contact-icons-left"></i>
+              1205 Elgin Ave
             </h4>
             <h4 className="contact-info">High Point, NC 27262</h4>
           </div>
           <div className="contact-middle">
             <h3 className="contact-info-title">SOCIAL</h3>
             <div className="contact-icons-container">
-              <i class="fab fa-yelp fa-2x"></i>
-              <i class="fab fa-instagram fa-2x"></i>
-              <i class="fab fa-facebook-square fa-2x"></i>
+              <i class="fab fa-yelp contact-icons-middle"/>
+              <i class="fab fa-instagram contact-icons-middle"/>
+              <i class="fab fa-facebook-square contact-icons-middle"/>
+              {/* https://www.facebook.com/Overstock-Discount-Flooring-101773294750190/ */}
             </div>
           </div>
           <div className="contact-right">
