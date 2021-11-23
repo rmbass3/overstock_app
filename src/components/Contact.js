@@ -9,8 +9,6 @@ import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
 import bgMain5 from '../imgs/bg-main-5.jpg'
-import '../../node_modules/@fortawesome/fontawesome-free/js/brands.js'
-import '../../node_modules/@fortawesome/fontawesome-free/js/solid.js'
 
 function Contact(props){
   return (
@@ -40,21 +38,13 @@ function Contact(props){
         <div className="contact-info-container">
           <div className="contact-left">
             <h3 className="contact-info-title">CONTACT</h3>
-            <h4 className="contact-info">
-              <i class="fas fa-phone-alt"></i>
-              (843) 318-9675
-            </h4>
-            <h4 className="contact-info">
-              <i class="fas fa-map-marker-alt"></i>
-              1205 Elgin Ave
-            </h4>
+            <h4 className="contact-info">(843) 318-9675</h4>
+            <h4 className="contact-info">1205 Elgin Ave</h4>
             <h4 className="contact-info">High Point, NC 27262</h4>
           </div>
           <div className="contact-middle">
             <h3 className="contact-info-title">SOCIAL</h3>
-            <i class="fab fa-yelp"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-square"></i>
+
           </div>
           <div className="contact-right">
             <h3 className="contact-hours-title">HOURS</h3>
