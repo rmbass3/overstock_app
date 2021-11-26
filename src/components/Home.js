@@ -25,12 +25,14 @@ function Home(props) {
               <div>
                 <h1 className="title-overstock">OVERSTOCK</h1>
                 <h3 className="title-end mt-2">DISCOUNT FLOORING</h3>
-                <Button 
-                  size="lg" 
-                  className="title-button btn-secondary mt-3" 
-                >
-                  Get a quote today
-                </Button>
+                <a href="#contact">
+                  <Button 
+                    size="lg" 
+                    className="title-button btn-secondary mt-3" 
+                  >
+                    Get a quote today
+                  </Button>
+                </a>
               </div>
             </ScrollAnimation>
           </div>
