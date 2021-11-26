@@ -15,7 +15,7 @@ import galleryimg2 from '../imgs/gallery-img-2.JPG';
 import galleryimg3 from '../imgs/gallery-img-3.JPG'
 import galleryimg4 from '../imgs/gallery-img-4.JPG'
 import galleryimg5 from '../imgs/gallery-img-5.JPG'
-import galleryimg6 from '../imgs/gallery-img-6.JPG'
+import galleryimg6 from '../imgs/gallery-img-6.jpg'
 import galleryimg7 from '../imgs/gallery-img-7.JPG'
 import galleryimg8 from '../imgs/gallery-img-8.JPG'
 import galleryimg9 from '../imgs/gallery-img-9.JPG'
