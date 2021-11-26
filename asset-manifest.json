@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/overstock_app/static/css/main.21d02b96.chunk.css",
-    "main.js": "/overstock_app/static/js/main.45395734.chunk.js",
-    "main.js.map": "/overstock_app/static/js/main.45395734.chunk.js.map",
+    "main.js": "/overstock_app/static/js/main.4fa85bac.chunk.js",
+    "main.js.map": "/overstock_app/static/js/main.4fa85bac.chunk.js.map",
     "runtime-main.js": "/overstock_app/static/js/runtime-main.b3ec1e46.js",
     "runtime-main.js.map": "/overstock_app/static/js/runtime-main.b3ec1e46.js.map",
     "static/css/2.ea4c6955.chunk.css": "/overstock_app/static/css/2.ea4c6955.chunk.css",
@@ -43,7 +43,7 @@
     "static/media/reviewer3-header.aa3265a2.jpg": "/overstock_app/static/media/reviewer3-header.aa3265a2.jpg",
     "static/media/reviewer4-header.a917d673.jpg": "/overstock_app/static/media/reviewer4-header.a917d673.jpg",
     "static/media/reviewer5-header.0fbd43e5.jpg": "/overstock_app/static/media/reviewer5-header.0fbd43e5.jpg",
-    "static/media/reviews-img-1.b135f4e3.jpg": "/overstock_app/static/media/reviews-img-1.b135f4e3.jpg",
+    "static/media/reviews-img-1.fdbfe332.jpg": "/overstock_app/static/media/reviews-img-1.fdbfe332.jpg",
     "static/media/reviews-img-2.4dab26b0.jpg": "/overstock_app/static/media/reviews-img-2.4dab26b0.jpg",
     "static/media/slide-flooring-img-1.010fc609.jpg": "/overstock_app/static/media/slide-flooring-img-1.010fc609.jpg",
     "static/media/slide-flooring-img-2.b257b46e.jpg": "/overstock_app/static/media/slide-flooring-img-2.b257b46e.jpg",
@@ -62,6 +62,6 @@
     "static/css/2.ea4c6955.chunk.css",
     "static/js/2.72366fea.chunk.js",
     "static/css/main.21d02b96.chunk.css",
-    "static/js/main.45395734.chunk.js"
+    "static/js/main.4fa85bac.chunk.js"
   ]
 }
