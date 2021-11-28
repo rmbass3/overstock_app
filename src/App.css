@@ -328,7 +328,7 @@
 }
 
 .about-text-col-left, .about-text-col-right, .about-img-col .parallax-about {
-  height: clamp(132px, 33vw, 330px)!important ;
+  height: clamp(255px, 33vw, 330px)!important ;
 }
 
 
