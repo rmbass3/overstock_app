@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/overstock_app/static/css/main.21d02b96.chunk.css",
-    "main.js": "/overstock_app/static/js/main.4fa85bac.chunk.js",
-    "main.js.map": "/overstock_app/static/js/main.4fa85bac.chunk.js.map",
+    "main.css": "/overstock_app/static/css/main.44e1e9f5.chunk.css",
+    "main.js": "/overstock_app/static/js/main.7e713379.chunk.js",
+    "main.js.map": "/overstock_app/static/js/main.7e713379.chunk.js.map",
     "runtime-main.js": "/overstock_app/static/js/runtime-main.b3ec1e46.js",
     "runtime-main.js.map": "/overstock_app/static/js/runtime-main.b3ec1e46.js.map",
     "static/css/2.ea4c6955.chunk.css": "/overstock_app/static/css/2.ea4c6955.chunk.css",
-    "static/js/2.72366fea.chunk.js": "/overstock_app/static/js/2.72366fea.chunk.js",
-    "static/js/2.72366fea.chunk.js.map": "/overstock_app/static/js/2.72366fea.chunk.js.map",
+    "static/js/2.248fad0e.chunk.js": "/overstock_app/static/js/2.248fad0e.chunk.js",
+    "static/js/2.248fad0e.chunk.js.map": "/overstock_app/static/js/2.248fad0e.chunk.js.map",
     "static/js/3.e5df5cbe.chunk.js": "/overstock_app/static/js/3.e5df5cbe.chunk.js",
     "static/js/3.e5df5cbe.chunk.js.map": "/overstock_app/static/js/3.e5df5cbe.chunk.js.map",
     "index.html": "/overstock_app/index.html",
     "static/css/2.ea4c6955.chunk.css.map": "/overstock_app/static/css/2.ea4c6955.chunk.css.map",
-    "static/css/main.21d02b96.chunk.css.map": "/overstock_app/static/css/main.21d02b96.chunk.css.map",
-    "static/js/2.72366fea.chunk.js.LICENSE.txt": "/overstock_app/static/js/2.72366fea.chunk.js.LICENSE.txt",
+    "static/css/main.44e1e9f5.chunk.css.map": "/overstock_app/static/css/main.44e1e9f5.chunk.css.map",
+    "static/js/2.248fad0e.chunk.js.LICENSE.txt": "/overstock_app/static/js/2.248fad0e.chunk.js.LICENSE.txt",
     "static/media/App.css": "/overstock_app/static/media/RedHatText-MediumItalic.188db8f3.ttf",
     "static/media/about-img1.69d3493d.JPG": "/overstock_app/static/media/about-img1.69d3493d.JPG",
     "static/media/about-img2.fb9a2a86.jpg": "/overstock_app/static/media/about-img2.fb9a2a86.jpg",
@@ -33,7 +33,7 @@
     "static/media/gallery-img-3.ab26ed9a.JPG": "/overstock_app/static/media/gallery-img-3.ab26ed9a.JPG",
     "static/media/gallery-img-4.46158bf1.JPG": "/overstock_app/static/media/gallery-img-4.46158bf1.JPG",
     "static/media/gallery-img-5.800490d4.JPG": "/overstock_app/static/media/gallery-img-5.800490d4.JPG",
-    "static/media/gallery-img-6.c1bd4309.jpg": "/overstock_app/static/media/gallery-img-6.c1bd4309.jpg",
+    "static/media/gallery-img-6.9a73b888.jpg": "/overstock_app/static/media/gallery-img-6.9a73b888.jpg",
     "static/media/gallery-img-7.807d4833.JPG": "/overstock_app/static/media/gallery-img-7.807d4833.JPG",
     "static/media/gallery-img-8.6c694845.JPG": "/overstock_app/static/media/gallery-img-8.6c694845.JPG",
     "static/media/gallery-img-9.ff7109ac.JPG": "/overstock_app/static/media/gallery-img-9.ff7109ac.JPG",
@@ -43,7 +43,7 @@
     "static/media/reviewer3-header.aa3265a2.jpg": "/overstock_app/static/media/reviewer3-header.aa3265a2.jpg",
     "static/media/reviewer4-header.a917d673.jpg": "/overstock_app/static/media/reviewer4-header.a917d673.jpg",
     "static/media/reviewer5-header.0fbd43e5.jpg": "/overstock_app/static/media/reviewer5-header.0fbd43e5.jpg",
-    "static/media/reviews-img-1.fdbfe332.jpg": "/overstock_app/static/media/reviews-img-1.fdbfe332.jpg",
+    "static/media/reviews-img-1.de45791b.jpg": "/overstock_app/static/media/reviews-img-1.de45791b.jpg",
     "static/media/reviews-img-2.4dab26b0.jpg": "/overstock_app/static/media/reviews-img-2.4dab26b0.jpg",
     "static/media/slide-flooring-img-1.010fc609.jpg": "/overstock_app/static/media/slide-flooring-img-1.010fc609.jpg",
     "static/media/slide-flooring-img-2.b257b46e.jpg": "/overstock_app/static/media/slide-flooring-img-2.b257b46e.jpg",
@@ -60,8 +60,8 @@
   "entrypoints": [
     "static/js/runtime-main.b3ec1e46.js",
     "static/css/2.ea4c6955.chunk.css",
-    "static/js/2.72366fea.chunk.js",
-    "static/css/main.21d02b96.chunk.css",
-    "static/js/main.4fa85bac.chunk.js"
+    "static/js/2.248fad0e.chunk.js",
+    "static/css/main.44e1e9f5.chunk.css",
+    "static/js/main.7e713379.chunk.js"
   ]
 }
