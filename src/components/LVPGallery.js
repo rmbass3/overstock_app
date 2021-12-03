@@ -128,42 +128,46 @@ function LVPGallery (props) {
           </div>
         </ParallaxBanner>
         <div className="gradient-trans trans-top" />
-        <div className="flooring-swiper-container">
-          <Swiper 
-            modules={[Pagination, EffectCoverflow]}
-            effect={'coverflow'} 
-            grabCursor={true} 
-            centeredSlides={true} 
-            slidesPerView={'auto'} 
-            coverflowEffect={{
-              "rotate": 30,
-              "stretch": 0,
-              "depth": 50,
-              "modifier": 2,
-              "slideShadows": true
-            }}
-            className="flooring-swiper"
-            loop={true}
-            pagination={true}
+        <ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
+          <div className="flooring-swiper-container">
+            <Swiper 
+              modules={[Pagination, EffectCoverflow]}
+              effect={'coverflow'} 
+              grabCursor={true} 
+              centeredSlides={true} 
+              slidesPerView={'auto'} 
+              coverflowEffect={{
+                "rotate": 30,
+                "stretch": 0,
+                "depth": 50,
+                "modifier": 2,
+                "slideShadows": true
+              }}
+              className="flooring-swiper"
+              loop={true}
+              pagination={true}
 
-          >
-            <SwiperSlide><img src={slideimg1} alt=""/></SwiperSlide>
-            <SwiperSlide><img src={slideimg2} alt=""/></SwiperSlide>
-            <SwiperSlide><img src={slideimg3} alt=""/></SwiperSlide>
-            <SwiperSlide><img src={slideimg4} alt=""/></SwiperSlide>
-            <SwiperSlide><img src={slideimg5} alt=""/></SwiperSlide>
-          </Swiper>
-        </div>
-        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-          <div className="gallery-container">
-            <Gallery 
-              images={IMAGES} 
-              enableImageSelection={false}
-              rowHeight={400}
-              backdropClosesModal={true}
-            />
+            >
+              <SwiperSlide><img src={slideimg1} alt=""/></SwiperSlide>
+              <SwiperSlide><img src={slideimg2} alt=""/></SwiperSlide>
+              <SwiperSlide><img src={slideimg3} alt=""/></SwiperSlide>
+              <SwiperSlide><img src={slideimg4} alt=""/></SwiperSlide>
+              <SwiperSlide><img src={slideimg5} alt=""/></SwiperSlide>
+            </Swiper>
           </div>
         </ScrollAnimation>
+        <div className="gallery">
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+            <div className="gallery-container">
+              <Gallery 
+                images={IMAGES} 
+                enableImageSelection={false}
+                rowHeight={400}
+                backdropClosesModal={true}
+              />
+            </div>
+          </ScrollAnimation>
+        </div>
     </div>
   )
 }

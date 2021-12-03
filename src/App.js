@@ -9,7 +9,9 @@ import Reviews from './components/Reviews';
 import Contact from './components/Contact';
 import { useState, useEffect} from 'react';
 
+
 function App() {
+
 
   const getInitialVal = () => {
     if (window.innerWidth > 767) {

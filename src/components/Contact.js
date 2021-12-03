@@ -10,11 +10,27 @@ import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
 import bgMain5 from '../imgs/bg-main-5.jpg'
 import '../../node_modules/@fortawesome/fontawesome-free/js/all'
+import { useController } from "react-scroll-parallax";
+import { useLayoutEffect } from "react";
+
+const ParallaxCache = () => {
+  const { parallaxController } = useController();
+
+  useLayoutEffect(() => {
+      const handler = () => parallaxController.update();
+      window.addEventListener('load', handler);
+      return () => window.removeEventListener('load', handler);
+  }, [parallaxController]);
+
+  return null;
+};
 
 function Contact(props){
+
   return (
     <div id="contact">
       <div className="gradient-trans trans-bottom" />
+      <ParallaxCache />
       <ParallaxBanner
         className="lvf-banner"
         layers={[

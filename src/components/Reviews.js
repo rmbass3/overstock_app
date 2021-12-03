@@ -144,7 +144,6 @@ function Reviews (props) {
                   }
                 ]}
                 disabled={props.mobile}
-                
               />
             </div>
           </div>
