@@ -161,7 +161,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: clamp(200px, 50vw, 600px) !important;
+  height: clamp(300px, 50vw, 600px) !important;
   display: flex;
   justify-content: center;
   align-items: center;
