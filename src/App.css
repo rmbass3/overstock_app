@@ -85,20 +85,20 @@
 .home-title-container .title-intro {
   color: white;
   font-family: RedHatItalics;
-  font-size: clamp(30px, 6vw, 84px);
+  font-size: clamp(30px, 6vw, 72px);
 }
 
 .home-title-container .title-overstock {
   color: var(--logo-color);
   font-family: RedHatMedium;
-  font-size: clamp(48px, 12vw, 168px);
+  font-size: clamp(48px, 12vw, 144px);
   line-height: 1;
 }
 
 .home-title-container .title-end {
   color: white;
   font-family: RedHatMedium;
-  font-size: clamp(15px, 3vw, 42px);
+  font-size: clamp(15px, 3vw, 36px);
   margin-top: 10px;
 }
 
@@ -109,8 +109,8 @@
 .home-title-container .title-button {
   font-family: RedHatItalics;
   border-radius: 0px;
-  font-size: clamp(10px, 2vw, 32px);
-  padding: clamp(10px, 2vw, 32px);
+  font-size: clamp(10px, 2vw, 20px);
+  padding: clamp(10px, 2vw, 20px);
   background: linear-gradient(0deg, rgb(19, 24, 27) 0%, rgb(22, 23, 24) 100%);
 }
 
