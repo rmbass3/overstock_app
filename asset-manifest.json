@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/overstock_app/static/css/main.27b9b1c2.chunk.css",
-    "main.js": "/overstock_app/static/js/main.56c53b98.chunk.js",
-    "main.js.map": "/overstock_app/static/js/main.56c53b98.chunk.js.map",
-    "runtime-main.js": "/overstock_app/static/js/runtime-main.b3ec1e46.js",
-    "runtime-main.js.map": "/overstock_app/static/js/runtime-main.b3ec1e46.js.map",
+    "main.css": "/overstock_app/static/css/main.5eadf30a.chunk.css",
+    "main.js": "/overstock_app/static/js/main.166dfb55.chunk.js",
+    "main.js.map": "/overstock_app/static/js/main.166dfb55.chunk.js.map",
+    "runtime-main.js": "/overstock_app/static/js/runtime-main.b770baab.js",
+    "runtime-main.js.map": "/overstock_app/static/js/runtime-main.b770baab.js.map",
     "static/css/2.ea4c6955.chunk.css": "/overstock_app/static/css/2.ea4c6955.chunk.css",
-    "static/js/2.df509919.chunk.js": "/overstock_app/static/js/2.df509919.chunk.js",
-    "static/js/2.df509919.chunk.js.map": "/overstock_app/static/js/2.df509919.chunk.js.map",
-    "static/js/3.e5df5cbe.chunk.js": "/overstock_app/static/js/3.e5df5cbe.chunk.js",
-    "static/js/3.e5df5cbe.chunk.js.map": "/overstock_app/static/js/3.e5df5cbe.chunk.js.map",
+    "static/js/2.832a455c.chunk.js": "/overstock_app/static/js/2.832a455c.chunk.js",
+    "static/js/2.832a455c.chunk.js.map": "/overstock_app/static/js/2.832a455c.chunk.js.map",
+    "static/js/3.df950000.chunk.js": "/overstock_app/static/js/3.df950000.chunk.js",
+    "static/js/3.df950000.chunk.js.map": "/overstock_app/static/js/3.df950000.chunk.js.map",
     "index.html": "/overstock_app/index.html",
     "static/css/2.ea4c6955.chunk.css.map": "/overstock_app/static/css/2.ea4c6955.chunk.css.map",
-    "static/css/main.27b9b1c2.chunk.css.map": "/overstock_app/static/css/main.27b9b1c2.chunk.css.map",
-    "static/js/2.df509919.chunk.js.LICENSE.txt": "/overstock_app/static/js/2.df509919.chunk.js.LICENSE.txt",
+    "static/css/main.5eadf30a.chunk.css.map": "/overstock_app/static/css/main.5eadf30a.chunk.css.map",
+    "static/js/2.832a455c.chunk.js.LICENSE.txt": "/overstock_app/static/js/2.832a455c.chunk.js.LICENSE.txt",
     "static/media/App.css": "/overstock_app/static/media/RedHatText-MediumItalic.188db8f3.ttf",
     "static/media/about-img1.69d3493d.JPG": "/overstock_app/static/media/about-img1.69d3493d.JPG",
     "static/media/about-img2.fb9a2a86.jpg": "/overstock_app/static/media/about-img2.fb9a2a86.jpg",
@@ -58,10 +58,10 @@
     "static/media/trans1-img6.30354f51.jpg": "/overstock_app/static/media/trans1-img6.30354f51.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b3ec1e46.js",
+    "static/js/runtime-main.b770baab.js",
     "static/css/2.ea4c6955.chunk.css",
-    "static/js/2.df509919.chunk.js",
-    "static/css/main.27b9b1c2.chunk.css",
-    "static/js/main.56c53b98.chunk.js"
+    "static/js/2.832a455c.chunk.js",
+    "static/css/main.5eadf30a.chunk.css",
+    "static/js/main.166dfb55.chunk.js"
   ]
 }
