@@ -44,7 +44,7 @@ function Home(props) {
           <ScrollAnimation 
             animateIn="fadeInDown"
             duration={2} 
-            delay={2000} 
+            delay={1000} 
             animateOnce={true}
           >
             <a href="#about">
