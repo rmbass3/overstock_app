@@ -5,7 +5,9 @@ import bgMain from '../imgs/bg-main-dark-2.jpg'
 import ScrollAnimation from "react-animate-on-scroll";
 
 
+
 function Home(props) {
+
   return (
     <div id="home">
       <ParallaxBanner
@@ -16,6 +18,7 @@ function Home(props) {
             amount: 0.5,
           },
         ]}
+        disabled={props.mobile}
       >
         <div className="home">
           <div className="container home-title-container">

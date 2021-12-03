@@ -20,6 +20,7 @@ function HomeTransition(props) {
             amount: 0.5,
           },
         ]}
+        disabled={props.mobile}
       >
         <div className="container lvf-title-container">
           <ScrollAnimation animateIn="fadeIn" duration={2}>
@@ -46,6 +47,7 @@ function HomeTransition(props) {
                   style={{
                     height: '400px'
                   }}
+                  disabled={props.mobile}
                 >
                   <div className="triangle-right-top d-none d-md-block"/>
                 </ParallaxBanner> 
@@ -103,6 +105,7 @@ function HomeTransition(props) {
                   style={{
                     height: '400px'
                   }}
+                  disabled={props.mobile}
                 >
                 <div className="triangle-left-top d-none d-md-block"/>
                 </ParallaxBanner> 
@@ -125,6 +128,7 @@ function HomeTransition(props) {
                   style={{
                     height: '400px'
                   }}
+                  disabled={props.mobile}
                 >
                   <div className="triangle-right-top d-none d-md-block"/>
                 </ParallaxBanner> 
@@ -182,6 +186,7 @@ function HomeTransition(props) {
                   style={{
                     height: '400px'
                   }}
+                  disabled={props.mobile}
                 >
                 <div className="triangle-left-top d-none d-md-block"/>
                 </ParallaxBanner> 
@@ -204,6 +209,7 @@ function HomeTransition(props) {
                   style={{
                     height: '400px'
                   }}
+                  disabled={props.mobile}
                 >
                   <div className="triangle-right-top d-none d-md-block"/>
                 </ParallaxBanner> 

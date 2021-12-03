@@ -118,6 +118,7 @@ function LVPGallery (props) {
               amount: 0.5,
             },
           ]}
+          disabled={props.mobile}
         >
           <div className="container lvf-title-container">
             <ScrollAnimation animateIn="fadeIn" duration={2}>

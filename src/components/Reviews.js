@@ -31,6 +31,7 @@ function Reviews (props) {
             amount: 0.5,
           },
         ]}
+        disabled={props.mobile}
       >
         <div className="container lvf-title-container">
           <ScrollAnimation animateIn="fadeIn" duration={2}>
@@ -142,6 +143,7 @@ function Reviews (props) {
                     amount: 0,
                   }
                 ]}
+                disabled={props.mobile}
                 
               />
             </div>
@@ -162,7 +164,7 @@ function Reviews (props) {
                     amount: 0,
                   }
                 ]}
-
+                disabled={props.mobile}
               >
                 
               </ParallaxBanner>

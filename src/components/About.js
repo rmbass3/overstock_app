@@ -10,7 +10,6 @@ import aboutimg5 from '../imgs/about-img5.jpg';
 function About(props){
   return (
     <div id="about">
-
       <div className="about-container">
         <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4 my-md-5">
           <div className="col-7 order-2">
@@ -36,6 +35,7 @@ function About(props){
                       amount: 0.0
                     }
                   ]}
+                  disabled={props.mobile}
                 >
                 </ParallaxBanner> 
               </ScrollAnimation>
@@ -66,6 +66,7 @@ function About(props){
                       amount: 0.0
                     }
                   ]}
+                  disabled={props.mobile}
                 >
                 </ParallaxBanner> 
               </ScrollAnimation>
@@ -84,6 +85,7 @@ function About(props){
                       amount: 0.0
                     }
                   ]}
+                  disabled={props.mobile}
                 >
                 </ParallaxBanner> 
               </div>
@@ -124,6 +126,7 @@ function About(props){
                       amount: 0.0
                     }
                   ]}
+                  disabled={props.mobile}
                 >
                 </ParallaxBanner> 
               </ScrollAnimation>
@@ -154,6 +157,7 @@ function About(props){
                       amount: 0.0
                     }
                   ]}
+                  disabled={props.mobile}
                 >
                 </ParallaxBanner> 
               </ScrollAnimation>
