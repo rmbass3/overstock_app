@@ -6,7 +6,7 @@ import logo from '../imgs/logo.png'
 function Header(props) {
   return (
     <div>
-      <Navbar expand="lg" className="header">
+      <Navbar expand="xxl" className="header">
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} alt="" className="logo"/>
