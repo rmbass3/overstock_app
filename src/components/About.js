@@ -13,7 +13,7 @@ function About(props){
       <div className="about-container">
         <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4 my-md-5">
           <div className="col-7 order-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" duration={0.5}>
+            <ScrollAnimation animateIn="fadeIn"  duration={0.5}>
               <div className="about-text-col-right">
                 <div className="about-text-container">
                   <h4 className="about-text-title">SELECTION</h4>
@@ -26,7 +26,7 @@ function About(props){
           </div>
           <div className="col-5 order-1">
             <div className="about-img-col">
-              <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" duration={0.5}>
+              <ScrollAnimation animateIn="fadeIn"  duration={0.5}>
                 <ParallaxBanner
                   className="parallax-about"
                   layers={[
@@ -44,7 +44,7 @@ function About(props){
         </div>
         <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4 my-md-5">
           <div className="col-7 order-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" duration={0.5}>
+            <ScrollAnimation animateIn="fadeIn"  duration={0.5}>
               <div className="about-text-col-left">
                 <div className="about-text-container">
                   <h4 className="about-text-title">PRICING</h4>
@@ -57,7 +57,7 @@ function About(props){
           </div>
           <div className="col-5 order-2">
             <div className="about-img-col">
-              <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" duration={0.5}>
+              <ScrollAnimation animateIn="fadeIn"  duration={0.5}>
                 <ParallaxBanner
                   className="parallax-about"
                   layers={[
@@ -74,7 +74,7 @@ function About(props){
           </div>
         </div>
         <div className="row row-cols-1 my-3 my-sm-4 my-md-5">
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={0.5} className="wide-img-col-container">
+          <ScrollAnimation animateIn="fadeIn" duration={0.5} className="wide-img-col-container">
             <div className="col order-1">
               <div className="about-wide-img-col">
                 <ParallaxBanner
@@ -104,7 +104,7 @@ function About(props){
         </div>
         <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4my-md-5">
           <div className="col-7 order-2">
-            <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" duration={0.5}> 
+            <ScrollAnimation animateIn="fadeIn"  duration={0.5}> 
               <div className="about-text-col-right">
                 <div className="about-text-container">
                   <h4 className="about-text-title">RELIABILITY</h4>
@@ -117,7 +117,7 @@ function About(props){
           </div>
           <div className="col-5 order-1">
             <div className="about-img-col">
-              <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" duration={0.5}>
+              <ScrollAnimation animateIn="fadeIn"  duration={0.5}>
                 <ParallaxBanner
                   className="parallax-about"
                   layers={[
@@ -135,7 +135,7 @@ function About(props){
         </div>
         <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4 my-md-5">
           <div className="col-7 order-1">
-            <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" duration={0.5}>
+            <ScrollAnimation animateIn="fadeIn"  duration={0.5}>
               <div className="about-text-col-left">
                 <div className="about-text-container">
                   <h4 className="about-text-title">QUALITY</h4>
@@ -148,7 +148,7 @@ function About(props){
           </div>
           <div className="col-5 order-2">
             <div className="about-img-col">
-              <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" duration={0.5}>
+              <ScrollAnimation animateIn="fadeIn"  duration={0.5}>
                 <ParallaxBanner
                   className="parallax-about"
                   layers={[
