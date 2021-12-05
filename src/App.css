@@ -281,6 +281,10 @@
   margin: 20px auto;
 }
 
+.parallax-trans1-right {
+  height: 200px!important;
+}
+
 /* Banner titles */
 .App .banner-title {
   background-repeat: no-repeat;
@@ -677,6 +681,10 @@
 
   .trans1-img-col {
     width: 100%;
+  }
+
+  .parallax-trans1-right {
+    height: 400px!important;
   }
 }
 

@@ -44,9 +44,6 @@ function HomeTransition(props) {
                       amount: 0.3
                     }
                   ]}
-                  style={{
-                    height: '400px'
-                  }}
                   disabled={props.mobile}
                 >
                   <div className="triangle-right-top d-none d-md-block"/>
@@ -102,9 +99,7 @@ function HomeTransition(props) {
                       amount: 0.3
                     }
                   ]}
-                  style={{
-                    height: '400px'
-                  }}
+
                   disabled={props.mobile}
                 >
                 <div className="triangle-left-top d-none d-md-block"/>
@@ -125,9 +120,7 @@ function HomeTransition(props) {
                       amount: 0.3
                     }
                   ]}
-                  style={{
-                    height: '400px'
-                  }}
+
                   disabled={props.mobile}
                 >
                   <div className="triangle-right-top d-none d-md-block"/>
@@ -183,9 +176,7 @@ function HomeTransition(props) {
                       amount: 0.3
                     }
                   ]}
-                  style={{
-                    height: '400px'
-                  }}
+
                   disabled={props.mobile}
                 >
                 <div className="triangle-left-top d-none d-md-block"/>
@@ -206,9 +197,6 @@ function HomeTransition(props) {
                       amount: 0.3
                     }
                   ]}
-                  style={{
-                    height: '400px'
-                  }}
                   disabled={props.mobile}
                 >
                   <div className="triangle-right-top d-none d-md-block"/>
