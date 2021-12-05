@@ -219,7 +219,6 @@
   font-family: RedHatMedium;
   text-align: center;
   font-size: clamp(15px, 2vw, 25px);
-  padding-right: 20px;
 }
 
 .home-trans1 .trans1-title-text {
@@ -227,8 +226,12 @@
   font-family: RedHatMedium;
   text-align: center;
   font-size: clamp(30px, 4vw, 50px);
-  padding-right: 20px;
   text-transform: uppercase;
+}
+
+.trans1-img-col {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .triangle-left-top {
@@ -275,7 +278,7 @@
 }
 
 .trans1-box-right .trans1-text-container, .trans1-box-left .trans1-text-container {
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 /* Banner titles */
@@ -670,6 +673,10 @@
 
   .row .wide-img-col-container {
     padding: 0 24px;
+  }
+
+  .trans1-img-col {
+    width: 100%;
   }
 }
 
