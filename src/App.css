@@ -561,8 +561,14 @@
   margin-right: 5px;
 }
 
-.contact-icons-container a {
+.contact-icons-container a, .contact-info a {
   color: var(--dark-charcoal);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: var(--dark-charcoal);
+  text-decoration: underline;
 }
 
 .yelp-link:hover {

@@ -59,13 +59,18 @@ function Contact(props){
               <h3 className="contact-info-title">CONTACT</h3>
               <h4 className="contact-info">
                 <i className="fas fa-phone-alt contact-icons-left"></i>
-                (843) 318-9675
+                <a href="tel:+8433189675">(843) 318-9675</a>
               </h4>
               <h4 className="contact-info">
                 <i className="fas fa-map-marker-alt contact-icons-left"></i>
-                1205 Elgin Ave
+                <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Overstock+Discount+Flooring/@35.9308479,-80.0383688,17z/data=!3m1!4b1!4m5!3m4!1s0x88530b81c8f99bed:0x2d169abe421fbfec!8m2!3d35.9308436!4d-80.0361801?hl=en">
+                  1205 Elgin Ave <br/>
+                  High Point, NC 27262
+                </a>
               </h4>
-              <h4 className="contact-info">High Point, NC 27262</h4>
+              {/* <h4 className="contact-info">
+                <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Overstock+Discount+Flooring/@35.9308479,-80.0383688,17z/data=!3m1!4b1!4m5!3m4!1s0x88530b81c8f99bed:0x2d169abe421fbfec!8m2!3d35.9308436!4d-80.0361801?hl=en">High Point, NC 27262</a>
+              </h4> */}
             </div>
             <div className="contact-middle">
               <h3 className="contact-info-title">SOCIAL</h3>
@@ -79,7 +84,6 @@ function Contact(props){
                 <a href="https://www.facebook.com/Overstock-Discount-Flooring-101773294750190/" target="_blank" className="fb-link" rel="noreferrer">
                   <i className="fab fa-facebook-square contact-icons-middle"/>
                 </a>
-                {/* https://www.facebook.com/Overstock-Discount-Flooring-101773294750190/ */}
               </div>
             </div>
             <div className="contact-right">

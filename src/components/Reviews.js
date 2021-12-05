@@ -120,7 +120,7 @@ function Reviews (props) {
         </div>
       </ScrollAnimation>
       <div className="review-cards">
-        <ScrollAnimation animateIn="fadeInRight">
+        <ScrollAnimation animateIn="fadeIn">
           <div className="review-card">
             <div className="review-card-text">
               <div className="review-card-title">
@@ -148,7 +148,7 @@ function Reviews (props) {
             </div>
           </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft">
+        <ScrollAnimation animateIn="fadeIn">
           <div className="review-card">
             <div className="review-card-img">
               <ParallaxBanner
