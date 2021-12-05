@@ -32,7 +32,7 @@ function HomeTransition(props) {
       </ParallaxBanner>
       <div className="gradient-trans trans-top" />
       <div className="trans1-container">
-        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mt-3 mt-sm-4 mt-md-5">
+        <div className="row row-cols-1 row-cols-md-2 gx-0 mb-0 mt-sm-4 mt-md-5">
           <div className="col order-2 order-md-1">
             <ScrollAnimation animateIn="fadeIn"  duration={0.5}>
               <div className="col trans1-img-col">
@@ -54,7 +54,7 @@ function HomeTransition(props) {
           <div className="col order-1 order-md-2">
             <ScrollAnimation animateIn="fadeIn"  duration={0.5}>
               <div className="col trans1-text-col">
-                <div className="trans1-box-right p-3 p-md-0">
+                <div className="trans1-box-right pb-3 px-3 p-md-0">
                   <div className="triangle-left-bottom d-none d-md-block"/>
                   <div className="container trans1-text-container">
                     <h4 className="trans1-title-text">
