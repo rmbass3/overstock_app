@@ -59,7 +59,7 @@ function Contact(props){
               <h3 className="contact-info-title">CONTACT</h3>
               <h4 className="contact-info">
                 <i className="fas fa-phone-alt contact-icons-left"></i>
-                <a href="tel:+8433189675">(843) 318-9675</a>
+                <a href="tel:843-318-9675">(843) 318-9675</a>
               </h4>
               <h4 className="contact-info">
                 <i className="fas fa-map-marker-alt contact-icons-left"></i>

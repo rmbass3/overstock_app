@@ -2,9 +2,9 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { ParallaxBanner } from "react-scroll-parallax";
 import { Card } from "react-bootstrap";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper } from '../../node_modules/swiper/react/swiper.js'
 import { SwiperSlide } from '../../node_modules/swiper/react/swiper-slide.js'
-import { EffectCoverflow } from "swiper";
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
@@ -20,6 +20,14 @@ import stars from '../imgs/stars.png'
 
 
 function Reviews (props) {
+  
+  const getSlideNum = (mobile) => {
+    if (mobile) {
+      return 1;
+    }
+    return 3;
+  }
+
   return (
     <div id="reviews">
       <div className="gradient-trans trans-bottom" />
@@ -44,22 +52,22 @@ function Reviews (props) {
       <ScrollAnimation animateIn="fadeIn">
         <div className="reviews-swiper-container">
           <Swiper 
-            modules={[EffectCoverflow]}
-            effect={'coverflow'} 
+            // modules={[Pagination]}
+            // pagination={true}
             grabCursor={true} 
             centeredSlides={true} 
-            slidesPerView={3} 
-            coverflowEffect={{
-              "rotate": 10,
-              "stretch": 0,
-              "depth": 50,
-              "modifier": 2,
-              "slideShadows": true
-            }}
-            spaceBetween={30}
+            slidesPerView={getSlideNum(props.mobile)} 
             loop={true}
             loopFillGroupWithBlank={true}
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={30}
+            pagination={{ 
+              clickable: true,
+              dynamicBullets: true
+            }}
             className="reviews-swiper"
+
+
           >
             <SwiperSlide>
               <Card>
@@ -165,7 +173,6 @@ function Reviews (props) {
                 ]}
                 disabled={props.mobile}
               >
-                
               </ParallaxBanner>
             </div>
             <div className="review-card-text">
