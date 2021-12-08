@@ -180,13 +180,13 @@
 .lvf-title-container .lvf-title-intro {
   color: white;
   font-family: RedHatItalics;
-  font-size: clamp(20px, 4vw, 60px);
+  font-size: clamp(24px, 4vw, 60px);
 }
 
 .lvf-title-container .lvf-title-lvp {
   color: var(--logo-color);
   font-family: RedHatMedium;
-  font-size: clamp(30px, 6vw, 90px);
+  font-size: clamp(36px, 6vw, 90px);
   text-transform: uppercase;
 }
 
@@ -474,7 +474,7 @@
 }
 
 .card .card-text {
-  font-size: clamp(10px, 2.5vw, 20px);
+  font-size: clamp(15px, 2.5vw, 20px);
   font-family: RedHatItalics;
 }
 
@@ -494,23 +494,24 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 30px;
+  padding: 15px;
   background: linear-gradient(0deg, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 100%);
 }
 
 .review-card-title {
   font-family: RedHatMedium;
-  font-size: clamp(20px, 5vw, 40px);
+  font-size: clamp(24px, 4vw, 40px);
+  margin-bottom: 20px;
 }
 
 .review-card-body {
   font-family: RedHatItalics;
-  font-size: clamp(10px, 2.5vw, 20px);
+  font-size: clamp(12px, 2vw, 20px);
 }
 
 .review-card-banner {
   width: 40vw!important;
-  height: 350px!important;
+  height: 400px!important;
 }
 
 .review-card-banner .parallax-banner-layer-1{
@@ -710,6 +711,10 @@
 
   .card .card-text {
     font-size: clamp(13px, 1.5vw, 20px);
+  }
+
+  .review-card-text {
+    padding: 30px;
   }
 }
 

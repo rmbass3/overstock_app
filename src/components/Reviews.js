@@ -143,7 +143,7 @@ function Reviews (props) {
           <div className="review-card">
             <div className="review-card-text">
               <div className="review-card-title">
-                S.K.
+                Sean K.
               </div>
               <div className="review-card-body">
                 "By far the best place I've ever bought flooring from. Between the quality of the customer service and the outstanding prices, I highly recommend this business for your next Luxury Vinyl Plank purchase."
@@ -188,7 +188,7 @@ function Reviews (props) {
             </div>
             <div className="review-card-text">
               <div className="review-card-title">
-                M.S.
+                Marc S.
               </div>
               <div className="review-card-body">
                 "Steve is awesome!!! Great floors and the price was better then any other!! Great customer service and recommend awesome people that installed at a great price! Will not go anywhere else! They are the best around!!"
