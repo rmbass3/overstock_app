@@ -74,10 +74,12 @@ function Reviews (props) {
               <Card>
                 <Card.Img variant="top" src={reviewer1} />
                 <Card.Body>
-                  <Card.Title>R.T.</Card.Title>
-                  <Card.Text>
-                    "Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!"
-                  </Card.Text>
+                  <Card.Title>Ryan T.</Card.Title>
+                  <div className="card-text-container">
+                    <Card.Text>
+                      "Best place to find good flooring products. The price was great. There were so many options as well. Super nice people!"
+                    </Card.Text>
+                  </div>
                 </Card.Body>
               </Card>
             </SwiperSlide>
@@ -85,10 +87,12 @@ function Reviews (props) {
               <Card>
                 <Card.Img variant="top" src={reviewer2} />
                 <Card.Body>
-                  <Card.Title>B.D.</Card.Title>
-                  <Card.Text>
-                    "Excellent customer service! Everything from the sales experience to the installation was flawless. Highly recommend!"
-                  </Card.Text>
+                  <Card.Title>Beverly D.</Card.Title>
+                  <div className="card-text-container">
+                    <Card.Text>
+                      "Excellent customer service! Everything from the sales experience to the installation was flawless. Highly recommend!"
+                    </Card.Text>
+                  </div>
                 </Card.Body>
               </Card>
             </SwiperSlide>
@@ -96,10 +100,12 @@ function Reviews (props) {
               <Card>
                 <Card.Img variant="top" src={reviewer3} />
                 <Card.Body>
-                  <Card.Title>S.S.</Card.Title>
-                  <Card.Text>
-                    "Steve is a great guy to work with. His prices can't be beat. He also has a great variety of flooring to choose from."
-                  </Card.Text>
+                  <Card.Title>Shannon S.</Card.Title>
+                  <div className="card-text-container">
+                    <Card.Text>
+                      "Steve is a great guy to work with. His prices can't be beat. He also has a great variety of flooring to choose from."
+                    </Card.Text>
+                  </div>
                 </Card.Body>
               </Card>
             </SwiperSlide>
@@ -107,10 +113,12 @@ function Reviews (props) {
               <Card>
                 <Card.Img variant="top" src={reviewer4} />
                 <Card.Body>
-                  <Card.Title>A.T.</Card.Title>
-                  <Card.Text>
-                    "Got the best service today. Very good quality products as such as a good deal!"
-                  </Card.Text>
+                  <Card.Title>Anh T.</Card.Title>
+                  <div className="card-text-container">
+                    <Card.Text>
+                      "Got the best service today. Very good quality products as such as a good deal!"
+                    </Card.Text>
+                  </div>
                 </Card.Body>
               </Card>
             </SwiperSlide>
@@ -118,10 +126,12 @@ function Reviews (props) {
               <Card>
                 <Card.Img variant="top" src={reviewer5} />
                 <Card.Body>
-                  <Card.Title>K.L.</Card.Title>
-                  <Card.Text>
-                    "Great products and service. Easy to work with."
-                  </Card.Text>
+                  <Card.Title>Kent L.</Card.Title>
+                  <div className="card-text-container">
+                    <Card.Text>
+                      "Great products and service. Easy to work with."
+                    </Card.Text>
+                  </div>
                 </Card.Body>
               </Card>
             </SwiperSlide>
