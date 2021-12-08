@@ -66,6 +66,7 @@ function Reviews (props) {
               dynamicBullets: true
             }}
             className="reviews-swiper"
+            initialSlide={2}
 
 
           >

@@ -436,9 +436,7 @@
 /* Reviews */
 .reviews-swiper-container {
   margin: 50px auto 0 auto;
-  width: 80%;
-  
-
+  width: 51%;
   max-width: 1250px;
   text-align: center;
   user-select: none;
@@ -451,7 +449,7 @@
 }
 
 .card .card-img-top {
-  width: clamp(100px, 17vw, 300px);
+  width: clamp(150px, 20vw, 300px);
   margin: 0 auto;
   padding-top: 20px;
 }
@@ -686,6 +684,10 @@
 
   .parallax-trans1-right {
     height: 400px!important;
+  }
+
+  .reviews-swiper-container {
+    width: 80%;
   }
 }
 
