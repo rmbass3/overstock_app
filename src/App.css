@@ -578,9 +578,15 @@
 }
 
 .contact-hours, .contact-info {
-  margin-bottom: 5px;
   font-size: clamp(15px, 2vw, 25px);
   color: var(--dark-charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-container .contact-info {
+  margin-bottom: 0!important;
 }
 
 .contact-info-title, .contact-hours-title {
@@ -592,7 +598,7 @@
 .contact-icons-container {
   display: flex;
   justify-content: space-around;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .contact-icons-container {
@@ -623,6 +629,19 @@
 
 .fb-link:hover {
   color: rgb(22, 67, 193);
+}
+
+.contact-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hours-flex-container {
+  display: flex;
+  flex-direction: column;
+
 }
 /* Breakpoints */
 
@@ -761,6 +780,19 @@
   .contact-left, .contact-middle, .contact-right {
     width: 33.33%;
     padding: 20px;
+  }
+
+  .contact-flex-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-info a {
+    padding: 5px;
+  }
+
+  .hours-flex-container {
+    padding-top: 10px;
   }
 }
 

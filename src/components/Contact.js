@@ -57,17 +57,20 @@ function Contact(props){
           <div className="contact-info-container">
             <div className="contact-left">
               <h3 className="contact-info-title">CONTACT</h3>
-              <h4 className="contact-info">
-                <i className="fas fa-phone-alt contact-icons-left"></i>
-                <a href="tel:843-318-9675">(843) 318-9675</a>
-              </h4>
-              <h4 className="contact-info">
-                <i className="fas fa-map-marker-alt contact-icons-left"></i>
-                <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Overstock+Discount+Flooring/@35.9308479,-80.0383688,17z/data=!3m1!4b1!4m5!3m4!1s0x88530b81c8f99bed:0x2d169abe421fbfec!8m2!3d35.9308436!4d-80.0361801?hl=en">
-                  1205 Elgin Ave <br/>
-                  High Point, NC 27262
-                </a>
-              </h4>
+              <div className="contact-flex-container">
+                <h4 className="contact-info">
+                  <i className="fas fa-phone-alt contact-icons-left"></i>
+                  <a href="tel:843-318-9675">(843) 318-9675</a>
+                </h4>
+                <h4 className="contact-info">
+                  <i className="fas fa-map-marker-alt contact-icons-left"></i>
+                  <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Overstock+Discount+Flooring/@35.9308479,-80.0383688,17z/data=!3m1!4b1!4m5!3m4!1s0x88530b81c8f99bed:0x2d169abe421fbfec!8m2!3d35.9308436!4d-80.0361801?hl=en">
+                    1205 Elgin Ave <br/>
+                    High Point, NC <br/>
+                    27262
+                  </a>
+                </h4>
+              </div>
               {/* <h4 className="contact-info">
                 <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Overstock+Discount+Flooring/@35.9308479,-80.0383688,17z/data=!3m1!4b1!4m5!3m4!1s0x88530b81c8f99bed:0x2d169abe421fbfec!8m2!3d35.9308436!4d-80.0361801?hl=en">High Point, NC 27262</a>
               </h4> */}
@@ -88,9 +91,11 @@ function Contact(props){
             </div>
             <div className="contact-right">
               <h3 className="contact-hours-title">HOURS</h3>
-              <h4 className="contact-hours">M-F: 8AM-5PM</h4>
-              <h4 className="contact-hours">Sat: 9AM-12PM</h4>
-              <h4 className="contact-hours">Sun: Closed</h4>
+              <div className="hours-flex-container">
+                <h4 className="contact-hours">M-F: 8AM-5PM</h4>
+                <h4 className="contact-hours">Sat: 9AM-12PM</h4>
+                <h4 className="contact-hours">Sun: Closed</h4>
+              </div>
             </div>
           </div>
         </div>
