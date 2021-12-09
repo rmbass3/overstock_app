@@ -8,7 +8,6 @@ import { Pagination, EffectCoverflow } from 'swiper';
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
-
 import bgMain3 from '../imgs/bg-main-3.jpg'
 import galleryimg1 from '../imgs/gallery-img-1.JPG'
 import galleryimg2 from '../imgs/gallery-img-2.JPG';
@@ -106,7 +105,6 @@ function LVPGallery (props) {
     }
   ]
 
-
   return (
     <div id="gallery">
         <div className="gradient-trans trans-bottom" />
@@ -132,21 +130,28 @@ function LVPGallery (props) {
           <div className="flooring-swiper-container">
             <Swiper 
               modules={[Pagination, EffectCoverflow]}
-              effect={'coverflow'} 
+              // effect={switchSlideType(props.mobile)} 
               grabCursor={true} 
               centeredSlides={true} 
               slidesPerView={'auto'} 
-              coverflowEffect={{
-                "rotate": 30,
-                "stretch": 0,
-                "depth": 50,
-                "modifier": 2,
-                "slideShadows": true
-              }}
               className="flooring-swiper"
               loop={true}
-              pagination={true}
-
+              pagination={{ 
+                clickable: true,
+                dynamicBullets: true
+              }}
+              loopFillGroupWithBlank={true}
+              initialSlide={2}
+              observer={true}
+              // onResize={() => {
+              //   const swiper = document.querySelector('.flooring-swiper').swiper;
+              //   // if (window.innerWidth > 767) {
+                  
+              //   // }
+              //   switchSlideType(props.mobile)
+              //   console.log(switchSlideType(props.mobile))
+              //   swiper.update()
+              // }}
             >
               <SwiperSlide><img src={slideimg1} alt=""/></SwiperSlide>
               <SwiperSlide><img src={slideimg2} alt=""/></SwiperSlide>
