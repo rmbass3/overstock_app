@@ -4,7 +4,7 @@ import { ParallaxBanner } from "react-scroll-parallax";
 import Gallery from "react-grid-gallery";
 import { Swiper } from '../../node_modules/swiper/react/swiper.js'
 import { SwiperSlide } from '../../node_modules/swiper/react/swiper-slide.js'
-import { Pagination, EffectCoverflow } from 'swiper';
+import { Pagination, EffectCards, Autoplay } from 'swiper';
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
@@ -126,11 +126,11 @@ function LVPGallery (props) {
           </div>
         </ParallaxBanner>
         <div className="gradient-trans trans-top" />
-        <ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
+        <ScrollAnimation className="flooring-swiper-animation" animateIn="fadeIn" duration={2} animateOnce={true}>
           <div className="flooring-swiper-container">
             <Swiper 
-              modules={[Pagination, EffectCoverflow]}
-              // effect={switchSlideType(props.mobile)} 
+              modules={[Pagination, Autoplay, EffectCards]}
+              effect={'cards'} 
               grabCursor={true} 
               centeredSlides={true} 
               slidesPerView={'auto'} 
@@ -143,6 +143,11 @@ function LVPGallery (props) {
               loopFillGroupWithBlank={true}
               initialSlide={2}
               observer={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false
+              }}
+              speed={600}
               // onResize={() => {
               //   const swiper = document.querySelector('.flooring-swiper').swiper;
               //   // if (window.innerWidth > 767) {
