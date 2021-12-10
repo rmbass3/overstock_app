@@ -24,6 +24,11 @@
   background-color: rgb(255, 255, 255);
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* Header */
 .App .header {
   font-size: clamp(15px, 1.5vw, 24px);
@@ -426,24 +431,6 @@
   width: 100%;
 }
 
-.flooring-swiper-container .swiper-slide img {
-  /* display: block; */
-}
-
-.swiper-slide img, .flooring-swiper-container .swiper-slide {
-  /* width: clamp(150px, 20vw, 300px);
-  width: 90%;
-  margin: 0 auto; */
-}
-
-
-.flooring-swiper-container .swiper-pagination {
-  /* bottom: 5px!important; */
-}
-
-#gallery .flooring-swiper-container {
-  /* width: clamp(200px, 20vw, 1000px) */
-}
 
 .flooring-swiper-animation {
   display: none;
