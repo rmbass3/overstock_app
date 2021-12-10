@@ -2,7 +2,7 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { ParallaxBanner } from "react-scroll-parallax";
 import { Card } from "react-bootstrap";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper } from '../../node_modules/swiper/react/swiper.js'
 import { SwiperSlide } from '../../node_modules/swiper/react/swiper-slide.js'
 import '../../node_modules/swiper/swiper-bundle.css';
@@ -59,7 +59,7 @@ function Reviews (props) {
             slidesPerView={getSlideNum(props.mobile)} 
             loop={true}
             loopFillGroupWithBlank={true}
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}
             pagination={{ 
               clickable: true,
@@ -67,7 +67,10 @@ function Reviews (props) {
             }}
             className="reviews-swiper"
             initialSlide={2}
-
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false
+            }}
 
           >
             <SwiperSlide>

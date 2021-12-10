@@ -180,13 +180,13 @@
 .lvf-title-container .lvf-title-intro {
   color: white;
   font-family: RedHatItalics;
-  font-size: clamp(24px, 4vw, 60px);
+  font-size: clamp(20px, 4vw, 60px);
 }
 
 .lvf-title-container .lvf-title-lvp {
   color: var(--logo-color);
   font-family: RedHatMedium;
-  font-size: clamp(36px, 6vw, 90px);
+  font-size: clamp(30px, 6vw, 90px);
   text-transform: uppercase;
 }
 
@@ -220,6 +220,7 @@
   text-align: center;
   font-size: clamp(15px, 2vw, 25px);
   margin-bottom: 0;
+  padding: 0 25px;
 }
 
 .home-trans1 .trans1-title-text {
@@ -356,7 +357,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .about-text-title {
@@ -364,6 +365,7 @@
   font-family: RedHatMedium;
   text-align: center;
   font-size: clamp(24px, 4vw, 50px);
+  margin-top: 10px;
 }
 
 .about-text {
@@ -467,6 +469,11 @@
   /* min-width: 200px; */
 }
 
+.swiper-slide .card {
+  /* background: linear-gradient(0deg, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 100%); */
+  border: none;
+}
+
 .card .card-img-top {
   width: clamp(150px, 30vw, 240px);
   margin: 0 auto;
@@ -498,7 +505,7 @@
 }
 
 .review-cards {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   max-width: 1250px;
 }
@@ -549,7 +556,7 @@
 
 .contact-container {
   margin: 20px auto;
-  width: 80%;
+  width: 90%;
   max-width: 1250px;
   text-align: center;
   margin-bottom: 40px;
@@ -558,7 +565,7 @@
 
 .contact-map-container .contact-map {
   width: 100%;
-  height: 60vw;
+  height: 70vw;
 }
 
 .contact-info-container {
@@ -576,19 +583,16 @@
 }
 
 .contact-hours, .contact-info {
-  font-size: clamp(20px, 2vw, 25px);
+  font-size: clamp(15px, 3vw, 21px);
   color: var(--dark-charcoal);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.contact-info-container .contact-info {
   margin-bottom: 0!important;
 }
 
 .contact-info-title, .contact-hours-title {
-  font-size: clamp(32px, 4vw, 50px);
+  font-size: clamp(28px, 4vw, 50px);
   color: var(--logo-color);
   margin-bottom: 15px;
 }
@@ -837,6 +841,18 @@
     margin-bottom: 15px;
   }
 
+  .contact-container {
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  .review-cards {
+    width: 80%;
+  }
+  
+  .about-text-container {
+    margin: 0 20px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
