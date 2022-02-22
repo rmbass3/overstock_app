@@ -8,7 +8,7 @@ import { ParallaxBanner } from "react-scroll-parallax";
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
-import bgMain5 from '../imgs/bg-main-5.jpg'
+import bgMain5 from '../imgs/bg/bg-main-5.jpg'
 import '../../node_modules/@fortawesome/fontawesome-free/js/all'
 import { useController } from "react-scroll-parallax";
 import { useLayoutEffect } from "react";

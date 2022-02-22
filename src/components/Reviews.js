@@ -8,15 +8,15 @@ import { SwiperSlide } from '../../node_modules/swiper/react/swiper-slide.js'
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
-import bgMain4 from '../imgs/bg-main-4.jpg'
-import reviewer1 from '../imgs/reviewer1-header.jpg'
-import reviewer2 from '../imgs/reviewer2-header.jpg'
-import reviewer3 from '../imgs/reviewer3-header.jpg'
-import reviewer4 from '../imgs/reviewer4-header.jpg'
-import reviewer5 from '../imgs/reviewer5-header.jpg'
-import reviewimg1 from '../imgs/reviews-img-1.jpg'
-import reviewimg2 from '../imgs/reviews-img-2.jpg'
-import stars from '../imgs/stars.png'
+import bgMain4 from '../imgs/bg/bg-main-3.jpg'
+import reviewer1 from '../imgs/reviewers/reviewer1-header.jpg'
+import reviewer2 from '../imgs/reviewers/reviewer2-header.jpg'
+import reviewer3 from '../imgs/reviewers/reviewer3-header.jpg'
+import reviewer4 from '../imgs/reviewers/reviewer4-header.jpg'
+import reviewer5 from '../imgs/reviewers/reviewer5-header.jpg'
+import reviewimg1 from '../imgs/reviews/reviews-img-1.jpg'
+import reviewimg2 from '../imgs/reviews/reviews-img-2.jpg'
+import stars from '../imgs/reviews/stars.png'
 
 
 function Reviews (props) {

@@ -1,7 +1,7 @@
 import React from "react";
 import {Button} from 'react-bootstrap';
 import { ParallaxBanner } from "react-scroll-parallax";
-import bgMain from '../imgs/bg-main-dark-2.jpg'
+import bgMain from '../imgs/bg/bg-main-1.jpg'
 import ScrollAnimation from "react-animate-on-scroll";
 import '../../node_modules/@fortawesome/fontawesome-free/js/all'
 

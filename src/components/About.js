@@ -1,11 +1,11 @@
 import React from "react";
 import { ParallaxBanner } from 'react-scroll-parallax';
 import ScrollAnimation from "react-animate-on-scroll";
-import aboutimg1 from '../imgs/about-img1.jpg';
-import aboutimg2 from '../imgs/about-img2.jpg';
-import aboutimg3 from '../imgs/about-img3.jpg';
-import aboutimg4 from '../imgs/about-img4.jpg';
-import aboutimg5 from '../imgs/about-img5.jpg';
+import aboutimg1 from '../imgs/about/about-img1.jpg';
+import aboutimg2 from '../imgs/about/about-img2.jpg';
+import aboutimg3 from '../imgs/about/about-img3.jpg';
+import aboutimg4 from '../imgs/about/about-img4.jpg';
+import aboutimg5 from '../imgs/about/about-img5.jpg';
 
 function About(props){
   return (

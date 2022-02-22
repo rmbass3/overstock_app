@@ -8,28 +8,24 @@ import { Pagination, EffectCards, Autoplay } from 'swiper';
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
 import '../../node_modules/swiper/modules/pagination/pagination.min.css'
-import bgMain3 from '../imgs/bg-main-3.jpg'
-import galleryimg1 from '../imgs/gallery-img-1.JPG'
-import galleryimg2 from '../imgs/gallery-img-2.JPG';
-import galleryimg3 from '../imgs/gallery-img-3.JPG'
-import galleryimg4 from '../imgs/gallery-img-4.JPG'
-import galleryimg5 from '../imgs/gallery-img-5.JPG'
-import galleryimg6 from '../imgs/gallery-img-6.jpg'
-import galleryimg7 from '../imgs/gallery-img-7.JPG'
-import galleryimg8 from '../imgs/gallery-img-8.JPG'
-import galleryimg9 from '../imgs/gallery-img-9.JPG'
-import galleryimg10 from '../imgs/gallery-img-10.JPG'
-import galleryimg11 from '../imgs/gallery-img-11.JPG'
-import galleryimg12 from '../imgs/gallery-img-12.JPG'
-import slideimg1 from '../imgs/slide-flooring-img-1.jpg'
-import slideimg2 from '../imgs/slide-flooring-img-2.jpg'
-import slideimg3 from '../imgs/slide-flooring-img-3.jpg'
-import slideimg4 from '../imgs/slide-flooring-img-4.jpg'
-import slideimg5 from '../imgs/slide-flooring-img-5.jpg'
-
-
-var galleryArr = [galleryimg1, galleryimg2, galleryimg3, galleryimg4, galleryimg5, galleryimg6, galleryimg7, galleryimg8, galleryimg9, galleryimg10, galleryimg11, galleryimg12];
-
+import bgMain3 from '../imgs/bg/bg-main-4.jpg'
+import galleryimg1 from '../imgs/gallery/gallery-img-1.jpg'
+import galleryimg2 from '../imgs/gallery/gallery-img-2.jpg';
+import galleryimg3 from '../imgs/gallery/gallery-img-3.jpg'
+import galleryimg4 from '../imgs/gallery/gallery-img-4.jpg'
+import galleryimg5 from '../imgs/gallery/gallery-img-5.jpg'
+import galleryimg6 from '../imgs/gallery/gallery-img-6.jpg'
+import galleryimg7 from '../imgs/gallery/gallery-img-7.jpg'
+import galleryimg8 from '../imgs/gallery/gallery-img-8.jpg'
+import galleryimg9 from '../imgs/gallery/gallery-img-9.jpg'
+import galleryimg10 from '../imgs/gallery/gallery-img-10.jpg'
+import galleryimg11 from '../imgs/gallery/gallery-img-11.jpg'
+import galleryimg12 from '../imgs/gallery/gallery-img-12.jpg'
+import slideimg1 from '../imgs/galleryslide/slide-flooring-img-1.jpg'
+import slideimg2 from '../imgs/galleryslide/slide-flooring-img-2.jpg'
+import slideimg3 from '../imgs/galleryslide/slide-flooring-img-3.jpg'
+import slideimg4 from '../imgs/galleryslide/slide-flooring-img-4.jpg'
+import slideimg5 from '../imgs/galleryslide/slide-flooring-img-5.jpg'
 
 function LVPGallery (props) {
 
@@ -37,69 +33,69 @@ function LVPGallery (props) {
   const IMAGES =
   [
     {
-      src: `${galleryArr[0]}`,
-      thumbnail: `${galleryArr[0]}`,
+      src: galleryimg1,
+      thumbnail: galleryimg1,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },
     {
-      src: `${galleryArr[1]}`,
-      thumbnail: `${galleryArr[1]}`,
+      src: galleryimg2,
+      thumbnail: galleryimg2,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },
     {
-      src: `${galleryArr[2]}`,
-      thumbnail: `${galleryArr[2]}`,
+      src: galleryimg3,
+      thumbnail: galleryimg3,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },
     {
-      src: `${galleryArr[3]}`,
-      thumbnail: `${galleryArr[3]}`,
+      src: galleryimg4,
+      thumbnail: galleryimg4,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },
     {
-      src: `${galleryArr[4]}`,
-      thumbnail: `${galleryArr[4]}`,
+      src: galleryimg5,
+      thumbnail: galleryimg5,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },
     {
-      src: `${galleryArr[5]}`,
-      thumbnail: `${galleryArr[5]}`,
+      src: galleryimg6,
+      thumbnail: galleryimg6,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },
     {
-      src: `${galleryArr[6]}`,
-      thumbnail: `${galleryArr[6]}`,
+      src: galleryimg7,
+      thumbnail: galleryimg7,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },    {
-      src: `${galleryArr[7]}`,
-      thumbnail: `${galleryArr[7]}`,
+      src: galleryimg8,
+      thumbnail: galleryimg8,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },    {
-      src: `${galleryArr[8]}`,
-      thumbnail: `${galleryArr[8]}`,
+      src: galleryimg9,
+      thumbnail: galleryimg9,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },    {
-      src: `${galleryArr[9]}`,
-      thumbnail: `${galleryArr[9]}`,
+      src: galleryimg10,
+      thumbnail: galleryimg10,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },    {
-      src: `${galleryArr[10]}`,
-      thumbnail: `${galleryArr[10]}`,
+      src: galleryimg11,
+      thumbnail: galleryimg11,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     },    {
-      src: `${galleryArr[11]}`,
-      thumbnail: `${galleryArr[11]}`,
+      src: galleryimg12,
+      thumbnail: galleryimg12,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
     }

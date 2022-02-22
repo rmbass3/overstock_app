@@ -1,12 +1,12 @@
 import React from "react";
 import { ParallaxBanner } from 'react-scroll-parallax';
-import trans1img2 from '../imgs/trans1-img2.jpg'
-import trans1img3 from '../imgs/trans1-img3.jpg'
-import trans1img4 from '../imgs/trans1-img4.jpg'
-import trans1img5 from '../imgs/trans1-img5.jpg'
-import trans1img6 from '../imgs/trans1-img6.jpg'
+import trans1img2 from '../imgs/hometrans/hometrans-img1.jpg'
+import trans1img3 from '../imgs/hometrans/hometrans-img2.jpg'
+import trans1img4 from '../imgs/hometrans/hometrans-img3.jpg'
+import trans1img5 from '../imgs/hometrans/hometrans-img4.jpg'
+import trans1img6 from '../imgs/hometrans/hometrans-img5.jpg'
 import ScrollAnimation from "react-animate-on-scroll";
-import bgMain2 from '../imgs/bg-main-dark.jpg'
+import bgMain2 from '../imgs/bg/bg-main-2.jpg'
 
 function HomeTransition(props) {
   return (
