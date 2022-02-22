@@ -339,7 +339,7 @@ html, body {
   background-color: var(--charcoal);
   display: flex;
   align-items: center;
-  background: linear-gradient(0deg, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 100%);
+  background: white;
   /* box-shadow: 5px 5px 8px 0px rgb(173, 173, 173); */
   padding: 0 5%;
 
@@ -349,7 +349,7 @@ html, body {
   background-color: var(--charcoal);
   display: flex;
   align-items: center;
-  background: linear-gradient(0deg, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 100%);
+  background: white;
   /* box-shadow: -5px 5px 8px 0px rgb(173, 173, 173); */
   padding: 0 5%;
 }
@@ -384,7 +384,7 @@ html, body {
   background-color: var(--charcoal);
   display: flex;
   align-items: center;
-  background: linear-gradient(0deg, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 100%);
+  background: white;
   height: clamp(165px, 33vw, 303px)!important ;
   /* box-shadow: 0px 5px 8px 5px rgb(173, 173, 173); */
   padding: 0 5%;
