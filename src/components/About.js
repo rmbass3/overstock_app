@@ -1,7 +1,7 @@
 import React from "react";
 import { ParallaxBanner } from 'react-scroll-parallax';
 import ScrollAnimation from "react-animate-on-scroll";
-import aboutimg1 from '../imgs/about-img1.JPG';
+import aboutimg1 from '../imgs/about-img1.jpg';
 import aboutimg2 from '../imgs/about-img2.jpg';
 import aboutimg3 from '../imgs/about-img3.jpg';
 import aboutimg4 from '../imgs/about-img4.jpg';
@@ -32,7 +32,7 @@ function About(props){
                   layers={[
                     {
                       image: aboutimg1,
-                      amount: 0.0
+                      amount: 0.3
                     }
                   ]}
                   disabled={props.mobile}
@@ -63,7 +63,7 @@ function About(props){
                   layers={[
                     {
                       image: aboutimg2,
-                      amount: 0.0
+                      amount: 0.3
                     }
                   ]}
                   disabled={props.mobile}
@@ -82,7 +82,7 @@ function About(props){
                   layers={[
                     {
                       image: aboutimg3,
-                      amount: 0.0
+                      amount: 0.3
                     }
                   ]}
                   disabled={props.mobile}
@@ -123,7 +123,7 @@ function About(props){
                   layers={[
                     {
                       image: aboutimg4,
-                      amount: 0.0
+                      amount: 0.3
                     }
                   ]}
                   disabled={props.mobile}
@@ -154,7 +154,7 @@ function About(props){
                   layers={[
                     {
                       image: aboutimg5,
-                      amount: 0.0
+                      amount: 0.3
                     }
                   ]}
                   disabled={props.mobile}

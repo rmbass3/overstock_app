@@ -394,6 +394,10 @@ html, body {
   height: clamp(132px, 33vw, 330px)!important ;
 }
 
+.about-wide-img-col .parallax-banner-layer-0, .about-img-col .parallax-banner-layer-0 {
+  inset: 0% 0px!important;
+}
+
 .about-img-col .parallax-banner-layer-0 {
   background-position: top center!important;
 }
