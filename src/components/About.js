@@ -11,14 +11,14 @@ function About(props){
   return (
     <div className="about">
       <div className="about-container">
-        <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4 my-md-5">
+        <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4my-md-5">
           <div className="col-7 order-2">
-            <ScrollAnimation animateIn="fadeIn"  duration={0.5}>
+            <ScrollAnimation animateIn="fadeIn"  duration={0.5}> 
               <div className="about-text-col-right">
                 <div className="about-text-container">
-                  <h4 className="about-text-title">SELECTION</h4>
+                  <h4 className="about-text-title">RELIABILITY</h4>
                   <p className="about-text">
-                    With OVER 200,000 square feet of LVP in stock carrying 15-year residential or lifetime commercial warranties the quality and selection speaks for itself.
+                    It’s been their mission since they first started this business to be a reliable option for the hardworking communities not only locally, but by distributing across the US to many retailers and commercial builders.
                   </p>
                 </div>
               </div>
@@ -31,7 +31,7 @@ function About(props){
                   className="parallax-about"
                   layers={[
                     {
-                      image: aboutimg1,
+                      image: aboutimg4,
                       amount: 0.3
                     }
                   ]}
@@ -102,14 +102,14 @@ function About(props){
             </div>
           </ScrollAnimation>
         </div>
-        <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4my-md-5">
+        <div className="row gx-3 gx-sm-4 gx-md-5 my-3 my-sm-4 my-md-5">
           <div className="col-7 order-2">
-            <ScrollAnimation animateIn="fadeIn"  duration={0.5}> 
+            <ScrollAnimation animateIn="fadeIn"  duration={0.5}>
               <div className="about-text-col-right">
                 <div className="about-text-container">
-                  <h4 className="about-text-title">RELIABILITY</h4>
+                  <h4 className="about-text-title">SELECTION</h4>
                   <p className="about-text">
-                    It’s been their mission since they first started this business to be a reliable option for the hardworking communities not only locally, but by distributing across the US to many retailers and commercial builders.
+                    With OVER 200,000 square feet of LVP in stock carrying 15-year residential or lifetime commercial warranties the quality and selection speaks for itself.
                   </p>
                 </div>
               </div>
@@ -122,13 +122,13 @@ function About(props){
                   className="parallax-about"
                   layers={[
                     {
-                      image: aboutimg4,
+                      image: aboutimg1,
                       amount: 0.3
                     }
                   ]}
                   disabled={props.mobile}
                 >
-                </ParallaxBanner> 
+                </ParallaxBanner>
               </ScrollAnimation>
             </div>
           </div>
