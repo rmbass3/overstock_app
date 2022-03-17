@@ -41,11 +41,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* About Us
-          Why LVP
-          Product Gallery
-          Reviews
-          Contact */}
       <Header />
       <Home mobile={isMobile}/>
       <About mobile={isMobile}/>
