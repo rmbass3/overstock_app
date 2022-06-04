@@ -14,6 +14,9 @@ import reviewer2 from '../imgs/reviewers/reviewer2-header.jpg'
 import reviewer3 from '../imgs/reviewers/reviewer3-header.jpg'
 import reviewer4 from '../imgs/reviewers/reviewer4-header.jpg'
 import reviewer5 from '../imgs/reviewers/reviewer5-header.jpg'
+import reviewer6 from '../imgs/reviewers/reviewer6-header.jpg'
+import reviewer7 from '../imgs/reviewers/reviewer7-header.jpg'
+import reviewer8 from '../imgs/reviewers/reviewer8-header.jpg'
 import reviewimg1 from '../imgs/reviews/reviews-img-1.jpg'
 import reviewimg2 from '../imgs/reviews/reviews-img-2.jpg'
 import stars from '../imgs/reviews/stars.png'
@@ -68,11 +71,50 @@ function Reviews (props) {
             className="reviews-swiper"
             initialSlide={2}
             autoplay={{
-              delay: 2500,
+              delay: 4500,
               disableOnInteraction: false
             }}
 
           >
+            <SwiperSlide>
+              <Card>
+                <Card.Img variant="top" src={reviewer6} />
+                <Card.Body>
+                  <Card.Title>Mike B.</Card.Title>
+                  <div className="card-text-container">
+                    <Card.Text>
+                      "I am a licensed GC and real estate broker, and in my 50+ years I have seldom received better value and service from any vendor"
+                    </Card.Text>
+                  </div>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card>
+                <Card.Img variant="top" src={reviewer7} />
+                <Card.Body>
+                  <Card.Title>Chris L.</Card.Title>
+                  <div className="card-text-container">
+                    <Card.Text>
+                      "The best company and customer service you can ask for. Steve, the owner, is the best and has great deals! Highly recommend!"
+                    </Card.Text>
+                  </div>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card>
+                <Card.Img variant="top" src={reviewer8} />
+                <Card.Body>
+                  <Card.Title>Sean K.</Card.Title>
+                  <div className="card-text-container">
+                    <Card.Text>
+                      "By far the best place I've ever bought flooring from. ...I highly recommend this business for your next LVP purchase"
+                    </Card.Text>
+                  </div>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
             <SwiperSlide>
               <Card>
                 <Card.Img variant="top" src={reviewer1} />
@@ -129,10 +171,10 @@ function Reviews (props) {
               <Card>
                 <Card.Img variant="top" src={reviewer5} />
                 <Card.Body>
-                  <Card.Title>Kent L.</Card.Title>
+                  <Card.Title>Declan M.</Card.Title>
                   <div className="card-text-container">
                     <Card.Text>
-                      "Great products and service. Easy to work with."
+                      "Great LVP flooring options from premium to value options. They've got a very helpful team that can set you up with exactly what you're looking for!"
                     </Card.Text>
                   </div>
                 </Card.Body>
@@ -146,10 +188,10 @@ function Reviews (props) {
           <div className="review-card">
             <div className="review-card-text">
               <div className="review-card-title">
-                Sean K.
+                Joe S.
               </div>
               <div className="review-card-body">
-                "By far the best place I've ever bought flooring from. Between the quality of the customer service and the outstanding prices, I highly recommend this business for your next Luxury Vinyl Plank purchase."
+                "Steve is the man! Very professional and his prices are second to none! Give him a shot and save hundreds on your flooring jobs. I buy and sell houses and have bought more than 20k sq. ft. from Steve! Great quality flooring at wholesale prices!"
               </div>
             </div>
             <div className="review-card-img">
@@ -191,10 +233,10 @@ function Reviews (props) {
             </div>
             <div className="review-card-text">
               <div className="review-card-title">
-                Marc S.
+                D.L. Hoffman H.
               </div>
               <div className="review-card-body">
-                "Steve is awesome!!! Great floors and the price was better then any other!! Great customer service and recommend awesome people that installed at a great price! Will not go anywhere else! They are the best around!!"
+                "Love the product and the people. Sales people and installers have been awesome to work with. I've used them for probably 10 houses in the last year or so and the experience has never been anything but top notch. We have 3 more flips lined up and they will be doing all the floors."
               </div>
             </div>
           </div>
