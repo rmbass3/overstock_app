@@ -7,6 +7,7 @@ import About from './components/About.js';
 import LVPGallery from './components/LVPGallery';
 import Reviews from './components/Reviews';
 import Contact from './components/Contact';
+import PopModal from './components/PopModal';
 import { useState, useEffect} from 'react';
 
 
@@ -48,6 +49,8 @@ function App() {
       <Reviews mobile={isMobile} />
       <LVPGallery mobile={isMobile} />
       <Contact mobile={isMobile} />
+      <PopModal mobile={isMobile} />
+      
     </div>
   );
 }
