@@ -23,33 +23,33 @@ function PopModal(props) {
         onHide={handleClose}
         centered
       >
-        <Modal.Header closeButton>
-          <Modal.Title className="text-center">Stay Informed</Modal.Title>
+        <Modal.Header className="modal-top-header" closeButton>
+          <Modal.Title className="modal-top-title">Stay Informed!</Modal.Title>
         </Modal.Header>
-        <Modal.Header>
-          <div className="">Be the first to know about our specials and new arrivals!</div>
+        <Modal.Header className="modal-bottom-header">
+          <div className="modal-bottom-title">Be the first to know about our specials and new arrivals!</div>
         </Modal.Header>
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3" controlId="formName">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter name" />
+              <Form.Control type="text" placeholder="Full name" />
             </Form.Group>
             <Form.Group className="mb-2" controlId="formEmail">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter email address" />
+              <Form.Control type="email" placeholder="Email" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formPhone">
               <Form.Label>Phone</Form.Label>
-              <Form.Control type="phone" placeholder="Enter phone number" />
+              <Form.Control type="phone" placeholder="Phone number" />
             </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="dark" onClick={handleClose}>
             Close
           </Button>
-          <Button className="modal-submit">Submit</Button>
+          <Button variant="light" className="modal-submit">Submit</Button>
         </Modal.Footer>
       </Modal>
     </div>

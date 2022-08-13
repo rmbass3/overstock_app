@@ -30,8 +30,34 @@ html, body {
 }
 
 /* PopModal */
-.modal-open{
+.modal-open {
   padding-right: 0!important;
+}
+
+.modal-top-header {
+  display: inline-block!important;
+  text-align: center;
+}
+
+.modal-top-title {
+  display: inline-block!important;
+}
+
+.btn-close {
+  float: right;
+}
+
+.modal-bottom-header {
+  margin: auto;
+}
+
+.modal-submit {
+  background-color: var(--logo-color)!important;
+  color: #fff!important;
+}
+
+.modal-content {
+  border-radius: 0!important;
 }
 
 /* Header */
