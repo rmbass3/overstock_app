@@ -1,18 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react"
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 
 function PopModal(props) {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false)
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  useEffect(() => {
+    setTimeout(() => {
+      handleShow()
+    }, 1000)
+  }, [])
+
+  const handleClose = () => {
+    setShow(false)
+    //setDisableShow(true)
+  }
+  const handleShow = () => setShow(true)
+
+
 
   return (
     <div>
-      <Button variant="primary" onClick={handleShow}>
-        Launch static backdrop modal
-      </Button>
       <Modal
         show={show}
         onHide={handleClose}

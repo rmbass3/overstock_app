@@ -42,6 +42,7 @@ function App() {
 
   return (
     <div className="App">
+      <PopModal mobile={isMobile} />
       <Header />
       <Home mobile={isMobile}/>
       <About mobile={isMobile}/>
@@ -49,7 +50,6 @@ function App() {
       <Reviews mobile={isMobile} />
       <LVPGallery mobile={isMobile} />
       <Contact mobile={isMobile} />
-      <PopModal mobile={isMobile} />
       
     </div>
   );
