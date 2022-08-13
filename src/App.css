@@ -29,6 +29,11 @@ html, body {
   overflow-x: hidden;
 }
 
+/* PopModal */
+.modal-open{
+  padding-right: 0!important;
+}
+
 /* Header */
 .App .header {
   font-size: clamp(15px, 1.5vw, 24px);
