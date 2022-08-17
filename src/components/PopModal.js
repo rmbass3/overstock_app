@@ -6,9 +6,12 @@ import Form from 'react-bootstrap/Form'
 function PopModal(props) {
 
   const [show, setShow] = useState(false)
+  const [validated, setValidated] = useState(false)
   const nameInput = useRef(null)
   const emailInput = useRef(null)
   const phoneInput = useRef(null)
+
+  console.log("validated: " + validated)
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,11 +24,22 @@ function PopModal(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    let name = nameInput?.current?.value
-    let email = emailInput?.current?.value
-    let phone = phoneInput?.current?.value
+    const form = event.currentTarget
+
+    if (form.checkValidity() === false){
+      event.stopPropagation()
+      console.log("form invalid")
+      return
+    }
+
+    console.log("form valid")
+    setValidated(true)
+
+    const name = nameInput?.current?.value
+    const email = emailInput?.current?.value
+    const phone = phoneInput?.current?.value
     //handleClose()
-    //console.log(name, email, phone)
+    console.log(name, email, phone)
   }
 
   return (
@@ -41,31 +55,43 @@ function PopModal(props) {
         <Modal.Header className="modal-bottom-header">
           <div className="modal-bottom-title">Be the first to know about our specials and new arrivals!</div>
         </Modal.Header>
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit} noValidate validated={validated}>
           <Modal.Body>
             <Form.Group className="mb-3" controlId="formName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control 
+              <Form.Label>Name*</Form.Label>
+              <Form.Control
+                required
                 type="text"
                 placeholder="Full name"
                 ref={nameInput}
               />
+              <Form.Control.Feedback type="invalid">
+                Please enter a valid name.
+              </Form.Control.Feedback>
             </Form.Group>
-            <Form.Group className="mb-2" controlId="formEmail">
-              <Form.Label>Email</Form.Label>
-              <Form.Control 
+            <Form.Group className="mb-3" controlId="formEmail">
+              <Form.Label>Email*</Form.Label>
+              <Form.Control
+                required
                 type="email" 
                 placeholder="Email" 
                 ref={emailInput}
               />
+              <Form.Control.Feedback type="invalid">
+                Please enter a valid email.
+              </Form.Control.Feedback>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formPhone">
               <Form.Label>Phone</Form.Label>
               <Form.Control 
-                type="phone" 
+                type="tel" 
                 placeholder="Phone number" 
                 ref={phoneInput}
+                pattern="^[0-9\-\+]{9,15}$"
               />
+              <Form.Control.Feedback type="invalid">
+                Please enter a valid phone number.
+              </Form.Control.Feedback>
             </Form.Group>
           </Modal.Body>
           <Modal.Footer>
