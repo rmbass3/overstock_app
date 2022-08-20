@@ -38,7 +38,7 @@ function PopModal(props) {
     const name = nameInput?.current?.value
     const email = emailInput?.current?.value
     const phone = phoneInput?.current?.value
-    //handleClose()
+    handleClose()
     console.log(name, email, phone)
   }
 
