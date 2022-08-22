@@ -4,6 +4,7 @@ import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
 import { db } from '../firebase/firebaseConfig'
 import { doc, setDoc } from "firebase/firestore"
+import axios from "axios"
 
 function PopModal(props) {
 
@@ -22,19 +23,18 @@ function PopModal(props) {
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
-  const handleSubmit = async (event) => {
-    event.preventDefault()
-    const form = event.currentTarget
-    if (form.checkValidity() === false){
-      event.stopPropagation()
-      return
-    }
-    setValidated(true)
-    const name = nameInput?.current?.value
-    const email = emailInput?.current?.value
-    const phone = phoneInput?.current?.value
-    handleClose()
+  const submitEmail = (name, email, phone) => {
+    axios.defaults.headers.post['Content-Type'] = 'application/json'
+    axios.post('https://formsubmit.co/ajax/overstockdiscountflooring@gmail.com', {
+      _subject: "ODF Form Submission: " + email,
+      Name: name,
+      Email: email,
+      Phone: phone
+    })
+      .catch(e => console.error(e))
+  }
 
+  const submitDatabase = async (name, email, phone) => {
     try {
       await setDoc(doc(db, "emails", email), {
         name: name,
@@ -45,6 +45,24 @@ function PopModal(props) {
     } catch (e) {
       console.error(e)
     }
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    const form = event.currentTarget
+    if (form.checkValidity() === false){
+      event.stopPropagation()
+      return
+    }
+    setValidated(true)
+
+    const name = nameInput?.current?.value
+    const email = emailInput?.current?.value
+    const phone = phoneInput?.current?.value
+
+    handleClose()
+    submitEmail(name, email, phone)
+    submitDatabase(name, email, phone)
   }
 
   return (
@@ -60,7 +78,13 @@ function PopModal(props) {
         <Modal.Header className="modal-bottom-header">
           <div className="modal-bottom-title">Be the first to know about our specials and new arrivals!</div>
         </Modal.Header>
-        <Form onSubmit={handleSubmit} noValidate validated={validated}>
+        <Form
+          onSubmit={handleSubmit} 
+          noValidate 
+          validated={validated}
+        >
+          <input type="hidden" name="_subject" value="New ODF Submission"/>
+          <input type="hidden" name="_captcha" value="false"/>
           <Modal.Body>
             <Form.Group className="mb-3" controlId="formName">
               <Form.Label>Name*</Form.Label>
@@ -69,6 +93,7 @@ function PopModal(props) {
                 type="text"
                 placeholder="Full name"
                 ref={nameInput}
+                name="Name"
               />
               <Form.Control.Feedback type="invalid">
                 Please enter a valid name.
@@ -81,6 +106,7 @@ function PopModal(props) {
                 type="email" 
                 placeholder="Email" 
                 ref={emailInput}
+                name="Email"
               />
               <Form.Control.Feedback type="invalid">
                 Please enter a valid email.
@@ -93,6 +119,7 @@ function PopModal(props) {
                 placeholder="Phone number" 
                 ref={phoneInput}
                 pattern="^[0-9\-\+]{9,15}$"
+                name="Telephone"
               />
               <Form.Control.Feedback type="invalid">
                 Please enter a valid phone number.
