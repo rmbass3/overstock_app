@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react"
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
+import { db } from '../firebase/firebaseConfig'
+import { doc, setDoc } from "firebase/firestore"
 
 function PopModal(props) {
 
@@ -10,8 +12,6 @@ function PopModal(props) {
   const nameInput = useRef(null)
   const emailInput = useRef(null)
   const phoneInput = useRef(null)
-
-  console.log("validated: " + validated)
 
   useEffect(() => {
     setTimeout(() => {
@@ -22,24 +22,29 @@ function PopModal(props) {
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
     const form = event.currentTarget
-
     if (form.checkValidity() === false){
       event.stopPropagation()
-      console.log("form invalid")
       return
     }
-
-    console.log("form valid")
     setValidated(true)
-
     const name = nameInput?.current?.value
     const email = emailInput?.current?.value
     const phone = phoneInput?.current?.value
     handleClose()
-    console.log(name, email, phone)
+
+    try {
+      await setDoc(doc(db, "emails", email), {
+        name: name,
+        email: email,
+        phone: phone,
+        time: new Date()
+      })
+    } catch (e) {
+      console.error(e)
+    }
   }
 
   return (
