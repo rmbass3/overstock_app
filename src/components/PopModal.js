@@ -71,6 +71,7 @@ function PopModal(props) {
         show={show}
         onHide={handleClose}
         centered
+        fullscreen={props.mobile}
       >
         <Modal.Header className="modal-top-header" closeButton>
           <Modal.Title className="modal-top-title">Stay Informed!</Modal.Title>

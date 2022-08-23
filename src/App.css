@@ -39,16 +39,8 @@ html, body {
   text-align: center;
 }
 
-.modal-top-title {
-  display: inline-block!important;
-}
-
 .btn-close {
   float: right;
-}
-
-.modal-bottom-header {
-  margin: auto;
 }
 
 .modal-submit {
@@ -58,7 +50,18 @@ html, body {
 
 .modal-content {
   border-radius: 0!important;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.95)!important;
 }
+
+.modal-bottom-header {
+  margin: 0;
+}
+
+.modal-top-title {
+  display: inline-block!important;
+}
+
 
 /* Header */
 .App .header {
@@ -874,6 +877,10 @@ html, body {
   
   .about-text-container {
     margin: 0 20px;
+  }
+
+  .modal-bottom-header {
+    margin: auto;
   }
 }
 
