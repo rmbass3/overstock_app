@@ -17,7 +17,7 @@ function PopModal(props) {
   useEffect(() => {
     setTimeout(() => {
       handleShow()
-    }, 1000)
+    }, 6000)
   }, [])
 
   const handleClose = () => setShow(false)
@@ -50,12 +50,14 @@ function PopModal(props) {
   const handleSubmit = (event) => {
     event.preventDefault()
     const form = event.currentTarget
+
+    setValidated(true)
+
     if (form.checkValidity() === false){
       event.stopPropagation()
       return
     }
-    setValidated(true)
-
+  
     const name = nameInput?.current?.value
     const email = emailInput?.current?.value
     const phone = phoneInput?.current?.value
@@ -119,7 +121,6 @@ function PopModal(props) {
                 type="tel" 
                 placeholder="Phone number" 
                 ref={phoneInput}
-                pattern="^[0-9\-\+]{9,15}$"
                 name="Telephone"
               />
               <Form.Control.Feedback type="invalid">
