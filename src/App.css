@@ -602,6 +602,10 @@ html, body {
   flex-direction: column;
 }
 
+.contact-info {
+  padding: 10px 0;
+}
+
 .contact-left, .contact-middle, .contact-right {
   width: 100%;
   padding: 10px 0px;
@@ -660,7 +664,7 @@ html, body {
 
 .contact-flex-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -823,6 +827,7 @@ html, body {
 
   .contact-info a {
     padding: 5px 0;
+    white-space: nowrap;
   }
 
   .hours-flex-container {
@@ -835,6 +840,10 @@ html, body {
 
   .fa-yelp, .fa-instagram, .fa-facebook-square {
     font-size: inherit
+  }
+
+  .contact-info {
+    padding: 5px 0;
   }
 
   .contact-hours, .contact-info {
@@ -863,7 +872,7 @@ html, body {
 
   .contact-container {
     margin: 20px auto;
-    width: 80%;
+    width: 90%;
   }
 
   .review-cards {
